@@ -431,13 +431,13 @@
   let selectedCategoryIds = new Set();
 
   async function loadCategories() {
-    const manifestRes = await fetch('/data/manifest.json');
+    const manifestRes = await fetch('data/manifest.json');
     if (!manifestRes.ok) throw new Error(`HTTP ${manifestRes.status}`);
     const manifest = await manifestRes.json();
 
     const categories = await Promise.all(
       manifest.categories.map(async (id) => {
-        const res = await fetch(`/data/categories/${id}.json`);
+        const res = await fetch(`data/categories/${id}.json`);
         if (!res.ok) throw new Error(`HTTP ${res.status} (${id})`);
         return res.json();
       })
