@@ -1,0 +1,698 @@
+{
+  "id": "present-simple",
+  "name": "Present Simple",
+  "explanation": "Se usa para hábitos, rutinas, hechos generales y verdades permanentes. En preguntas con <em>do/does</em>, el verbo principal va en forma base (sin -s).",
+  "original": [
+    {
+      "id": "ps-10",
+      "num": 10,
+      "prompt": "Most of the shops nearby {0} on Saturdays.",
+      "verbs": [
+        "NOT CLOSE"
+      ],
+      "answers": [
+        [
+          "don't close",
+          "do not close"
+        ]
+      ],
+      "justification": "La clave aquí es \"on Saturdays\", que indica una rutina habitual, no algo que pasa ahora mismo; por lo tanto va Present Simple. La regla del Present Simple negativo es \"don't/doesn't + verbo base\"; como el sujeto \"most of the shops\" es plural, usamos \"don't\": \"don't close\"."
+    },
+    {
+      "id": "ps-18",
+      "num": 18,
+      "prompt": "The weather is really awful here. {0} like that?",
+      "verbs": [
+        "IT, ALWAYS, RAIN"
+      ],
+      "answers": [
+        [
+          "Does it always rain"
+        ]
+      ],
+      "justification": "La clave aquí es \"always\", un adverbio de frecuencia que indica hábito o costumbre; por lo tanto va Present Simple. La regla de la pregunta en Present Simple es \"do/does + sujeto + verbo base\"; como el sujeto \"it\" es 3ª persona singular, el auxiliar lleva la -s (\"does\") y el verbo principal queda en forma base: \"Does it always rain?\"."
+    },
+    {
+      "id": "ps-23",
+      "num": 23,
+      "prompt": "How long {0} on her mobile on average?",
+      "verbs": [
+        "YOUR DAUGHTER, SPEND"
+      ],
+      "answers": [
+        [
+          "does your daughter spend"
+        ]
+      ],
+      "justification": "La clave aquí es \"on average\", que describe un hábito general, no una acción puntual; por lo tanto va Present Simple. La regla de la pregunta en Present Simple es \"do/does + sujeto + verbo base\"; como \"your daughter\" es 3ª persona singular, el auxiliar es \"does\" y el verbo queda en base: \"does your daughter spend\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "ps-e1",
+      "prompt": "She usually {0} to work by bus.",
+      "verbs": [
+        "GO"
+      ],
+      "answers": [
+        [
+          "goes"
+        ]
+      ],
+      "justification": "La clave aquí es \"usually\", un adverbio de frecuencia que señala una rutina; por lo tanto va Present Simple. La regla del Present Simple en afirmativo con 3ª persona singular (she) es añadir -s/-es al verbo: \"go\" se vuelve \"goes\"."
+    },
+    {
+      "id": "ps-e2",
+      "prompt": "Water {0} at 100 degrees Celsius.",
+      "verbs": [
+        "BOIL"
+      ],
+      "answers": [
+        [
+          "boils"
+        ]
+      ],
+      "justification": "La clave aquí es que se trata de un hecho científico permanente (algo siempre verdadero); por lo tanto va Present Simple. La regla del Present Simple con 3ª persona singular (\"water\") es añadir -s al verbo: \"boil\" se vuelve \"boils\"."
+    },
+    {
+      "id": "ps-e3",
+      "prompt": "{0} you {1} coffee every morning?",
+      "verbs": [
+        "DRINK"
+      ],
+      "answers": [
+        [
+          "Do"
+        ],
+        [
+          "drink"
+        ]
+      ],
+      "justification": "La clave aquí es \"every morning\", que indica un hábito; por lo tanto va Present Simple. La regla de la pregunta en Present Simple es \"do/does + sujeto + verbo base\"; como el sujeto es \"you\", el auxiliar es \"Do\" y el verbo principal queda en base: \"Do you drink...?\"."
+    },
+    {
+      "id": "ps-e4",
+      "prompt": "My brother {0} play video games; he prefers reading.",
+      "verbs": [
+        "NOT LIKE"
+      ],
+      "answers": [
+        [
+          "doesn't like",
+          "does not like"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe una preferencia general (un hecho permanente sobre la persona); por lo tanto va Present Simple. La regla del Present Simple negativo con 3ª persona singular (\"my brother\") es \"doesn't + verbo base\": \"doesn't like\"."
+    },
+    {
+      "id": "ps-e5",
+      "prompt": "The train {0} at 8:15 every day.",
+      "verbs": [
+        "LEAVE"
+      ],
+      "answers": [
+        [
+          "leaves"
+        ]
+      ],
+      "justification": "La clave aquí es \"every day\" junto con un horario fijo (8:15); los horarios y rutinas usan Present Simple. La regla con 3ª persona singular (\"the train\") es añadir -s al verbo: \"leave\" se vuelve \"leaves\"."
+    },
+    {
+      "id": "ps-e6",
+      "prompt": "The CI pipeline {0} the tests on every push.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "runs"
+        ]
+      ],
+      "justification": "La clave aquí es \"on every push\", que describe una acción habitual y automática del pipeline; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the CI pipeline\") es añadir -s al verbo: \"run\" se vuelve \"runs\"."
+    },
+    {
+      "id": "ps-e7",
+      "prompt": "The build {0} when the dependencies are out of date.",
+      "verbs": [
+        "NOT PASS"
+      ],
+      "answers": [
+        [
+          "doesn't pass",
+          "does not pass"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un hecho general sobre el comportamiento del build (algo que siempre ocurre bajo esa condición); por lo tanto va Present Simple. La regla del negativo con 3ª persona singular (\"the build\") es \"doesn't + verbo base\": \"doesn't pass\"."
+    },
+    {
+      "id": "ps-e8",
+      "prompt": "{0} the server {1} logs to the cloud automatically?",
+      "verbs": [
+        "SEND"
+      ],
+      "answers": [
+        [
+          "Does"
+        ],
+        [
+          "send"
+        ]
+      ],
+      "justification": "La clave aquí es \"automatically\", que indica un comportamiento habitual del sistema; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"the server\" es 3ª persona singular, el auxiliar es \"Does\" y el verbo principal queda en base: \"Does the server send...?\"."
+    },
+    {
+      "id": "ps-e9",
+      "prompt": "Our developers {0} a standup at 9 a.m. every morning.",
+      "verbs": [
+        "HOLD"
+      ],
+      "answers": [
+        [
+          "hold"
+        ]
+      ],
+      "justification": "La clave aquí es \"every morning\", que señala una rutina diaria; por lo tanto va Present Simple. La regla del afirmativo con sujeto plural (\"our developers\") es usar el verbo en forma base, sin -s: \"hold\"."
+    },
+    {
+      "id": "ps-e10",
+      "prompt": "The clients {0} support tickets on weekends.",
+      "verbs": [
+        "NOT OPEN"
+      ],
+      "answers": [
+        [
+          "don't open",
+          "do not open"
+        ]
+      ],
+      "justification": "La clave aquí es \"on weekends\", que describe un hábito general; por lo tanto va Present Simple. La regla del negativo con sujeto plural (\"the clients\") es \"don't + verbo base\": \"don't open\"."
+    },
+    {
+      "id": "ps-e11",
+      "prompt": "The monitoring tool {0} an alert whenever the CPU spikes.",
+      "verbs": [
+        "TRIGGER"
+      ],
+      "answers": [
+        [
+          "triggers"
+        ]
+      ],
+      "justification": "La clave aquí es \"whenever the CPU spikes\", que describe una reacción habitual y automática; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the monitoring tool\") es añadir -s al verbo: \"trigger\" se vuelve \"triggers\"."
+    },
+    {
+      "id": "ps-e12",
+      "prompt": "How often {0} to production?",
+      "verbs": [
+        "YOUR TEAM, DEPLOY"
+      ],
+      "answers": [
+        [
+          "does your team deploy"
+        ]
+      ],
+      "justification": "La clave aquí es \"How often\", que pregunta por la frecuencia de un hábito; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"your team\" es 3ª persona singular, el auxiliar es \"does\" y el verbo queda en base: \"does your team deploy\"."
+    },
+    {
+      "id": "ps-e13",
+      "prompt": "The product manager {0} the roadmap every quarter.",
+      "verbs": [
+        "REVIEW"
+      ],
+      "answers": [
+        [
+          "reviews"
+        ]
+      ],
+      "justification": "La clave aquí es \"every quarter\", una expresión de frecuencia que indica una rutina periódica; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the product manager\") es añadir -s al verbo: \"review\" se vuelve \"reviews\"."
+    },
+    {
+      "id": "ps-e14",
+      "prompt": "This script {0} the database; it only reads from it.",
+      "verbs": [
+        "NOT MODIFY"
+      ],
+      "answers": [
+        [
+          "doesn't modify",
+          "does not modify"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un hecho permanente sobre lo que hace el script; por lo tanto va Present Simple. La regla del negativo con 3ª persona singular (\"this script\") es \"doesn't + verbo base\": \"doesn't modify\"."
+    },
+    {
+      "id": "ps-e15",
+      "prompt": "{0} the deployment {1} a manual approval step?",
+      "verbs": [
+        "REQUIRE"
+      ],
+      "answers": [
+        [
+          "Does"
+        ],
+        [
+          "require"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por una característica general y permanente del proceso de despliegue; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"the deployment\" es 3ª persona singular, el auxiliar es \"Does\" y el verbo queda en base: \"Does the deployment require...?\"."
+    },
+    {
+      "id": "ps-e16",
+      "prompt": "The QA engineers {0} regression suites before each release.",
+      "verbs": [
+        "EXECUTE"
+      ],
+      "answers": [
+        [
+          "execute"
+        ]
+      ],
+      "justification": "La clave aquí es \"before each release\", que describe una práctica habitual; por lo tanto va Present Simple. La regla del afirmativo con sujeto plural (\"the QA engineers\") es usar el verbo en forma base, sin -s: \"execute\"."
+    },
+    {
+      "id": "ps-e17",
+      "prompt": "The cache {0} after five minutes.",
+      "verbs": [
+        "EXPIRE"
+      ],
+      "answers": [
+        [
+          "expires"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un comportamiento general y constante del sistema (algo siempre verdadero); por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the cache\") es añadir -s al verbo: \"expire\" se vuelve \"expires\"."
+    },
+    {
+      "id": "ps-e18",
+      "prompt": "Our servers {0} traffic from blacklisted IPs.",
+      "verbs": [
+        "NOT ACCEPT"
+      ],
+      "answers": [
+        [
+          "don't accept",
+          "do not accept"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe una regla de configuración permanente de los servidores; por lo tanto va Present Simple. La regla del negativo con sujeto plural (\"our servers\") es \"don't + verbo base\": \"don't accept\"."
+    },
+    {
+      "id": "ps-e19",
+      "prompt": "The scrum master {0} the sprint board during the daily meeting.",
+      "verbs": [
+        "UPDATE"
+      ],
+      "answers": [
+        [
+          "updates"
+        ]
+      ],
+      "justification": "La clave aquí es \"during the daily meeting\", que señala una rutina diaria; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the scrum master\") es añadir -s al verbo: \"update\" se vuelve \"updates\"."
+    },
+    {
+      "id": "ps-e20",
+      "prompt": "{0} you {1} the release notes before publishing?",
+      "verbs": [
+        "PROOFREAD"
+      ],
+      "answers": [
+        [
+          "Do"
+        ],
+        [
+          "proofread"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por una práctica habitual previa a publicar; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como el sujeto es \"you\", el auxiliar es \"Do\" y el verbo queda en base: \"Do you proofread...?\"."
+    },
+    {
+      "id": "ps-e21",
+      "prompt": "The API {0} JSON responses by default.",
+      "verbs": [
+        "RETURN"
+      ],
+      "answers": [
+        [
+          "returns"
+        ]
+      ],
+      "justification": "La clave aquí es \"by default\", que describe un comportamiento general y permanente de la API; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the API\") es añadir -s al verbo: \"return\" se vuelve \"returns\"."
+    },
+    {
+      "id": "ps-e22",
+      "prompt": "The new intern {0} access to the production credentials.",
+      "verbs": [
+        "NOT HAVE"
+      ],
+      "answers": [
+        [
+          "doesn't have",
+          "does not have"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un estado permanente de permisos; por lo tanto va Present Simple. La regla del negativo con 3ª persona singular (\"the new intern\") es \"doesn't + verbo base\": \"doesn't have\"."
+    },
+    {
+      "id": "ps-e23",
+      "prompt": "The finance team {0} the KPIs at the end of every month.",
+      "verbs": [
+        "MEASURE"
+      ],
+      "answers": [
+        [
+          "measures"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the end of every month\", una expresión de frecuencia que indica una rutina periódica; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the finance team\") es añadir -s al verbo: \"measure\" se vuelve \"measures\"."
+    },
+    {
+      "id": "ps-e24",
+      "prompt": "When {0} the maintenance window?",
+      "verbs": [
+        "THE OPS TEAM, SCHEDULE"
+      ],
+      "answers": [
+        [
+          "does the ops team schedule"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por una práctica habitual de planificación; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"the ops team\" es 3ª persona singular, el auxiliar es \"does\" y el verbo queda en base: \"does the ops team schedule\"."
+    },
+    {
+      "id": "ps-e25",
+      "prompt": "Microservices {0} with each other through message queues.",
+      "verbs": [
+        "COMMUNICATE"
+      ],
+      "answers": [
+        [
+          "communicate"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un hecho general sobre cómo funcionan los microservicios (verdad permanente de la arquitectura); por lo tanto va Present Simple. La regla del afirmativo con sujeto plural (\"microservices\") es usar el verbo en forma base, sin -s: \"communicate\"."
+    },
+    {
+      "id": "ps-e26",
+      "prompt": "The load balancer {0} traffic evenly across all servers.",
+      "verbs": [
+        "DISTRIBUTE"
+      ],
+      "answers": [
+        [
+          "distributes"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe una función general y permanente del sistema; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the load balancer\") es añadir -s al verbo: \"distribute\" se vuelve \"distributes\"."
+    },
+    {
+      "id": "ps-e27",
+      "prompt": "Our customers {0} a response within 24 hours.",
+      "verbs": [
+        "EXPECT"
+      ],
+      "answers": [
+        [
+          "expect"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe una expectativa general y constante; por lo tanto va Present Simple. La regla del afirmativo con sujeto plural (\"our customers\") es usar el verbo en forma base, sin -s: \"expect\"."
+    },
+    {
+      "id": "ps-e28",
+      "prompt": "{0} the application {1} on older browsers?",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "Does"
+        ],
+        [
+          "run"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por una característica general y permanente del software; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"the application\" es 3ª persona singular, el auxiliar es \"Does\" y el verbo queda en base: \"Does the application run...?\"."
+    },
+    {
+      "id": "ps-e29",
+      "prompt": "The team lead {0} micromanage her developers; she trusts them.",
+      "verbs": [
+        "NOT MICROMANAGE"
+      ],
+      "answers": [
+        [
+          "doesn't micromanage",
+          "does not micromanage"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un rasgo permanente del estilo de la persona; por lo tanto va Present Simple. La regla del negativo con 3ª persona singular (\"the team lead\") es \"doesn't + verbo base\": \"doesn't micromanage\"."
+    },
+    {
+      "id": "ps-e30",
+      "prompt": "Stand-up meetings {0} more than fifteen minutes here.",
+      "verbs": [
+        "NOT LAST"
+      ],
+      "answers": [
+        [
+          "don't last",
+          "do not last"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe una norma habitual del equipo; por lo tanto va Present Simple. La regla del negativo con sujeto plural (\"stand-up meetings\") es \"don't + verbo base\": \"don't last\"."
+    },
+    {
+      "id": "ps-e31",
+      "prompt": "The compiler {0} an error when a variable is undefined.",
+      "verbs": [
+        "THROW"
+      ],
+      "answers": [
+        [
+          "throws"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un comportamiento general y constante del compilador; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the compiler\") es añadir -s al verbo: \"throw\" se vuelve \"throws\"."
+    },
+    {
+      "id": "ps-e32",
+      "prompt": "{0} you {1} your code before every commit?",
+      "verbs": [
+        "LINT"
+      ],
+      "answers": [
+        [
+          "Do"
+        ],
+        [
+          "lint"
+        ]
+      ],
+      "justification": "La clave aquí es \"before every commit\", que pregunta por una práctica habitual; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como el sujeto es \"you\", el auxiliar es \"Do\" y el verbo queda en base: \"Do you lint...?\"."
+    },
+    {
+      "id": "ps-e33",
+      "prompt": "The accountant {0} the invoices at the end of each week.",
+      "verbs": [
+        "PROCESS"
+      ],
+      "answers": [
+        [
+          "processes"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the end of each week\", una expresión de frecuencia que indica una rutina; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the accountant\") es añadir -es al verbo terminado en -ss: \"process\" se vuelve \"processes\"."
+    },
+    {
+      "id": "ps-e34",
+      "prompt": "How often {0} the project dependencies?",
+      "verbs": [
+        "YOUR TEAM, UPDATE"
+      ],
+      "answers": [
+        [
+          "does your team update"
+        ]
+      ],
+      "justification": "La clave aquí es \"How often\", que pregunta por la frecuencia de un hábito; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"your team\" es 3ª persona singular, el auxiliar es \"does\" y el verbo queda en base: \"does your team update\"."
+    },
+    {
+      "id": "ps-e35",
+      "prompt": "Junior developers {0} direct access to the production database.",
+      "verbs": [
+        "NOT GET"
+      ],
+      "answers": [
+        [
+          "don't get",
+          "do not get"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe una regla de permisos permanente; por lo tanto va Present Simple. La regla del negativo con sujeto plural (\"junior developers\") es \"don't + verbo base\": \"don't get\"."
+    },
+    {
+      "id": "ps-e36",
+      "prompt": "The firewall {0} all incoming requests by default.",
+      "verbs": [
+        "BLOCK"
+      ],
+      "answers": [
+        [
+          "blocks"
+        ]
+      ],
+      "justification": "La clave aquí es \"by default\", que describe una configuración general y permanente; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the firewall\") es añadir -s al verbo: \"block\" se vuelve \"blocks\"."
+    },
+    {
+      "id": "ps-e37",
+      "prompt": "Our company {0} bonuses twice a year.",
+      "verbs": [
+        "PAY"
+      ],
+      "answers": [
+        [
+          "pays"
+        ]
+      ],
+      "justification": "La clave aquí es \"twice a year\", una expresión de frecuencia que indica una rutina periódica; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"our company\") es añadir -s al verbo (la -y tras vocal no cambia): \"pay\" se vuelve \"pays\"."
+    },
+    {
+      "id": "ps-e38",
+      "prompt": "{0} the contract {1} a confidentiality clause?",
+      "verbs": [
+        "INCLUDE"
+      ],
+      "answers": [
+        [
+          "Does"
+        ],
+        [
+          "include"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por una característica general y permanente del documento; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"the contract\" es 3ª persona singular, el auxiliar es \"Does\" y el verbo queda en base: \"Does the contract include...?\"."
+    },
+    {
+      "id": "ps-e39",
+      "prompt": "The marketing team {0} a newsletter every Friday.",
+      "verbs": [
+        "PUBLISH"
+      ],
+      "answers": [
+        [
+          "publishes"
+        ]
+      ],
+      "justification": "La clave aquí es \"every Friday\", una expresión de frecuencia que indica una rutina semanal; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the marketing team\") es añadir -es al verbo terminado en -sh: \"publish\" se vuelve \"publishes\"."
+    },
+    {
+      "id": "ps-e40",
+      "prompt": "Remote employees {0} to the office on Mondays.",
+      "verbs": [
+        "NOT COMMUTE"
+      ],
+      "answers": [
+        [
+          "don't commute",
+          "do not commute"
+        ]
+      ],
+      "justification": "La clave aquí es \"on Mondays\", que describe un hábito habitual; por lo tanto va Present Simple. La regla del negativo con sujeto plural (\"remote employees\") es \"don't + verbo base\": \"don't commute\"."
+    },
+    {
+      "id": "ps-e41",
+      "prompt": "The backup job {0} at midnight automatically.",
+      "verbs": [
+        "START"
+      ],
+      "answers": [
+        [
+          "starts"
+        ]
+      ],
+      "justification": "La clave aquí es \"automatically\" junto con un horario fijo (midnight), propios de una rutina programada; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the backup job\") es añadir -s al verbo: \"start\" se vuelve \"starts\"."
+    },
+    {
+      "id": "ps-e42",
+      "prompt": "When {0} the report to the directors?",
+      "verbs": [
+        "THE ANALYST, SUBMIT"
+      ],
+      "answers": [
+        [
+          "does the analyst submit"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por una práctica habitual de entrega; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"the analyst\" es 3ª persona singular, el auxiliar es \"does\" y el verbo queda en base: \"does the analyst submit\"."
+    },
+    {
+      "id": "ps-e43",
+      "prompt": "The two teams {0} the same code repository.",
+      "verbs": [
+        "SHARE"
+      ],
+      "answers": [
+        [
+          "share"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un hecho general y permanente sobre la organización del trabajo; por lo tanto va Present Simple. La regla del afirmativo con sujeto plural (\"the two teams\") es usar el verbo en forma base, sin -s: \"share\"."
+    },
+    {
+      "id": "ps-e44",
+      "prompt": "This license {0} commercial use.",
+      "verbs": [
+        "NOT ALLOW"
+      ],
+      "answers": [
+        [
+          "doesn't allow",
+          "does not allow"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe una condición permanente de la licencia; por lo tanto va Present Simple. La regla del negativo con 3ª persona singular (\"this license\") es \"doesn't + verbo base\": \"doesn't allow\"."
+    },
+    {
+      "id": "ps-e45",
+      "prompt": "{0} the database {1} regular backups?",
+      "verbs": [
+        "NEED"
+      ],
+      "answers": [
+        [
+          "Does"
+        ],
+        [
+          "need"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por un requisito general y permanente del sistema; por lo tanto va Present Simple. La regla de la pregunta es \"do/does + sujeto + verbo base\"; como \"the database\" es 3ª persona singular, el auxiliar es \"Does\" y el verbo queda en base: \"Does the database need...?\"."
+    },
+    {
+      "id": "ps-e46",
+      "prompt": "Our suppliers {0} the goods within five business days.",
+      "verbs": [
+        "DELIVER"
+      ],
+      "answers": [
+        [
+          "deliver"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe un plazo habitual y constante de entrega; por lo tanto va Present Simple. La regla del afirmativo con sujeto plural (\"our suppliers\") es usar el verbo en forma base, sin -s: \"deliver\"."
+    },
+    {
+      "id": "ps-e47",
+      "prompt": "The CEO {0} every all-hands meeting in person.",
+      "verbs": [
+        "ATTEND"
+      ],
+      "answers": [
+        [
+          "attends"
+        ]
+      ],
+      "justification": "La clave aquí es \"every all-hands meeting\", una expresión de frecuencia que indica un hábito; por lo tanto va Present Simple. La regla del afirmativo con 3ª persona singular (\"the CEO\") es añadir -s al verbo: \"attend\" se vuelve \"attends\"."
+    }
+  ]
+}

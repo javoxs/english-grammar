@@ -1,0 +1,897 @@
+{
+  "id": "conditional-first",
+  "name": "1st Conditional",
+  "explanation": "1st Conditional: posibilidad real en el futuro. If + Present Simple en la condición y will + verbo base en la principal (admite modales como can/may/should/must e imperativo). Incluye conectores (unless, as long as, provided that, even if, only if) e inversión con Should. Cada oración tiene dos cláusulas: {0} y {1}.",
+  "keyHint": "Se trata de una situación real y posible en el futuro.",
+  "original": [],
+  "extra": [
+    {
+      "id": "cond1-e1",
+      "prompt": "If you {0} the documentation, everything {1} sense.",
+      "verbs": [
+        "READ",
+        "SHOULD MAKE"
+      ],
+      "answers": [
+        [
+          "read"
+        ],
+        [
+          "should make"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con modal de expectativa. En la cláusula \"if\" va Present Simple (\"read\"); en la principal, \"should + verbo base\" expresa expectativa: \"should make\"."
+    },
+    {
+      "id": "cond1-e2",
+      "prompt": "If the client {0} the contract, we {1} on Monday.",
+      "verbs": [
+        "SIGN",
+        "WILL START"
+      ],
+      "answers": [
+        [
+          "signs"
+        ],
+        [
+          "will start",
+          "'ll start"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional (futuro real). En la cláusula \"if\" va Present Simple (\"signs\", 3ª persona con -s); en la principal va \"will + verbo base\": \"will start\"."
+    },
+    {
+      "id": "cond1-e3",
+      "prompt": "If all the tests {0}, the pipeline {1} to production.",
+      "verbs": [
+        "PASS",
+        "WILL DEPLOY"
+      ],
+      "answers": [
+        [
+          "pass"
+        ],
+        [
+          "will deploy",
+          "'ll deploy"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"pass\"); en la principal va \"will + verbo base\": \"will deploy\"."
+    },
+    {
+      "id": "cond1-e4",
+      "prompt": "If you {0} the standup, I {1} you the notes.",
+      "verbs": [
+        "MISS",
+        "WILL SEND"
+      ],
+      "answers": [
+        [
+          "miss"
+        ],
+        [
+          "will send",
+          "'ll send"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"miss\"); en la principal va \"will + verbo base\": \"will send\"."
+    },
+    {
+      "id": "cond1-e5",
+      "prompt": "Should the server {0}, the on-call engineer {1} immediately.",
+      "verbs": [
+        "CRASH",
+        "MUST RESPOND"
+      ],
+      "answers": [
+        [
+          "crash"
+        ],
+        [
+          "must respond"
+        ]
+      ],
+      "justification": "La clave aquí es un 1st Conditional con inversión formal \"Should + sujeto + verbo base\" (= If it should...). Por eso {0} es el verbo base (\"crash\") y la principal usa el modal de obligación \"must respond\"."
+    },
+    {
+      "id": "cond1-e6",
+      "prompt": "Unless the team {0} the bug, we {1} the release.",
+      "verbs": [
+        "FIX",
+        "WILL DELAY"
+      ],
+      "answers": [
+        [
+          "fixes"
+        ],
+        [
+          "will delay",
+          "'ll delay"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\"), con estructura de 1st Conditional. En la cláusula de condición va Present Simple (\"fixes\"); en la principal va \"will + verbo base\": \"will delay\"."
+    },
+    {
+      "id": "cond1-e7",
+      "prompt": "As long as the servers {0} stable, the app {1} smoothly.",
+      "verbs": [
+        "STAY",
+        "WILL RUN"
+      ],
+      "answers": [
+        [
+          "stay"
+        ],
+        [
+          "will run",
+          "'ll run"
+        ]
+      ],
+      "justification": "La clave aquí es el conector \"as long as\" (condición), con estructura de 1st Conditional. La condición va en Present Simple (\"stay\") y la principal en \"will + verbo base\": \"will run\"."
+    },
+    {
+      "id": "cond1-e8",
+      "prompt": "Provided that the budget {0} approved, we {1} two engineers.",
+      "verbs": [
+        "BE",
+        "WILL HIRE"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ],
+        [
+          "will hire",
+          "'ll hire"
+        ]
+      ],
+      "justification": "La clave aquí es el conector formal \"provided that\" (= si y solo si), con estructura de 1st Conditional. La condición va en Present Simple (\"is approved\") y la principal en \"will + verbo base\": \"will hire\"."
+    },
+    {
+      "id": "cond1-e9",
+      "prompt": "Even if we {0} the deadline, the client {1} satisfied.",
+      "verbs": [
+        "MEET",
+        "NOT BE"
+      ],
+      "answers": [
+        [
+          "meet"
+        ],
+        [
+          "won't be",
+          "will not be"
+        ]
+      ],
+      "justification": "La clave aquí es \"even if\" (concesivo: aunque), con estructura de 1st Conditional. La condición va en Present Simple (\"meet\") y la principal en \"will + verbo base\", en negativo: \"won't be\"."
+    },
+    {
+      "id": "cond1-e10",
+      "prompt": "If you {0} a critical bug, {1} a ticket immediately.",
+      "verbs": [
+        "FIND",
+        "OPEN"
+      ],
+      "answers": [
+        [
+          "find"
+        ],
+        [
+          "open"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con imperativo en la cláusula principal. La condición va en Present Simple (\"find\") y el resultado es una orden (imperativo, verbo base sin sujeto): \"open a ticket\"."
+    },
+    {
+      "id": "cond1-e11",
+      "prompt": "If the developer {0} the issue when you called, {1} her back later.",
+      "verbs": [
+        "DEBUG",
+        "CALL"
+      ],
+      "answers": [
+        [
+          "was debugging"
+        ],
+        [
+          "call"
+        ]
+      ],
+      "justification": "La clave aquí es \"if\" + Past Continuous (acción en curso en el pasado: \"was debugging\") con imperativo en la principal (\"call her back\", orden en verbo base)."
+    },
+    {
+      "id": "cond1-e12",
+      "prompt": "If you {0} the unit tests, you {1} the build.",
+      "verbs": [
+        "FINISH",
+        "CAN START"
+      ],
+      "answers": [
+        [
+          "have finished",
+          "'ve finished"
+        ],
+        [
+          "can start"
+        ]
+      ],
+      "justification": "La clave aquí es \"if\" + Present Perfect (acción completada con efecto presente: \"have finished\") y en la principal el modal \"can + verbo base\": \"can start\"."
+    },
+    {
+      "id": "cond1-e13",
+      "prompt": "If you {0} now, you {1} the module by Friday.",
+      "verbs": [
+        "START",
+        "WILL FINISH"
+      ],
+      "answers": [
+        [
+          "start"
+        ],
+        [
+          "will have finished",
+          "'ll have finished"
+        ]
+      ],
+      "justification": "La clave aquí es un 1st Conditional con Future Perfect en la principal: la condición va en Present Simple (\"start\") y el resultado, por \"by Friday\", usa \"will have + participio\": \"will have finished\"."
+    },
+    {
+      "id": "cond1-e14",
+      "prompt": "If we {0} the prototype today, investors {1} interested.",
+      "verbs": [
+        "DEMO",
+        "MAY BE"
+      ],
+      "answers": [
+        [
+          "demo"
+        ],
+        [
+          "may be"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con el modal de posibilidad débil \"may\". En la cláusula \"if\" va Present Simple (\"demo\") y en la principal \"may + verbo base\": \"may be\"."
+    },
+    {
+      "id": "cond1-e15",
+      "prompt": "If the migration {0}, the team {1} the changes.",
+      "verbs": [
+        "FAIL",
+        "WILL REVERT"
+      ],
+      "answers": [
+        [
+          "fails"
+        ],
+        [
+          "will revert",
+          "'ll revert"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional (futuro real). En la cláusula \"if\" va Present Simple (\"fails\", 3ª persona con -s) y en la principal \"will + verbo base\": \"will revert\"."
+    },
+    {
+      "id": "cond1-e16",
+      "prompt": "If you {0} the API, you {1} a rate limit.",
+      "verbs": [
+        "OVERUSE",
+        "MIGHT HIT"
+      ],
+      "answers": [
+        [
+          "overuse"
+        ],
+        [
+          "might hit"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con el modal de posibilidad remota \"might\". En la cláusula \"if\" va Present Simple (\"overuse\") y en la principal \"might + verbo base\": \"might hit\"."
+    },
+    {
+      "id": "cond1-e17",
+      "prompt": "As long as the budget {0}, we {1} the contractors.",
+      "verbs": [
+        "HOLD",
+        "CAN KEEP"
+      ],
+      "answers": [
+        [
+          "holds"
+        ],
+        [
+          "can keep"
+        ]
+      ],
+      "justification": "La clave aquí es \"as long as\" (condición) con estructura de 1st Conditional. La condición va en Present Simple (\"holds\", 3ª persona) y la principal usa el modal de posibilidad \"can + verbo base\": \"can keep\"."
+    },
+    {
+      "id": "cond1-e18",
+      "prompt": "Provided that the specs {0} final, engineering {1} on Monday.",
+      "verbs": [
+        "BE",
+        "WILL START"
+      ],
+      "answers": [
+        [
+          "are",
+          "'re"
+        ],
+        [
+          "will start",
+          "'ll start"
+        ]
+      ],
+      "justification": "La clave aquí es el conector formal \"provided that\" (= si y solo si), con estructura de 1st Conditional. La condición va en Present Simple con sujeto plural (\"are final\") y la principal en \"will + verbo base\": \"will start\"."
+    },
+    {
+      "id": "cond1-e19",
+      "prompt": "Unless we {0} the cache, the page {1} stale data.",
+      "verbs": [
+        "CLEAR",
+        "WILL SHOW"
+      ],
+      "answers": [
+        [
+          "clear"
+        ],
+        [
+          "will show",
+          "'ll show"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\"), con estructura de 1st Conditional. La condición va en Present Simple (\"clear\", con \"we\" sin -s) y la principal en \"will + verbo base\": \"will show\"."
+    },
+    {
+      "id": "cond1-e20",
+      "prompt": "Even if the demo {0}, the client {1} the deal.",
+      "verbs": [
+        "IMPRESS",
+        "MAY NOT CLOSE"
+      ],
+      "answers": [
+        [
+          "impresses"
+        ],
+        [
+          "may not close"
+        ]
+      ],
+      "justification": "La clave aquí es \"even if\" (concesivo: aunque), con estructura de 1st Conditional. La condición va en Present Simple (\"impresses\") y la principal usa el modal \"may\" en negativo: \"may not close\"."
+    },
+    {
+      "id": "cond1-e21",
+      "prompt": "Should the deadline {0}, the manager {1} the team at once.",
+      "verbs": [
+        "SLIP",
+        "WILL NOTIFY"
+      ],
+      "answers": [
+        [
+          "slip"
+        ],
+        [
+          "will notify",
+          "'ll notify"
+        ]
+      ],
+      "justification": "La clave aquí es un 1st Conditional con inversión formal \"Should + sujeto + verbo base\" (= If the deadline should slip). Por eso {0} es el verbo base (\"slip\") y la principal va en \"will + verbo base\": \"will notify\"."
+    },
+    {
+      "id": "cond1-e22",
+      "prompt": "If marketing {0} the campaign early, sales {1}.",
+      "verbs": [
+        "LAUNCH",
+        "SHOULD RISE"
+      ],
+      "answers": [
+        [
+          "launches"
+        ],
+        [
+          "should rise"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con el modal de expectativa \"should\". En la cláusula \"if\" va Present Simple (\"launches\", 3ª persona) y en la principal \"should + verbo base\": \"should rise\"."
+    },
+    {
+      "id": "cond1-e23",
+      "prompt": "If the customer {0} a complaint, support {1} within an hour.",
+      "verbs": [
+        "FILE",
+        "MUST RESPOND"
+      ],
+      "answers": [
+        [
+          "files"
+        ],
+        [
+          "must respond"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con el modal de obligación \"must\". En la cláusula \"if\" va Present Simple (\"files\", 3ª persona) y en la principal \"must + verbo base\": \"must respond\"."
+    },
+    {
+      "id": "cond1-e24",
+      "prompt": "If you {0} your tasks before noon, you {1} leave early.",
+      "verbs": [
+        "FINISH",
+        "CAN LEAVE"
+      ],
+      "answers": [
+        [
+          "finish"
+        ],
+        [
+          "can leave"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con el modal de permiso/posibilidad \"can\". En la cláusula \"if\" va Present Simple (\"finish\") y en la principal \"can + verbo base\": \"can leave\"."
+    },
+    {
+      "id": "cond1-e25",
+      "prompt": "In case the demo server {0}, we {1} a backup ready.",
+      "verbs": [
+        "CRASH",
+        "WILL HAVE"
+      ],
+      "answers": [
+        [
+          "crashes"
+        ],
+        [
+          "will have",
+          "'ll have"
+        ]
+      ],
+      "justification": "La clave aquí es \"in case\" (precaución) proyectada al futuro, con estructura de 1st Conditional. La condición va en Present Simple (\"crashes\") y la principal en \"will + verbo base\": \"will have\"."
+    },
+    {
+      "id": "cond1-e26",
+      "prompt": "If the release {0} well, we {1} the next sprint tomorrow.",
+      "verbs": [
+        "GO",
+        "WILL PLAN"
+      ],
+      "answers": [
+        [
+          "goes"
+        ],
+        [
+          "will plan",
+          "'ll plan"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional (futuro real). En la cláusula \"if\" va Present Simple (\"goes\", 3ª persona con -s) y en la principal \"will + verbo base\": \"will plan\"."
+    },
+    {
+      "id": "cond1-e27",
+      "prompt": "The project {1} on time if the team {0} overtime this week.",
+      "verbs": [
+        "WORK",
+        "WILL FINISH"
+      ],
+      "answers": [
+        [
+          "works"
+        ],
+        [
+          "will finish",
+          "'ll finish"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional con orden result-first (la principal primero, sin coma). La condición va en Present Simple (\"works\", 3ª persona) y la principal en \"will + verbo base\": \"will finish\"."
+    },
+    {
+      "id": "cond1-e28",
+      "prompt": "Should a security breach {0}, IT {1} all access immediately.",
+      "verbs": [
+        "OCCUR",
+        "WILL REVOKE"
+      ],
+      "answers": [
+        [
+          "occur"
+        ],
+        [
+          "will revoke",
+          "'ll revoke"
+        ]
+      ],
+      "justification": "La clave aquí es un 1st Conditional con inversión formal \"Should + sujeto + verbo base\" (= If a breach should occur). Por eso {0} es el verbo base (\"occur\") y la principal va en \"will + verbo base\": \"will revoke\"."
+    },
+    {
+      "id": "cond1-e29",
+      "prompt": "If you {0} the onboarding docs, setup {1} much smoother.",
+      "verbs": [
+        "UPDATE",
+        "WILL BE"
+      ],
+      "answers": [
+        [
+          "update"
+        ],
+        [
+          "will be",
+          "'ll be"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"update\") y en la principal \"will + verbo base\": \"will be\"."
+    },
+    {
+      "id": "cond1-e30",
+      "prompt": "Unless the stakeholders {0}, we {1} the scope.",
+      "verbs": [
+        "AGREE",
+        "NOT EXPAND"
+      ],
+      "answers": [
+        [
+          "agree"
+        ],
+        [
+          "won't expand",
+          "will not expand"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\"), con estructura de 1st Conditional. La condición va en Present Simple (\"agree\", plural sin -s) y la principal en \"will + verbo base\" en negativo: \"won't expand\"."
+    },
+    {
+      "id": "cond1-e31",
+      "prompt": "As long as the metrics {0} stable, management {1} the strategy.",
+      "verbs": [
+        "STAY",
+        "WILL KEEP"
+      ],
+      "answers": [
+        [
+          "stay"
+        ],
+        [
+          "will keep",
+          "'ll keep"
+        ]
+      ],
+      "justification": "La clave aquí es \"as long as\" (condición), con estructura de 1st Conditional. La condición va en Present Simple (\"stay\", plural) y la principal en \"will + verbo base\": \"will keep\"."
+    },
+    {
+      "id": "cond1-e32",
+      "prompt": "If the vendor {0} late, we {1} a penalty.",
+      "verbs": [
+        "DELIVER",
+        "WILL CHARGE"
+      ],
+      "answers": [
+        [
+          "delivers"
+        ],
+        [
+          "will charge",
+          "'ll charge"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional (futuro real). En la cláusula \"if\" va Present Simple (\"delivers\", 3ª persona con -s) y en la principal \"will + verbo base\": \"will charge\"."
+    },
+    {
+      "id": "cond1-e33",
+      "prompt": "If the candidate {0} the interview, HR {1} an offer.",
+      "verbs": [
+        "PASS",
+        "WILL EXTEND"
+      ],
+      "answers": [
+        [
+          "passes"
+        ],
+        [
+          "will extend",
+          "'ll extend"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"passes\", 3ª persona con -es) y en la principal \"will + verbo base\": \"will extend\"."
+    },
+    {
+      "id": "cond1-e34",
+      "prompt": "If you {0} the logs carefully, you {1} the root cause.",
+      "verbs": [
+        "CHECK",
+        "WILL FIND"
+      ],
+      "answers": [
+        [
+          "check"
+        ],
+        [
+          "will find",
+          "'ll find"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"check\") y en la principal \"will + verbo base\": \"will find\"."
+    },
+    {
+      "id": "cond1-e35",
+      "prompt": "Provided that the test coverage {0} 80 percent, the PR {1}.",
+      "verbs": [
+        "EXCEED",
+        "CAN MERGE"
+      ],
+      "answers": [
+        [
+          "exceeds"
+        ],
+        [
+          "can merge"
+        ]
+      ],
+      "justification": "La clave aquí es el conector formal \"provided that\", con estructura de 1st Conditional. La condición va en Present Simple (\"exceeds\", 3ª persona) y la principal usa el modal \"can + verbo base\": \"can merge\"."
+    },
+    {
+      "id": "cond1-e36",
+      "prompt": "If the meeting {0} too long, we {1} it for tomorrow.",
+      "verbs": [
+        "RUN",
+        "WILL RESCHEDULE"
+      ],
+      "answers": [
+        [
+          "runs"
+        ],
+        [
+          "will reschedule",
+          "'ll reschedule"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"runs\", 3ª persona) y en la principal \"will + verbo base\": \"will reschedule\"."
+    },
+    {
+      "id": "cond1-e37",
+      "prompt": "Even if the main server {0}, the failover {1} the service.",
+      "verbs": [
+        "FAIL",
+        "WILL MAINTAIN"
+      ],
+      "answers": [
+        [
+          "fails"
+        ],
+        [
+          "will maintain",
+          "'ll maintain"
+        ]
+      ],
+      "justification": "La clave aquí es \"even if\" (concesivo: aunque), con estructura de 1st Conditional. La condición va en Present Simple (\"fails\") y la principal en \"will + verbo base\": \"will maintain\"."
+    },
+    {
+      "id": "cond1-e38",
+      "prompt": "If sales {0} the target, the company {1} bonuses.",
+      "verbs": [
+        "HIT",
+        "WILL PAY"
+      ],
+      "answers": [
+        [
+          "hit"
+        ],
+        [
+          "will pay",
+          "'ll pay"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"hit\", sujeto plural sin -s) y en la principal \"will + verbo base\": \"will pay\"."
+    },
+    {
+      "id": "cond1-e39",
+      "prompt": "If you {0} the unit tests, you {1} the integration suite next.",
+      "verbs": [
+        "HAVE WRITTEN",
+        "CAN RUN"
+      ],
+      "answers": [
+        [
+          "have written",
+          "'ve written"
+        ],
+        [
+          "can run"
+        ]
+      ],
+      "justification": "La clave aquí es \"if\" + Present Perfect (acción completada con efecto presente: \"have written\") y en la principal el modal \"can + verbo base\": \"can run\"."
+    },
+    {
+      "id": "cond1-e40",
+      "prompt": "If the client {0} the requirements, we {1} the timeline by Friday.",
+      "verbs": [
+        "HAVE APPROVED",
+        "WILL HAVE UPDATED"
+      ],
+      "answers": [
+        [
+          "has approved",
+          "'s approved"
+        ],
+        [
+          "will have updated",
+          "'ll have updated"
+        ]
+      ],
+      "justification": "La clave aquí combina \"if\" + Present Perfect en la condición (\"has approved\", 3ª persona) y Future Perfect en la principal por \"by Friday\": \"will have + participio\" → \"will have updated\"."
+    },
+    {
+      "id": "cond1-e41",
+      "prompt": "If the developer {0} when the alert fired, {1} the logs first.",
+      "verbs": [
+        "BE DEPLOYING",
+        "CHECK"
+      ],
+      "answers": [
+        [
+          "was deploying"
+        ],
+        [
+          "check"
+        ]
+      ],
+      "justification": "La clave aquí es \"if\" + Past Continuous real (acción en curso en el pasado: \"was deploying\") con imperativo en la principal (\"check the logs\", orden en verbo base)."
+    },
+    {
+      "id": "cond1-e42",
+      "prompt": "If you {0} now, the report {1} ready by noon.",
+      "verbs": [
+        "START",
+        "WILL BE"
+      ],
+      "answers": [
+        [
+          "start"
+        ],
+        [
+          "will be",
+          "'ll be"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"start\") y en la principal \"will + verbo base\": \"will be\"."
+    },
+    {
+      "id": "cond1-e43",
+      "prompt": "If the budget {0} approved soon, we {1} two engineers by Q3.",
+      "verbs": [
+        "BE",
+        "WILL HAVE HIRED"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ],
+        [
+          "will have hired",
+          "'ll have hired"
+        ]
+      ],
+      "justification": "La clave aquí es un 1st Conditional con Future Perfect: la condición va en Present Simple (\"is approved\") y, por \"by Q3\", la principal usa \"will have + participio\": \"will have hired\"."
+    },
+    {
+      "id": "cond1-e44",
+      "prompt": "Unless you {0} the migration script, the data {1} corrupted.",
+      "verbs": [
+        "TEST",
+        "MAY GET"
+      ],
+      "answers": [
+        [
+          "test"
+        ],
+        [
+          "may get"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\"), con estructura de 1st Conditional. La condición va en Present Simple (\"test\") y la principal usa el modal de posibilidad \"may + verbo base\": \"may get\"."
+    },
+    {
+      "id": "cond1-e45",
+      "prompt": "If the API {0} a 500 error, the client {1} the request.",
+      "verbs": [
+        "RETURN",
+        "SHOULD RETRY"
+      ],
+      "answers": [
+        [
+          "returns"
+        ],
+        [
+          "should retry"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con el modal de recomendación \"should\". En la cláusula \"if\" va Present Simple (\"returns\", 3ª persona) y en la principal \"should + verbo base\": \"should retry\"."
+    },
+    {
+      "id": "cond1-e46",
+      "prompt": "As long as you {0} the coding standards, your PR {1} approved quickly.",
+      "verbs": [
+        "RESPECT",
+        "WILL GET"
+      ],
+      "answers": [
+        [
+          "respect"
+        ],
+        [
+          "will get",
+          "'ll get"
+        ]
+      ],
+      "justification": "La clave aquí es \"as long as\" (condición), con estructura de 1st Conditional. La condición va en Present Simple (\"respect\") y la principal en \"will + verbo base\": \"will get\"."
+    },
+    {
+      "id": "cond1-e47",
+      "prompt": "If we {0} the feedback seriously, team morale {1}.",
+      "verbs": [
+        "TAKE",
+        "WILL IMPROVE"
+      ],
+      "answers": [
+        [
+          "take"
+        ],
+        [
+          "will improve",
+          "'ll improve"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"take\", con \"we\" sin -s) y en la principal \"will + verbo base\": \"will improve\"."
+    },
+    {
+      "id": "cond1-e48",
+      "prompt": "Should the client {0} the scope, we {1} the estimate.",
+      "verbs": [
+        "EXPAND",
+        "WILL REVISE"
+      ],
+      "answers": [
+        [
+          "expand"
+        ],
+        [
+          "will revise",
+          "'ll revise"
+        ]
+      ],
+      "justification": "La clave aquí es un 1st Conditional con inversión formal \"Should + sujeto + verbo base\" (= If the client should expand). Por eso {0} es el verbo base (\"expand\") y la principal va en \"will + verbo base\": \"will revise\"."
+    },
+    {
+      "id": "cond1-e49",
+      "prompt": "If the demo {0} flawlessly, the board {1} the funding.",
+      "verbs": [
+        "RUN",
+        "MIGHT APPROVE"
+      ],
+      "answers": [
+        [
+          "runs"
+        ],
+        [
+          "might approve"
+        ]
+      ],
+      "justification": "La clave aquí es un condicional real con el modal de posibilidad remota \"might\". En la cláusula \"if\" va Present Simple (\"runs\", 3ª persona) y en la principal \"might + verbo base\": \"might approve\"."
+    },
+    {
+      "id": "cond1-e50",
+      "prompt": "If you {0} the standup by ten, you {1} aligned for the day.",
+      "verbs": [
+        "JOIN",
+        "WILL BE"
+      ],
+      "answers": [
+        [
+          "join"
+        ],
+        [
+          "will be",
+          "'ll be"
+        ]
+      ],
+      "justification": "La clave aquí es el 1st Conditional. En la cláusula \"if\" va Present Simple (\"join\") y en la principal \"will + verbo base\": \"will be\"."
+    }
+  ]
+}

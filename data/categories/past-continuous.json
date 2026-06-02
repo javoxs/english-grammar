@@ -1,0 +1,698 @@
+{
+  "id": "past-continuous",
+  "name": "Past Continuous",
+  "explanation": "Acción en progreso en un momento del pasado, o acción interrumpida por otra. Forma: was/were + verbo-ing.",
+  "original": [
+    {
+      "id": "pcon-3b",
+      "num": 3,
+      "prompt": "I saw you yesterday. You {0} outside a café.",
+      "verbs": [
+        "SIT"
+      ],
+      "answers": [
+        [
+          "were sitting"
+        ]
+      ],
+      "justification": "La clave aquí es que la acción estaba en progreso en un momento concreto del pasado (cuando te vi ayer); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"you\" usamos \"were\": \"were sitting\"."
+    },
+    {
+      "id": "pcon-24b",
+      "num": 24,
+      "prompt": "My camera was stolen while I {0} for the gift.",
+      "verbs": [
+        "PAY"
+      ],
+      "answers": [
+        [
+          "was paying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que introduce una acción larga en progreso interrumpida por otra (el robo); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"I\" usamos \"was\": \"was paying\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "pcon-e1",
+      "prompt": "At 8 p.m. yesterday, I {0} dinner.",
+      "verbs": [
+        "COOK"
+      ],
+      "answers": [
+        [
+          "was cooking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"at 8 p.m. yesterday\", una hora exacta del pasado en la que la acción ya estaba en marcha; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"I\" usamos \"was\": \"was cooking\"."
+    },
+    {
+      "id": "pcon-e2",
+      "prompt": "They {0} TV when the power went out.",
+      "verbs": [
+        "WATCH"
+      ],
+      "answers": [
+        [
+          "were watching"
+        ]
+      ],
+      "justification": "La clave aquí es que hay una acción larga (ver la tele) interrumpida por otra breve (\"when the power went out\"); la acción larga va en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"they\" usamos \"were\": \"were watching\"."
+    },
+    {
+      "id": "pcon-e3",
+      "prompt": "What {0} you {1} at this time last year?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "were"
+        ],
+        [
+          "doing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"at this time last year\", un punto del pasado en el que se pregunta qué estabas haciendo; por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"you\" usamos \"were\": \"What were you doing?\"."
+    },
+    {
+      "id": "pcon-e4",
+      "prompt": "It {0} heavily when we left the house.",
+      "verbs": [
+        "RAIN"
+      ],
+      "answers": [
+        [
+          "was raining"
+        ]
+      ],
+      "justification": "La clave aquí es que hay una acción en progreso (llover) interrumpida por otra breve (\"when we left the house\"); la acción larga va en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"it\" usamos \"was\": \"was raining\"."
+    },
+    {
+      "id": "pcon-e5",
+      "prompt": "She {0} to music while she was doing her homework.",
+      "verbs": [
+        "LISTEN"
+      ],
+      "answers": [
+        [
+          "was listening"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que aquí une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"she\" usamos \"was\": \"was listening\"."
+    },
+    {
+      "id": "pcon-e6",
+      "prompt": "I {0} the logs when the server crashed.",
+      "verbs": [
+        "CHECK"
+      ],
+      "answers": [
+        [
+          "was checking"
+        ]
+      ],
+      "justification": "La clave aquí es que hay una acción larga (revisar los logs) interrumpida por otra breve (\"when the server crashed\"); la acción larga va en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"I\" usamos \"was\": \"was checking\"."
+    },
+    {
+      "id": "pcon-e7",
+      "prompt": "The developers {0} the new feature when the client called.",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "were deploying"
+        ]
+      ],
+      "justification": "La clave aquí es que una acción en progreso (desplegar la función) se ve interrumpida por otra breve (\"when the client called\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the developers\" usamos \"were\": \"were deploying\"."
+    },
+    {
+      "id": "pcon-e8",
+      "prompt": "While the build {0}, we reviewed the pull request.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "was running"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que introduce una acción larga en progreso (el build corriendo) simultánea a otra; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the build\" usamos \"was\": \"was running\"."
+    },
+    {
+      "id": "pcon-e9",
+      "prompt": "She {0} the quarterly report when her laptop froze.",
+      "verbs": [
+        "WRITE"
+      ],
+      "answers": [
+        [
+          "was writing"
+        ]
+      ],
+      "justification": "La clave aquí es que una acción larga (escribir el informe) se interrumpe por otra breve (\"when her laptop froze\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"she\" usamos \"was\": \"was writing\"."
+    },
+    {
+      "id": "pcon-e10",
+      "prompt": "We {0} the demo while the network was failing.",
+      "verbs": [
+        "PRESENT"
+      ],
+      "answers": [
+        [
+          "were presenting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"we\" usamos \"were\": \"were presenting\"."
+    },
+    {
+      "id": "pcon-e11",
+      "prompt": "The system {0} properly during the morning peak.",
+      "verbs": [
+        "NOT WORK"
+      ],
+      "answers": [
+        [
+          "wasn't working",
+          "was not working"
+        ]
+      ],
+      "justification": "La clave aquí es que se describe el estado en progreso del sistema durante un periodo concreto del pasado (\"during the morning peak\"); por lo tanto va Past Continuous en negativo. La regla es \"was/were + not + verbo-ing\"; con \"the system\" usamos \"was\": \"wasn't working\"."
+    },
+    {
+      "id": "pcon-e12",
+      "prompt": "What {0} the team {1} when the outage started?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "was"
+        ],
+        [
+          "doing"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción en progreso en un momento del pasado (\"when the outage started\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"the team\" usamos \"was\": \"What was the team doing?\"."
+    },
+    {
+      "id": "pcon-e13",
+      "prompt": "The QA engineers {0} the release while the manager waited.",
+      "verbs": [
+        "TEST"
+      ],
+      "answers": [
+        [
+          "were testing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; la acción principal va en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the QA engineers\" usamos \"were\": \"were testing\"."
+    },
+    {
+      "id": "pcon-e14",
+      "prompt": "I {0} to the standup when the alert popped up.",
+      "verbs": [
+        "NOT LISTEN"
+      ],
+      "answers": [
+        [
+          "wasn't listening",
+          "was not listening"
+        ]
+      ],
+      "justification": "La clave aquí es una acción en progreso interrumpida por otra breve (\"when the alert popped up\"), expresada en negativo; por lo tanto va Past Continuous. La regla es \"was/were + not + verbo-ing\"; con \"I\" usamos \"was\": \"wasn't listening\"."
+    },
+    {
+      "id": "pcon-e15",
+      "prompt": "{0} you {1} the database when the connection dropped?",
+      "verbs": [
+        "MIGRATE"
+      ],
+      "answers": [
+        [
+          "Were",
+          "were"
+        ],
+        [
+          "migrating"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción en progreso interrumpida por otra breve (\"when the connection dropped\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"you\" usamos \"were\": \"Were you migrating?\"."
+    },
+    {
+      "id": "pcon-e16",
+      "prompt": "The marketing team {0} the campaign while sales were rising.",
+      "verbs": [
+        "ANALYZE"
+      ],
+      "answers": [
+        [
+          "was analyzing",
+          "was analysing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the marketing team\" usamos \"was\": \"was analyzing\"."
+    },
+    {
+      "id": "pcon-e17",
+      "prompt": "He {0} the meeting notes when the CEO walked in.",
+      "verbs": [
+        "TAKE"
+      ],
+      "answers": [
+        [
+          "was taking"
+        ]
+      ],
+      "justification": "La clave aquí es una acción larga (tomar notas) interrumpida por otra breve (\"when the CEO walked in\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"he\" usamos \"was\": \"was taking\"."
+    },
+    {
+      "id": "pcon-e18",
+      "prompt": "At 3 p.m. the support agents {0} dozens of tickets.",
+      "verbs": [
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "were handling"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"at 3 p.m.\", una hora exacta del pasado en la que la acción ya estaba en marcha; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the support agents\" usamos \"were\": \"were handling\"."
+    },
+    {
+      "id": "pcon-e19",
+      "prompt": "Why {0} the pipeline {1} every commit yesterday?",
+      "verbs": [
+        "FAIL"
+      ],
+      "answers": [
+        [
+          "was"
+        ],
+        [
+          "failing"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción que estaba ocurriendo de forma repetida en el pasado (\"yesterday\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"the pipeline\" usamos \"was\": \"Why was the pipeline failing?\"."
+    },
+    {
+      "id": "pcon-e20",
+      "prompt": "We {0} a hotfix while the users were complaining.",
+      "verbs": [
+        "PREPARE"
+      ],
+      "answers": [
+        [
+          "were preparing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"we\" usamos \"were\": \"were preparing\"."
+    },
+    {
+      "id": "pcon-e21",
+      "prompt": "The intern {0} the credentials when security flagged the account.",
+      "verbs": [
+        "NOT ENCRYPT"
+      ],
+      "answers": [
+        [
+          "wasn't encrypting",
+          "was not encrypting"
+        ]
+      ],
+      "justification": "La clave aquí es una acción en progreso interrumpida por otra breve (\"when security flagged the account\"), en negativo; por lo tanto va Past Continuous. La regla es \"was/were + not + verbo-ing\"; con \"the intern\" usamos \"was\": \"wasn't encrypting\"."
+    },
+    {
+      "id": "pcon-e22",
+      "prompt": "While I {0} the invoice, the printer ran out of paper.",
+      "verbs": [
+        "PRINT"
+      ],
+      "answers": [
+        [
+          "was printing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que introduce una acción larga en progreso interrumpida por otra breve (quedarse sin papel); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"I\" usamos \"was\": \"was printing\"."
+    },
+    {
+      "id": "pcon-e23",
+      "prompt": "They {0} the budget when the new figures arrived.",
+      "verbs": [
+        "DISCUSS"
+      ],
+      "answers": [
+        [
+          "were discussing"
+        ]
+      ],
+      "justification": "La clave aquí es una acción larga (discutir el presupuesto) interrumpida por otra breve (\"when the new figures arrived\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"they\" usamos \"were\": \"were discussing\"."
+    },
+    {
+      "id": "pcon-e24",
+      "prompt": "The designer {0} the mockups while the developers were coding.",
+      "verbs": [
+        "UPDATE"
+      ],
+      "answers": [
+        [
+          "was updating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the designer\" usamos \"was\": \"was updating\"."
+    },
+    {
+      "id": "pcon-e25",
+      "prompt": "{0} the servers {1} too much memory during the load test?",
+      "verbs": [
+        "CONSUME"
+      ],
+      "answers": [
+        [
+          "Were",
+          "were"
+        ],
+        [
+          "consuming"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción en progreso durante un periodo concreto del pasado (\"during the load test\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"the servers\" usamos \"were\": \"Were the servers consuming?\"."
+    },
+    {
+      "id": "pcon-e26",
+      "prompt": "At midnight, the batch job {0} the monthly data.",
+      "verbs": [
+        "PROCESS"
+      ],
+      "answers": [
+        [
+          "was processing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"at midnight\", una hora exacta del pasado en la que la acción ya estaba en marcha; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the batch job\" usamos \"was\": \"was processing\"."
+    },
+    {
+      "id": "pcon-e27",
+      "prompt": "While the backend team {0} the API, the designers refined the UI.",
+      "verbs": [
+        "BUILD"
+      ],
+      "answers": [
+        [
+          "was building"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que introduce una acción larga en progreso simultánea a otra; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the backend team\" usamos \"was\": \"was building\"."
+    },
+    {
+      "id": "pcon-e28",
+      "prompt": "The CEO {0} the slides when the fire alarm rang.",
+      "verbs": [
+        "PRESENT"
+      ],
+      "answers": [
+        [
+          "was presenting"
+        ]
+      ],
+      "justification": "La clave aquí es una acción larga (presentar las diapositivas) interrumpida por otra breve (\"when the fire alarm rang\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the CEO\" usamos \"was\": \"was presenting\"."
+    },
+    {
+      "id": "pcon-e29",
+      "prompt": "The monitoring tool {0} the right metrics during the incident.",
+      "verbs": [
+        "NOT TRACK"
+      ],
+      "answers": [
+        [
+          "wasn't tracking",
+          "was not tracking"
+        ]
+      ],
+      "justification": "La clave aquí es describir el estado en progreso de la herramienta durante un periodo del pasado (\"during the incident\"), en negativo; por lo tanto va Past Continuous. La regla es \"was/were + not + verbo-ing\"; con \"the monitoring tool\" usamos \"was\": \"wasn't tracking\"."
+    },
+    {
+      "id": "pcon-e30",
+      "prompt": "{0} the developers {1} on the same module yesterday afternoon?",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "Were"
+        ],
+        [
+          "working"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción en progreso durante un periodo del pasado (\"yesterday afternoon\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"the developers\" usamos \"were\": \"Were the developers working?\"."
+    },
+    {
+      "id": "pcon-e31",
+      "prompt": "Sales were climbing while the support team {0} more tickets than ever.",
+      "verbs": [
+        "CLOSE"
+      ],
+      "answers": [
+        [
+          "was closing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the support team\" usamos \"was\": \"was closing\"."
+    },
+    {
+      "id": "pcon-e32",
+      "prompt": "I {0} the deployment script when my laptop died.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "was running"
+        ]
+      ],
+      "justification": "La clave aquí es una acción larga (ejecutar el script) interrumpida por otra breve (\"when my laptop died\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"I\" usamos \"was\": \"was running\"."
+    },
+    {
+      "id": "pcon-e33",
+      "prompt": "At 9 a.m. the engineers {0} the root cause of the outage.",
+      "verbs": [
+        "INVESTIGATE"
+      ],
+      "answers": [
+        [
+          "were investigating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"at 9 a.m.\", una hora exacta del pasado en la que la acción ya estaba en marcha; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the engineers\" usamos \"were\": \"were investigating\"."
+    },
+    {
+      "id": "pcon-e34",
+      "prompt": "The servers {0} correctly while the load test ran.",
+      "verbs": [
+        "NOT RESPOND"
+      ],
+      "answers": [
+        [
+          "weren't responding",
+          "were not responding"
+        ]
+      ],
+      "justification": "La clave aquí es describir el estado en progreso de los servidores durante un periodo del pasado (\"while the load test ran\"), en negativo; por lo tanto va Past Continuous. La regla es \"was/were + not + verbo-ing\"; con \"the servers\" usamos \"were\": \"weren't responding\"."
+    },
+    {
+      "id": "pcon-e35",
+      "prompt": "Why {0} the dashboard {1} stale data this morning?",
+      "verbs": [
+        "SHOW"
+      ],
+      "answers": [
+        [
+          "was"
+        ],
+        [
+          "showing"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción que estaba ocurriendo en un periodo del pasado (\"this morning\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"the dashboard\" usamos \"was\": \"Why was the dashboard showing?\"."
+    },
+    {
+      "id": "pcon-e36",
+      "prompt": "While we {0} the contract, the client changed the requirements.",
+      "verbs": [
+        "DRAFT"
+      ],
+      "answers": [
+        [
+          "were drafting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que introduce una acción larga en progreso interrumpida por otra breve (cambiar los requisitos); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"we\" usamos \"were\": \"were drafting\"."
+    },
+    {
+      "id": "pcon-e37",
+      "prompt": "The interns were shadowing the seniors while the leads {0} the architecture.",
+      "verbs": [
+        "DESIGN"
+      ],
+      "answers": [
+        [
+          "were designing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the leads\" usamos \"were\": \"were designing\"."
+    },
+    {
+      "id": "pcon-e38",
+      "prompt": "She {0} the budget figures when the projector failed.",
+      "verbs": [
+        "EXPLAIN"
+      ],
+      "answers": [
+        [
+          "was explaining"
+        ]
+      ],
+      "justification": "La clave aquí es una acción larga (explicar las cifras) interrumpida por otra breve (\"when the projector failed\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"she\" usamos \"was\": \"was explaining\"."
+    },
+    {
+      "id": "pcon-e39",
+      "prompt": "This time last week, the team {0} for the product launch.",
+      "verbs": [
+        "PREPARE"
+      ],
+      "answers": [
+        [
+          "was preparing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"this time last week\", un punto del pasado en el que la acción estaba en marcha; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the team\" usamos \"was\": \"was preparing\"."
+    },
+    {
+      "id": "pcon-e40",
+      "prompt": "The new hire {0} attention during the security briefing.",
+      "verbs": [
+        "NOT PAY"
+      ],
+      "answers": [
+        [
+          "wasn't paying",
+          "was not paying"
+        ]
+      ],
+      "justification": "La clave aquí es describir una acción en progreso durante un periodo del pasado (\"during the security briefing\"), en negativo; por lo tanto va Past Continuous. La regla es \"was/were + not + verbo-ing\"; con \"the new hire\" usamos \"was\": \"wasn't paying\"."
+    },
+    {
+      "id": "pcon-e41",
+      "prompt": "What {0} the vendor {1} when the data leaked?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "was"
+        ],
+        [
+          "doing"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción en progreso en un momento del pasado (\"when the data leaked\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"the vendor\" usamos \"was\": \"What was the vendor doing?\"."
+    },
+    {
+      "id": "pcon-e42",
+      "prompt": "The testers {0} the build when the deadline got moved up.",
+      "verbs": [
+        "VALIDATE"
+      ],
+      "answers": [
+        [
+          "were validating"
+        ]
+      ],
+      "justification": "La clave aquí es una acción larga (validar el build) interrumpida por otra breve (\"when the deadline got moved up\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the testers\" usamos \"were\": \"were validating\"."
+    },
+    {
+      "id": "pcon-e43",
+      "prompt": "While the database {0}, the users couldn't log in.",
+      "verbs": [
+        "SYNC"
+      ],
+      "answers": [
+        [
+          "was syncing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que introduce una acción larga en progreso simultánea a otra situación; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the database\" usamos \"was\": \"was syncing\"."
+    },
+    {
+      "id": "pcon-e44",
+      "prompt": "At noon he {0} the release notes for the next version.",
+      "verbs": [
+        "WRITE"
+      ],
+      "answers": [
+        [
+          "was writing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"at noon\", una hora exacta del pasado en la que la acción ya estaba en marcha; por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"he\" usamos \"was\": \"was writing\"."
+    },
+    {
+      "id": "pcon-e45",
+      "prompt": "We {0} any errors while the demo was running.",
+      "verbs": [
+        "NOT EXPECT"
+      ],
+      "answers": [
+        [
+          "weren't expecting",
+          "were not expecting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while ... was running\", que enmarca una acción en progreso simultánea, expresada en negativo; por lo tanto va Past Continuous. La regla es \"was/were + not + verbo-ing\"; con \"we\" usamos \"were\": \"weren't expecting\"."
+    },
+    {
+      "id": "pcon-e46",
+      "prompt": "{0} the marketing team {1} the ad when the budget was cut?",
+      "verbs": [
+        "LAUNCH"
+      ],
+      "answers": [
+        [
+          "Was"
+        ],
+        [
+          "launching"
+        ]
+      ],
+      "justification": "La clave aquí es preguntar por una acción en progreso interrumpida por otra breve (\"when the budget was cut\"); por lo tanto va Past Continuous. La regla en pregunta es \"was/were + sujeto + verbo-ing\"; con \"the marketing team\" usamos \"was\": \"Was the marketing team launching?\"."
+    },
+    {
+      "id": "pcon-e47",
+      "prompt": "Profits were falling while costs {0} every quarter.",
+      "verbs": [
+        "RISE"
+      ],
+      "answers": [
+        [
+          "were rising"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"while\", que une dos acciones largas y simultáneas en el pasado; ambas van en Past Continuous. La regla es \"was/were + verbo-ing\"; con \"costs\" usamos \"were\": \"were rising\"."
+    },
+    {
+      "id": "pcon-e48",
+      "prompt": "The app {0} location data when the user revoked permission.",
+      "verbs": [
+        "COLLECT"
+      ],
+      "answers": [
+        [
+          "was collecting"
+        ]
+      ],
+      "justification": "La clave aquí es una acción larga (recopilar datos de ubicación) interrumpida por otra breve (\"when the user revoked permission\"); por lo tanto va Past Continuous. La regla es \"was/were + verbo-ing\"; con \"the app\" usamos \"was\": \"was collecting\"."
+    }
+  ]
+}

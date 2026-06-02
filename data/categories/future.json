@@ -1,0 +1,756 @@
+{
+  "id": "future",
+  "name": "Future / Future Perfect Continuous",
+  "explanation": "Futuro simple (will), futuro con going to para planes, y Future Perfect Continuous para duración hasta un punto futuro.",
+  "original": [
+    {
+      "id": "fut-11",
+      "num": 11,
+      "prompt": "Where {0} your holidays next summer?",
+      "verbs": [
+        "YOU, SPEND"
+      ],
+      "answers": [
+        [
+          "will you spend",
+          "are you going to spend",
+          "are you spending"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"next summer\", que sitúa la acción en el futuro; por lo tanto va una forma de futuro. La regla de la pregunta con will es \"will + sujeto + verbo base\" (\"will you spend\"); también valen \"are you going to spend\" (plan) o \"are you spending\" (arreglo concreto)."
+    },
+    {
+      "id": "fut-12",
+      "num": 12,
+      "prompt": "I will have this novel finished by December. By then I {0} on it for over a year.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "will have been working",
+          "'ll have been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By then\" (diciembre) junto a una duración (\"for over a year\"): se mira cuánto tiempo se llevará haciendo algo hasta un punto futuro. Por lo tanto va Future Perfect Continuous. La regla es \"will have been + verbo-ing\": \"will have been working\"."
+    },
+    {
+      "id": "fut-9b",
+      "num": 9,
+      "prompt": "We have had lovely weather for the last two weeks. I hope it {0} that way.",
+      "verbs": [
+        "STAY"
+      ],
+      "answers": [
+        [
+          "stays"
+        ]
+      ],
+      "justification": "La clave aquí es detectar el verbo \"hope\", que aunque exprese un deseo futuro suele ir seguido de Present Simple. Por lo tanto, con el sujeto \"it\" (3ª persona singular) la regla añade -s: \"stays\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "fut-e1",
+      "prompt": "I think it {0} tomorrow.",
+      "verbs": [
+        "RAIN"
+      ],
+      "answers": [
+        [
+          "will rain",
+          "'ll rain"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"I think\" junto a \"tomorrow\": es una predicción/opinión sobre el futuro sin evidencia presente. Por lo tanto va Future Simple. La regla es \"will + verbo base\": \"will rain\"."
+    },
+    {
+      "id": "fut-e2",
+      "prompt": "Look at those clouds! It {0} going to rain.",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"Look at those clouds!\", una evidencia presente que anuncia algo futuro; por lo tanto va \"going to\". La regla es \"am/is/are + going to + verbo base\"; con \"it\" usamos \"is\": \"is going to rain\"."
+    },
+    {
+      "id": "fut-e3",
+      "prompt": "By next month, she {0} here for five years.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "will have been working",
+          "'ll have been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By next month\" junto a una duración (\"for five years\"): se mide cuánto tiempo se llevará haciendo algo hasta un punto futuro. Por lo tanto va Future Perfect Continuous. La regla es \"will have been + verbo-ing\": \"will have been working\"."
+    },
+    {
+      "id": "fut-e4",
+      "prompt": "We {0} you as soon as we arrive.",
+      "verbs": [
+        "CALL"
+      ],
+      "answers": [
+        [
+          "will call",
+          "'ll call"
+        ]
+      ],
+      "justification": "La clave aquí es que es una promesa o decisión espontánea sobre el futuro (\"as soon as we arrive\"); por lo tanto va Future Simple con will. La regla es \"will + verbo base\": \"will call\"."
+    },
+    {
+      "id": "fut-e5",
+      "prompt": "They {0} a new office next year.",
+      "verbs": [
+        "OPEN"
+      ],
+      "answers": [
+        [
+          "are going to open",
+          "will open",
+          "'re going to open"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"next year\" junto a un plan ya decidido; por lo tanto va una forma de futuro. La regla con \"going to\" para planes es \"am/is/are + going to + verbo base\" (con \"they\" → \"are going to open\"); también vale \"will open\"."
+    },
+    {
+      "id": "fut-e6",
+      "prompt": "The team {0} the new version next Friday.",
+      "verbs": [
+        "RELEASE"
+      ],
+      "answers": [
+        [
+          "will release",
+          "'ll release",
+          "is going to release"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"next Friday\", que sitúa la entrega en el futuro. Por lo tanto va una forma de futuro. La regla es \"will + verbo base\" para la predicción/decisión: \"will release\"; también vale \"is going to release\" si es un plan ya fijado."
+    },
+    {
+      "id": "fut-e7",
+      "prompt": "Don't worry, I {0} the bug before the demo.",
+      "verbs": [
+        "FIX"
+      ],
+      "answers": [
+        [
+          "will fix",
+          "'ll fix"
+        ]
+      ],
+      "justification": "La clave aquí es que es una promesa/decisión espontánea (\"Don't worry\") sobre el futuro. Por lo tanto va Future Simple con will. La regla es \"will + verbo base\": \"will fix\"."
+    },
+    {
+      "id": "fut-e8",
+      "prompt": "The company {0} ten new developers because the project is growing fast.",
+      "verbs": [
+        "HIRE"
+      ],
+      "answers": [
+        [
+          "is going to hire",
+          "'s going to hire",
+          "will hire"
+        ]
+      ],
+      "justification": "La clave aquí es la evidencia/decisión presente (\"the project is growing fast\") que respalda un plan ya tomado. Por lo tanto va \"going to\". La regla es \"am/is/are + going to + verbo base\"; con \"the company\" (3ª persona) usamos \"is going to hire\"."
+    },
+    {
+      "id": "fut-e9",
+      "prompt": "By next year, the team {0} the legacy system for a decade.",
+      "verbs": [
+        "MAINTAIN"
+      ],
+      "answers": [
+        [
+          "will have been maintaining",
+          "'ll have been maintaining"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By next year\" junto a una duración (\"for a decade\"): se mide cuánto tiempo se llevará haciendo algo hasta un punto futuro. Por lo tanto va Future Perfect Continuous. La regla es \"will have been + verbo-ing\": \"will have been maintaining\"."
+    },
+    {
+      "id": "fut-e10",
+      "prompt": "{0} you {1} the report to the client this afternoon?",
+      "verbs": [
+        "WILL",
+        "SEND"
+      ],
+      "answers": [
+        [
+          "will",
+          "'ll"
+        ],
+        [
+          "send"
+        ]
+      ],
+      "justification": "La clave aquí es que es una pregunta sobre el futuro (\"this afternoon\"). La regla de la pregunta con will es \"will + sujeto + verbo base\": \"Will you send\"."
+    },
+    {
+      "id": "fut-e11",
+      "prompt": "We {0} the servers tonight because maintenance is scheduled.",
+      "verbs": [
+        "RESTART"
+      ],
+      "answers": [
+        [
+          "are going to restart",
+          "'re going to restart",
+          "will restart"
+        ]
+      ],
+      "justification": "La clave aquí es el plan ya programado (\"maintenance is scheduled\") para esta noche. Por lo tanto va \"going to\". La regla es \"am/is/are + going to + verbo base\"; con \"we\" usamos \"are going to restart\"."
+    },
+    {
+      "id": "fut-e12",
+      "prompt": "I'm sure the new feature {0} our users.",
+      "verbs": [
+        "IMPRESS"
+      ],
+      "answers": [
+        [
+          "will impress",
+          "'ll impress"
+        ]
+      ],
+      "justification": "La clave aquí es \"I'm sure\", que introduce una predicción u opinión sobre el futuro sin evidencia presente. Por lo tanto va Future Simple. La regla es \"will + verbo base\": \"will impress\"."
+    },
+    {
+      "id": "fut-e13",
+      "prompt": "The client {0} the contract until we lower the price.",
+      "verbs": [
+        "NOT SIGN"
+      ],
+      "answers": [
+        [
+          "will not sign",
+          "won't sign"
+        ]
+      ],
+      "justification": "La clave aquí es una predicción negativa sobre el futuro condicionada (\"until we lower the price\"). Por lo tanto va Future Simple en negativo. La regla es \"will + not + verbo base\": \"will not sign\" (contraído \"won't sign\")."
+    },
+    {
+      "id": "fut-e14",
+      "prompt": "By the time the audit starts, we {0} the documentation for three weeks.",
+      "verbs": [
+        "PREPARE"
+      ],
+      "answers": [
+        [
+          "will have been preparing",
+          "'ll have been preparing"
+        ]
+      ],
+      "justification": "La clave aquí es \"By the time the audit starts\" junto a una duración (\"for three weeks\"): se mide cuánto tiempo se llevará haciendo algo hasta un punto futuro. Por lo tanto va Future Perfect Continuous. La regla es \"will have been + verbo-ing\": \"will have been preparing\"."
+    },
+    {
+      "id": "fut-e15",
+      "prompt": "Look at the roadmap! We {0} on three projects at once next quarter.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "are going to work",
+          "'re going to work",
+          "will work"
+        ]
+      ],
+      "justification": "La clave aquí es la evidencia presente (\"Look at the roadmap!\") que anuncia algo planeado para el futuro. Por lo tanto va \"going to\". La regla es \"am/is/are + going to + verbo base\"; con \"we\" usamos \"are going to work\"."
+    },
+    {
+      "id": "fut-e16",
+      "prompt": "{0} the CEO {1} the keynote at the conference?",
+      "verbs": [
+        "WILL",
+        "GIVE"
+      ],
+      "answers": [
+        [
+          "will",
+          "'ll"
+        ],
+        [
+          "give"
+        ]
+      ],
+      "justification": "La clave aquí es que es una pregunta sobre un evento futuro. La regla de la pregunta con will es \"will + sujeto + verbo base\": \"Will the CEO give\"."
+    },
+    {
+      "id": "fut-e17",
+      "prompt": "Our competitor {0} a similar app next month, according to the rumors.",
+      "verbs": [
+        "LAUNCH"
+      ],
+      "answers": [
+        [
+          "is going to launch",
+          "'s going to launch",
+          "will launch"
+        ]
+      ],
+      "justification": "La clave aquí es un plan o intención ya prevista (\"according to the rumors\") para \"next month\". Por lo tanto va \"going to\". La regla es \"am/is/are + going to + verbo base\"; con \"our competitor\" usamos \"is going to launch\"."
+    },
+    {
+      "id": "fut-e18",
+      "prompt": "I promise I {0} the meeting again.",
+      "verbs": [
+        "NOT MISS"
+      ],
+      "answers": [
+        [
+          "will not miss",
+          "won't miss"
+        ]
+      ],
+      "justification": "La clave aquí es \"I promise\", que introduce una promesa sobre el futuro. Por lo tanto va Future Simple en negativo. La regla es \"will + not + verbo base\": \"will not miss\" (contraído \"won't miss\")."
+    },
+    {
+      "id": "fut-e19",
+      "prompt": "By 2030, this startup {0} cloud services for fifteen years.",
+      "verbs": [
+        "PROVIDE"
+      ],
+      "answers": [
+        [
+          "will have been providing",
+          "'ll have been providing"
+        ]
+      ],
+      "justification": "La clave aquí es \"By 2030\" junto a una duración (\"for fifteen years\"): se mide cuánto tiempo se llevará haciendo algo hasta un punto futuro. Por lo tanto va Future Perfect Continuous. La regla es \"will have been + verbo-ing\": \"will have been providing\"."
+    },
+    {
+      "id": "fut-e20",
+      "prompt": "The phone is ringing. I {0} it.",
+      "verbs": [
+        "GET"
+      ],
+      "answers": [
+        [
+          "will get",
+          "'ll get"
+        ]
+      ],
+      "justification": "La clave aquí es una decisión espontánea tomada en el momento (\"The phone is ringing\"). Por lo tanto va Future Simple con will. La regla es \"will + verbo base\": \"will get\"."
+    },
+    {
+      "id": "fut-e21",
+      "prompt": "We {0} the budget this year; the board already decided to keep it.",
+      "verbs": [
+        "NOT CUT"
+      ],
+      "answers": [
+        [
+          "are not going to cut",
+          "aren't going to cut",
+          "'re not going to cut",
+          "will not cut",
+          "won't cut"
+        ]
+      ],
+      "justification": "La clave aquí es una decisión ya tomada (\"the board already decided\") en negativo. Por lo tanto va \"going to\" negativo. La regla es \"am/is/are + not + going to + verbo base\"; con \"we\" → \"are not going to cut\"; también vale el Future Simple \"won't cut\"."
+    },
+    {
+      "id": "fut-e22",
+      "prompt": "Don't call me at 9; I {0} the sprint review at that time.",
+      "verbs": [
+        "ATTEND"
+      ],
+      "answers": [
+        [
+          "will be attending",
+          "'ll be attending",
+          "am going to attend",
+          "'m going to attend"
+        ]
+      ],
+      "justification": "La clave aquí es una acción en curso en un momento concreto del futuro (\"at 9\", \"at that time\"). Por lo tanto va Future Continuous. La regla es \"will be + verbo-ing\": \"will be attending\"; también se acepta el plan con \"going to\"."
+    },
+    {
+      "id": "fut-e23",
+      "prompt": "When {0} we {1} the migration to the new database?",
+      "verbs": [
+        "WILL",
+        "FINISH"
+      ],
+      "answers": [
+        [
+          "will",
+          "'ll"
+        ],
+        [
+          "finish"
+        ]
+      ],
+      "justification": "La clave aquí es una pregunta con partícula interrogativa (\"When\") sobre el futuro. La regla de la pregunta con will es \"(palabra-pregunta) + will + sujeto + verbo base\": \"When will we finish\"."
+    },
+    {
+      "id": "fut-e24",
+      "prompt": "By the end of the quarter, the developers {0} on the same module for six months.",
+      "verbs": [
+        "COLLABORATE"
+      ],
+      "answers": [
+        [
+          "will have been collaborating",
+          "'ll have been collaborating"
+        ]
+      ],
+      "justification": "La clave aquí es \"By the end of the quarter\" junto a una duración (\"for six months\"): se mide cuánto tiempo se llevará haciendo algo hasta un punto futuro. Por lo tanto va Future Perfect Continuous. La regla es \"will have been + verbo-ing\": \"will have been collaborating\"."
+    },
+    {
+      "id": "fut-e25",
+      "prompt": "I'm afraid the deadline {0} realistic if the scope keeps changing.",
+      "verbs": [
+        "NOT BE"
+      ],
+      "answers": [
+        [
+          "will not be",
+          "won't be"
+        ]
+      ],
+      "justification": "La clave aquí es una predicción sobre el futuro (\"if the scope keeps changing\") en negativo. Por lo tanto va Future Simple en negativo. La regla es \"will + not + verbo base\": \"will not be\" (contraído \"won't be\")."
+    },
+    {
+      "id": "fut-e26",
+      "prompt": "I {0} the client at 10 tomorrow; it's already in my calendar.",
+      "verbs": [
+        "MEET"
+      ],
+      "answers": [
+        [
+          "am meeting",
+          "'m meeting",
+          "am going to meet",
+          "'m going to meet"
+        ]
+      ],
+      "justification": "La clave aquí es un arreglo ya fijado (\"it's already in my calendar\") con hora concreta. Por lo tanto va Present Continuous con valor de futuro. La regla es \"am/is/are + verbo-ing\"; con \"I\" usamos \"am meeting\"."
+    },
+    {
+      "id": "fut-e27",
+      "prompt": "The whole team {0} to the conference next week.",
+      "verbs": [
+        "FLY"
+      ],
+      "answers": [
+        [
+          "is flying",
+          "'s flying",
+          "is going to fly",
+          "'s going to fly"
+        ]
+      ],
+      "justification": "La clave aquí es un plan/arreglo concreto para \"next week\". Por lo tanto va Present Continuous con valor de futuro. La regla es \"am/is/are + verbo-ing\"; con \"the whole team\" (3ª persona) usamos \"is flying\"."
+    },
+    {
+      "id": "fut-e28",
+      "prompt": "We {0} the new hires on Monday morning.",
+      "verbs": [
+        "ONBOARD"
+      ],
+      "answers": [
+        [
+          "are onboarding",
+          "'re onboarding",
+          "are going to onboard",
+          "'re going to onboard"
+        ]
+      ],
+      "justification": "La clave aquí es un arreglo planificado con momento fijo (\"on Monday morning\"). Por lo tanto va Present Continuous con valor de futuro. La regla es \"am/is/are + verbo-ing\"; con \"we\" usamos \"are onboarding\"."
+    },
+    {
+      "id": "fut-e29",
+      "prompt": "The train to the data center {0} at 7:45 sharp.",
+      "verbs": [
+        "LEAVE"
+      ],
+      "answers": [
+        [
+          "leaves"
+        ]
+      ],
+      "justification": "La clave aquí es un horario fijo (\"at 7:45 sharp\") de un transporte. Por lo tanto va Present Simple para horarios. La regla añade -s en 3ª persona singular: \"leaves\"."
+    },
+    {
+      "id": "fut-e30",
+      "prompt": "The webinar {0} at 3 p.m. and ends at 4.",
+      "verbs": [
+        "START"
+      ],
+      "answers": [
+        [
+          "starts"
+        ]
+      ],
+      "justification": "La clave aquí es un horario fijo de agenda (\"at 3 p.m.\"). Por lo tanto va Present Simple para horarios/calendarios. La regla añade -s en 3ª persona singular: \"starts\"."
+    },
+    {
+      "id": "fut-e31",
+      "prompt": "The office {0} at 9 every weekday.",
+      "verbs": [
+        "OPEN"
+      ],
+      "answers": [
+        [
+          "opens"
+        ]
+      ],
+      "justification": "La clave aquí es un horario regular y fijo (\"at 9 every weekday\"). Por lo tanto va Present Simple para horarios. La regla añade -s en 3ª persona singular: \"opens\"."
+    },
+    {
+      "id": "fut-e32",
+      "prompt": "When {0} the next sprint {1}?",
+      "verbs": [
+        "DO",
+        "START"
+      ],
+      "answers": [
+        [
+          "does"
+        ],
+        [
+          "start"
+        ]
+      ],
+      "justification": "La clave aquí es una pregunta sobre un evento de calendario fijo. Por lo tanto va Present Simple para horarios. La regla de la pregunta es \"(palabra-pregunta) + do/does + sujeto + verbo base\"; con \"the next sprint\" (3ª persona) usamos \"does ... start\": \"When does the next sprint start?\"."
+    },
+    {
+      "id": "fut-e33",
+      "prompt": "By Friday, the team {0} the new feature.",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "will have deployed",
+          "'ll have deployed"
+        ]
+      ],
+      "justification": "La clave aquí es \"By Friday\", que marca una acción completada antes de un punto futuro. Por lo tanto va Future Perfect. La regla es \"will have + participio\": \"will have deployed\"."
+    },
+    {
+      "id": "fut-e34",
+      "prompt": "By the time you arrive, we {0} the release.",
+      "verbs": [
+        "FINISH"
+      ],
+      "answers": [
+        [
+          "will have finished",
+          "'ll have finished"
+        ]
+      ],
+      "justification": "La clave aquí es \"By the time you arrive\", que marca una acción terminada antes de un momento futuro. Por lo tanto va Future Perfect. La regla es \"will have + participio\": \"will have finished\"."
+    },
+    {
+      "id": "fut-e35",
+      "prompt": "By next quarter, we {0} the migration; there's just too much data.",
+      "verbs": [
+        "NOT COMPLETE"
+      ],
+      "answers": [
+        [
+          "will not have completed",
+          "won't have completed"
+        ]
+      ],
+      "justification": "La clave aquí es \"By next quarter\" con una acción que no estará terminada antes de ese punto futuro. Por lo tanto va Future Perfect en negativo. La regla es \"will + not + have + participio\": \"will not have completed\" (contraído \"won't have completed\")."
+    },
+    {
+      "id": "fut-e36",
+      "prompt": "The contractors {0} the new office by December.",
+      "verbs": [
+        "BUILD"
+      ],
+      "answers": [
+        [
+          "will have built",
+          "'ll have built"
+        ]
+      ],
+      "justification": "La clave aquí es \"by December\", que marca una acción completada antes de un punto futuro. Por lo tanto va Future Perfect. La regla es \"will have + participio\": \"will have built\"."
+    },
+    {
+      "id": "fut-e37",
+      "prompt": "This time tomorrow, I {0} the quarterly results to the board.",
+      "verbs": [
+        "PRESENT"
+      ],
+      "answers": [
+        [
+          "will be presenting",
+          "'ll be presenting"
+        ]
+      ],
+      "justification": "La clave aquí es \"This time tomorrow\", un momento concreto del futuro en el que una acción estará en curso. Por lo tanto va Future Continuous. La regla es \"will be + verbo-ing\": \"will be presenting\"."
+    },
+    {
+      "id": "fut-e38",
+      "prompt": "Don't call at noon; the team {0} the incident at that time.",
+      "verbs": [
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "will be handling",
+          "'ll be handling"
+        ]
+      ],
+      "justification": "La clave aquí es una acción en curso en un momento puntual del futuro (\"at noon\", \"at that time\"). Por lo tanto va Future Continuous. La regla es \"will be + verbo-ing\": \"will be handling\"."
+    },
+    {
+      "id": "fut-e39",
+      "prompt": "We {0} a retrospective after every sprint from now on.",
+      "verbs": [
+        "HOLD"
+      ],
+      "answers": [
+        [
+          "are going to hold",
+          "'re going to hold",
+          "will hold",
+          "'ll hold"
+        ]
+      ],
+      "justification": "La clave aquí es una intención/decisión ya tomada (\"from now on\"). Por lo tanto va \"going to\". La regla es \"am/is/are + going to + verbo base\"; con \"we\" usamos \"are going to hold\"; también vale \"will hold\"."
+    },
+    {
+      "id": "fut-e40",
+      "prompt": "The printer is out of paper. I {0} some from the supply room.",
+      "verbs": [
+        "GRAB"
+      ],
+      "answers": [
+        [
+          "will grab",
+          "'ll grab"
+        ]
+      ],
+      "justification": "La clave aquí es una decisión espontánea tomada en el momento (\"The printer is out of paper\"). Por lo tanto va Future Simple con will. La regla es \"will + verbo base\": \"will grab\"."
+    },
+    {
+      "id": "fut-e41",
+      "prompt": "I doubt the vendor {0} the deadline.",
+      "verbs": [
+        "MEET"
+      ],
+      "answers": [
+        [
+          "will meet",
+          "'ll meet"
+        ]
+      ],
+      "justification": "La clave aquí es \"I doubt\", que introduce una predicción u opinión sobre el futuro sin evidencia presente. Por lo tanto va Future Simple. La regla es \"will + verbo base\": \"will meet\"."
+    },
+    {
+      "id": "fut-e42",
+      "prompt": "The disk is almost full; the server {0} going to crash soon.",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ]
+      ],
+      "justification": "La clave aquí es la evidencia presente (\"The disk is almost full\") que anuncia algo futuro. Por lo tanto va \"going to\". La regla es \"am/is/are + going to + verbo base\"; con \"the server\" usamos \"is\": \"is going to crash\"."
+    },
+    {
+      "id": "fut-e43",
+      "prompt": "{0} the support team {1} 24/7 coverage next year?",
+      "verbs": [
+        "WILL",
+        "PROVIDE"
+      ],
+      "answers": [
+        [
+          "will",
+          "'ll"
+        ],
+        [
+          "provide"
+        ]
+      ],
+      "justification": "La clave aquí es una pregunta sobre el futuro (\"next year\"). La regla de la pregunta con will es \"will + sujeto + verbo base\": \"Will the support team provide\"."
+    },
+    {
+      "id": "fut-e44",
+      "prompt": "We {0} the legacy app next month; we're moving everything to the cloud.",
+      "verbs": [
+        "NOT SHIP"
+      ],
+      "answers": [
+        [
+          "aren't shipping",
+          "are not shipping",
+          "'re not shipping",
+          "aren't going to ship",
+          "are not going to ship"
+        ]
+      ],
+      "justification": "La clave aquí es un plan ya decidido para \"next month\" en negativo (\"we're moving everything to the cloud\"). Por lo tanto va Present Continuous con valor de futuro (o \"going to\"); con \"we\" usamos \"aren't shipping\"."
+    },
+    {
+      "id": "fut-e45",
+      "prompt": "The flight to the summit {0} at 6 a.m. on Monday.",
+      "verbs": [
+        "DEPART"
+      ],
+      "answers": [
+        [
+          "departs"
+        ]
+      ],
+      "justification": "La clave aquí es un horario fijo (\"at 6 a.m. on Monday\"). Por lo tanto va Present Simple para horarios. La regla añade -s en 3ª persona singular: \"departs\"."
+    },
+    {
+      "id": "fut-e46",
+      "prompt": "{0} you {1} the booth at the trade show all day?",
+      "verbs": [
+        "WILL",
+        "STAFF"
+      ],
+      "answers": [
+        [
+          "will",
+          "'ll"
+        ],
+        [
+          "be staffing"
+        ]
+      ],
+      "justification": "La clave aquí es una pregunta sobre una acción que durará un tramo del futuro (\"all day\"). Por lo tanto va Future Continuous. La regla de la pregunta es \"will + sujeto + be + verbo-ing\": \"Will you be staffing\"."
+    },
+    {
+      "id": "fut-e47",
+      "prompt": "The board {0} the pricing this year; they confirmed it stays the same.",
+      "verbs": [
+        "NOT CHANGE"
+      ],
+      "answers": [
+        [
+          "is not going to change",
+          "isn't going to change",
+          "'s not going to change",
+          "will not change",
+          "won't change"
+        ]
+      ],
+      "justification": "La clave aquí es una decisión ya confirmada (\"they confirmed it stays the same\") en negativo. Por lo tanto va \"going to\" negativo. La regla es \"am/is/are + not + going to + verbo base\"; con \"the board\" usamos \"is not going to change\"; también vale \"won't change\"."
+    }
+  ]
+}

@@ -1,0 +1,918 @@
+{
+  "id": "conditional-third",
+  "name": "3rd Conditional",
+  "explanation": "3rd Conditional: situación irreal en el pasado (lo contrario de lo que ocurrió). If + Past Perfect (had + participio) en la condición y would have + participio en la principal (admite could/might have). Incluye la inversión formal Had ... . Cada oración tiene dos cláusulas: {0} y {1}.",
+  "keyHint": "Se trata de una situación hipotética en el pasado, contraria a lo que realmente ocurrió.",
+  "original": [
+    {
+      "id": "cond-13",
+      "num": 13,
+      "prompt": "If we {0} at home, a lot of people {1} the disease.",
+      "verbs": [
+        "STAY",
+        "SURVIVE"
+      ],
+      "answers": [
+        [
+          "had stayed"
+        ],
+        [
+          "would have survived",
+          "could have survived"
+        ]
+      ],
+      "justification": "La clave aquí es la hipótesis irreal sobre el pasado, señal del 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had stayed\"); en la principal va \"would have + participio\": \"would have survived\" (también vale \"could have survived\")."
+    }
+  ],
+  "extra": [
+    {
+      "id": "cond3-e1",
+      "prompt": "If we {0} the code, we {1} the outage.",
+      "verbs": [
+        "REVIEW",
+        "NOT CAUSE"
+      ],
+      "answers": [
+        [
+          "had reviewed"
+        ],
+        [
+          "wouldn't have caused",
+          "would not have caused"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had reviewed\"); en la principal va \"would have + participio\", en negativo: \"wouldn't have caused\"."
+    },
+    {
+      "id": "cond3-e2",
+      "prompt": "If the vendor {0} on time, we {1} the launch.",
+      "verbs": [
+        "DELIVER",
+        "NOT MISS"
+      ],
+      "answers": [
+        [
+          "had delivered"
+        ],
+        [
+          "wouldn't have missed",
+          "would not have missed"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had delivered\"); en la principal va \"would have + participio\", en negativo: \"wouldn't have missed\"."
+    },
+    {
+      "id": "cond3-e3",
+      "prompt": "If marketing {0} the campaign on time, sales {1}.",
+      "verbs": [
+        "LAUNCH",
+        "INCREASE"
+      ],
+      "answers": [
+        [
+          "had launched"
+        ],
+        [
+          "would have increased",
+          "would've increased"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had launched\"); en la principal va \"would have + participio\": \"would have increased\"."
+    },
+    {
+      "id": "cond3-e4",
+      "prompt": "If the client {0} the demo, they {1} the deal.",
+      "verbs": [
+        "SEE",
+        "CLOSE"
+      ],
+      "answers": [
+        [
+          "had seen"
+        ],
+        [
+          "would have closed",
+          "would've closed"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had seen\"); en la principal va \"would have + participio\": \"would have closed\"."
+    },
+    {
+      "id": "cond3-e5",
+      "prompt": "If we {0} earlier, we {1} the bug before release.",
+      "verbs": [
+        "TEST",
+        "MIGHT CATCH"
+      ],
+      "answers": [
+        [
+          "had tested"
+        ],
+        [
+          "might have caught",
+          "might've caught"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had tested\"); en la principal, \"might have + participio\" indica posibilidad: \"might have caught\"."
+    },
+    {
+      "id": "cond3-e6",
+      "prompt": "If the servers {0} more memory, they {1} the load.",
+      "verbs": [
+        "HAVE",
+        "COULD HANDLE"
+      ],
+      "answers": [
+        [
+          "had had"
+        ],
+        [
+          "could have handled",
+          "could've handled"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had had\"); en la principal, \"could have + participio\" indica capacidad pasada: \"could have handled\"."
+    },
+    {
+      "id": "cond3-e7",
+      "prompt": "Had the team {0} the API, onboarding {1} much faster.",
+      "verbs": [
+        "DOCUMENT",
+        "BE"
+      ],
+      "answers": [
+        [
+          "documented"
+        ],
+        [
+          "would have been",
+          "would've been"
+        ]
+      ],
+      "justification": "La clave aquí es un 3rd Conditional con inversión formal: \"Had + sujeto + participio\" reemplaza a \"If ... had\". Por eso {0} es solo el participio (\"documented\") y la principal va \"would have + participio\": \"would have been\"."
+    },
+    {
+      "id": "cond3-e8",
+      "prompt": "If the on-call engineer {0} the alert sooner, the outage {1} for hours.",
+      "verbs": [
+        "NOTICE",
+        "NOT LAST"
+      ],
+      "answers": [
+        [
+          "had noticed"
+        ],
+        [
+          "wouldn't have lasted",
+          "would not have lasted"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had noticed\"); en la principal va \"would have + participio\", en negativo: \"wouldn't have lasted\"."
+    },
+    {
+      "id": "cond3-e9",
+      "prompt": "We {1} on time if QA {0} the edge cases.",
+      "verbs": [
+        "TEST",
+        "DELIVER"
+      ],
+      "answers": [
+        [
+          "had tested"
+        ],
+        [
+          "would have delivered",
+          "would've delivered"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido (principal primero, sin coma). La cláusula \"if\" va en Past Perfect (\"had tested\") y la principal en \"would have + participio\": \"would have delivered\"."
+    },
+    {
+      "id": "cond3-e10",
+      "prompt": "If the cache {0} configured correctly, the API {1} the spike.",
+      "verbs": [
+        "BE",
+        "COULD HANDLE"
+      ],
+      "answers": [
+        [
+          "had been"
+        ],
+        [
+          "could have handled",
+          "could've handled"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had been\"); en la principal, \"could have + participio\" expresa capacidad pasada: \"could have handled\"."
+    },
+    {
+      "id": "cond3-e11",
+      "prompt": "If we {0} the stakeholders earlier, they {1} the new timeline.",
+      "verbs": [
+        "BRIEF",
+        "MIGHT ACCEPT"
+      ],
+      "answers": [
+        [
+          "had briefed"
+        ],
+        [
+          "might have accepted",
+          "might've accepted"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had briefed\"); en la principal, \"might have + participio\" indica posibilidad: \"might have accepted\"."
+    },
+    {
+      "id": "cond3-e12",
+      "prompt": "If the documentation {0} clearer, new hires {1} the setup without help.",
+      "verbs": [
+        "BE",
+        "MAY COMPLETE"
+      ],
+      "answers": [
+        [
+          "had been"
+        ],
+        [
+          "may have completed",
+          "might have completed",
+          "might've completed"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had been\"); en la principal, \"may/might have + participio\" expresa posibilidad: \"may have completed\"."
+    },
+    {
+      "id": "cond3-e13",
+      "prompt": "If the contractor {0} the risks, we {1} a backup plan.",
+      "verbs": [
+        "FLAG",
+        "SHOULD PREPARE"
+      ],
+      "answers": [
+        [
+          "had flagged"
+        ],
+        [
+          "should have prepared",
+          "should've prepared"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had flagged\"); en la principal, \"should have + participio\" expresa lo que era esperable hacer: \"should have prepared\"."
+    },
+    {
+      "id": "cond3-e14",
+      "prompt": "If the intern {0} the production database, we {1} the weekend restoring data.",
+      "verbs": [
+        "NOT DROP",
+        "NOT SPEND"
+      ],
+      "answers": [
+        [
+          "hadn't dropped",
+          "had not dropped"
+        ],
+        [
+          "wouldn't have spent",
+          "would not have spent"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con ambas cláusulas en negativo. En la cláusula \"if\" va Past Perfect negativo (\"hadn't dropped\"); en la principal, \"wouldn't have + participio\": \"wouldn't have spent\"."
+    },
+    {
+      "id": "cond3-e15",
+      "prompt": "Unless the team {0} a rollback plan, the deploy {1} in disaster.",
+      "verbs": [
+        "PREPARE",
+        "END"
+      ],
+      "answers": [
+        [
+          "had prepared"
+        ],
+        [
+          "would have ended",
+          "would've ended"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con el conector \"unless\" (= \"if not\"). Aun así la cláusula lleva Past Perfect (\"had prepared\") y la principal \"would have + participio\": \"would have ended\"."
+    },
+    {
+      "id": "cond3-e16",
+      "prompt": "If only we {0} the contract terms, we {1} the penalty.",
+      "verbs": [
+        "READ",
+        "NOT PAY"
+      ],
+      "answers": [
+        [
+          "had read"
+        ],
+        [
+          "wouldn't have paid",
+          "would not have paid"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con \"if only\" (lamento por el pasado). La cláusula lleva Past Perfect (\"had read\") y la principal \"would have + participio\" en negativo: \"wouldn't have paid\"."
+    },
+    {
+      "id": "cond3-e17",
+      "prompt": "Had the architect {0} the bottleneck, the system {1} under load.",
+      "verbs": [
+        "ANTICIPATE",
+        "NOT CRASH"
+      ],
+      "answers": [
+        [
+          "anticipated"
+        ],
+        [
+          "wouldn't have crashed",
+          "would not have crashed"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional: \"Had + sujeto + participio\" reemplaza a \"If ... had\". Por eso {0} es solo el participio (\"anticipated\") y la principal va \"wouldn't have + participio\": \"wouldn't have crashed\"."
+    },
+    {
+      "id": "cond3-e18",
+      "prompt": "Had we {0} the budget earlier, we {1} more engineers.",
+      "verbs": [
+        "SECURE",
+        "COULD HIRE"
+      ],
+      "answers": [
+        [
+          "secured"
+        ],
+        [
+          "could have hired",
+          "could've hired"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional: \"Had we secured\" equivale a \"If we had secured\". Por eso {0} es solo el participio y la principal va con modal pasado \"could have + participio\": \"could have hired\"."
+    },
+    {
+      "id": "cond3-e19",
+      "prompt": "The startup {1} the funding round if the metrics {0} stronger.",
+      "verbs": [
+        "BE",
+        "COULD CLOSE"
+      ],
+      "answers": [
+        [
+          "had been"
+        ],
+        [
+          "could have closed",
+          "could've closed"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido (principal primero). La cláusula \"if\" lleva Past Perfect (\"had been\") y la principal el modal pasado \"could have + participio\": \"could have closed\"."
+    },
+    {
+      "id": "cond3-e20",
+      "prompt": "If the sales team {0} the proposal on time, the client {1} the renewal.",
+      "verbs": [
+        "SUBMIT",
+        "SIGN"
+      ],
+      "answers": [
+        [
+          "had submitted"
+        ],
+        [
+          "would have signed",
+          "would've signed"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had submitted\"); en la principal va \"would have + participio\": \"would have signed\"."
+    },
+    {
+      "id": "cond3-e21",
+      "prompt": "If the CFO {0} the figures, the board {1} the merger.",
+      "verbs": [
+        "VERIFY",
+        "APPROVE"
+      ],
+      "answers": [
+        [
+          "had verified"
+        ],
+        [
+          "would have approved",
+          "would've approved"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had verified\"); en la principal va \"would have + participio\": \"would have approved\"."
+    },
+    {
+      "id": "cond3-e22",
+      "prompt": "If the firewall {0} updated, the attackers {1} access.",
+      "verbs": [
+        "BE",
+        "NOT GAIN"
+      ],
+      "answers": [
+        [
+          "had been"
+        ],
+        [
+          "wouldn't have gained",
+          "would not have gained"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect en pasiva (\"had been updated\"); en la principal va \"would have + participio\" en negativo: \"wouldn't have gained\"."
+    },
+    {
+      "id": "cond3-e23",
+      "prompt": "If the release notes {0} the change, users {1} the new flow faster.",
+      "verbs": [
+        "EXPLAIN",
+        "MIGHT ADOPT"
+      ],
+      "answers": [
+        [
+          "had explained"
+        ],
+        [
+          "might have adopted",
+          "might've adopted"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had explained\"); en la principal, \"might have + participio\" expresa posibilidad: \"might have adopted\"."
+    },
+    {
+      "id": "cond3-e24",
+      "prompt": "The customers {1} the price increase if we {0} it transparently.",
+      "verbs": [
+        "COMMUNICATE",
+        "MIGHT ACCEPT"
+      ],
+      "answers": [
+        [
+          "had communicated"
+        ],
+        [
+          "might have accepted",
+          "might've accepted"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido (principal primero) y modal pasado. La cláusula \"if\" lleva Past Perfect (\"had communicated\") y la principal \"might have + participio\": \"might have accepted\"."
+    },
+    {
+      "id": "cond3-e25",
+      "prompt": "Had the support team {0} the ticket, the client {1} the contract.",
+      "verbs": [
+        "ESCALATE",
+        "NOT CANCEL"
+      ],
+      "answers": [
+        [
+          "escalated"
+        ],
+        [
+          "wouldn't have cancelled",
+          "would not have cancelled",
+          "wouldn't have canceled",
+          "would not have canceled"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional: \"Had ... escalated\" equivale a \"If ... had escalated\". Por eso {0} es solo el participio y la principal va \"wouldn't have + participio\": \"wouldn't have cancelled\"."
+    },
+    {
+      "id": "cond3-e26",
+      "prompt": "We {1} the module if we {0} how fast traffic would grow.",
+      "verbs": [
+        "REALIZE",
+        "SHOULD REFACTOR"
+      ],
+      "answers": [
+        [
+          "had realized",
+          "had realised"
+        ],
+        [
+          "should have refactored",
+          "should've refactored"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido y modal pasado. La cláusula \"if\" lleva Past Perfect (\"had realized\") y la principal \"should have + participio\", que expresa lo aconsejable: \"should have refactored\"."
+    },
+    {
+      "id": "cond3-e27",
+      "prompt": "If only the PM {0} the scope, the team {1} the burnout.",
+      "verbs": [
+        "LIMIT",
+        "AVOID"
+      ],
+      "answers": [
+        [
+          "had limited"
+        ],
+        [
+          "would have avoided",
+          "would've avoided"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con \"if only\" (lamento por el pasado). La cláusula lleva Past Perfect (\"had limited\") y la principal \"would have + participio\": \"would have avoided\"."
+    },
+    {
+      "id": "cond3-e28",
+      "prompt": "The investors {1} out unless the founder {0} a clear roadmap.",
+      "verbs": [
+        "PRESENT",
+        "PULL"
+      ],
+      "answers": [
+        [
+          "had presented"
+        ],
+        [
+          "would have pulled",
+          "would've pulled"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido y el conector \"unless\" (= \"if not\"). La cláusula lleva Past Perfect (\"had presented\") y la principal \"would have + participio\": \"would have pulled\"."
+    },
+    {
+      "id": "cond3-e29",
+      "prompt": "If the dataset {0} labelled properly, the model {1} better results.",
+      "verbs": [
+        "BE",
+        "COULD PRODUCE"
+      ],
+      "answers": [
+        [
+          "had been"
+        ],
+        [
+          "could have produced",
+          "could've produced"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect en pasiva (\"had been labelled\"); en la principal, \"could have + participio\": \"could have produced\"."
+    },
+    {
+      "id": "cond3-e30",
+      "prompt": "If we {0} the release during peak hours, we {1} thousands of users.",
+      "verbs": [
+        "NOT SCHEDULE",
+        "NOT AFFECT"
+      ],
+      "answers": [
+        [
+          "hadn't scheduled",
+          "had not scheduled"
+        ],
+        [
+          "wouldn't have affected",
+          "would not have affected"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con ambas cláusulas en negativo. En la cláusula \"if\" va Past Perfect negativo (\"hadn't scheduled\"); en la principal, \"wouldn't have + participio\": \"wouldn't have affected\"."
+    },
+    {
+      "id": "cond3-e31",
+      "prompt": "Had the analysts {0} the trend, the company {1} into the new market.",
+      "verbs": [
+        "SPOT",
+        "EXPAND"
+      ],
+      "answers": [
+        [
+          "spotted"
+        ],
+        [
+          "would have expanded",
+          "would've expanded"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional: \"Had ... spotted\" equivale a \"If ... had spotted\". Por eso {0} es solo el participio y la principal va \"would have + participio\": \"would have expanded\"."
+    },
+    {
+      "id": "cond3-e32",
+      "prompt": "Had the recruiter {0} the offer faster, the candidate {1} it.",
+      "verbs": [
+        "SEND",
+        "MIGHT ACCEPT"
+      ],
+      "answers": [
+        [
+          "sent"
+        ],
+        [
+          "might have accepted",
+          "might've accepted"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional con modal pasado: \"Had ... sent\" equivale a \"If ... had sent\". La principal va \"might have + participio\": \"might have accepted\"."
+    },
+    {
+      "id": "cond3-e33",
+      "prompt": "If the developers {0} the unit tests, the regression {1} unnoticed.",
+      "verbs": [
+        "WRITE",
+        "NOT GO"
+      ],
+      "answers": [
+        [
+          "had written"
+        ],
+        [
+          "wouldn't have gone",
+          "would not have gone"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had written\"); en la principal va \"would have + participio\" en negativo: \"wouldn't have gone\"."
+    },
+    {
+      "id": "cond3-e34",
+      "prompt": "The product {1} the award if the design team {0} more time.",
+      "verbs": [
+        "HAVE",
+        "COULD WIN"
+      ],
+      "answers": [
+        [
+          "had had"
+        ],
+        [
+          "could have won",
+          "could've won"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido (principal primero) y modal pasado. La cláusula \"if\" lleva Past Perfect (\"had had\") y la principal \"could have + participio\": \"could have won\"."
+    },
+    {
+      "id": "cond3-e35",
+      "prompt": "If the onboarding {0} smoother, the new hire {1} sooner.",
+      "verbs": [
+        "BE",
+        "CONTRIBUTE"
+      ],
+      "answers": [
+        [
+          "had been"
+        ],
+        [
+          "would have contributed",
+          "would've contributed"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had been\"); en la principal va \"would have + participio\": \"would have contributed\"."
+    },
+    {
+      "id": "cond3-e36",
+      "prompt": "If only the team {0} the dependencies, the build {1}.",
+      "verbs": [
+        "PIN",
+        "NOT BREAK"
+      ],
+      "answers": [
+        [
+          "had pinned"
+        ],
+        [
+          "wouldn't have broken",
+          "would not have broken"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con \"if only\" (lamento por el pasado). La cláusula lleva Past Perfect (\"had pinned\") y la principal \"wouldn't have + participio\": \"wouldn't have broken\"."
+    },
+    {
+      "id": "cond3-e37",
+      "prompt": "Unless the manager {0} the overtime, the project {1} on schedule.",
+      "verbs": [
+        "APPROVE",
+        "NOT STAY"
+      ],
+      "answers": [
+        [
+          "had approved"
+        ],
+        [
+          "wouldn't have stayed",
+          "would not have stayed"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con el conector \"unless\" (= \"if not\"). La cláusula lleva Past Perfect (\"had approved\") y la principal \"wouldn't have + participio\": \"wouldn't have stayed\"."
+    },
+    {
+      "id": "cond3-e38",
+      "prompt": "If the security team {0} the leak, they {1} the credentials immediately.",
+      "verbs": [
+        "DETECT",
+        "SHOULD ROTATE"
+      ],
+      "answers": [
+        [
+          "had detected"
+        ],
+        [
+          "should have rotated",
+          "should've rotated"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had detected\"); en la principal, \"should have + participio\" expresa lo que era aconsejable: \"should have rotated\"."
+    },
+    {
+      "id": "cond3-e39",
+      "prompt": "If the report {0} the risk, the executives {1} differently.",
+      "verbs": [
+        "HIGHLIGHT",
+        "MAY ACT"
+      ],
+      "answers": [
+        [
+          "had highlighted"
+        ],
+        [
+          "may have acted",
+          "might have acted",
+          "might've acted"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had highlighted\"); en la principal, \"may/might have + participio\" expresa posibilidad: \"may have acted\"."
+    },
+    {
+      "id": "cond3-e40",
+      "prompt": "Had the company {0} in automation, it {1} costs sooner.",
+      "verbs": [
+        "INVEST",
+        "COULD CUT"
+      ],
+      "answers": [
+        [
+          "invested"
+        ],
+        [
+          "could have cut",
+          "could've cut"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional con modal pasado: \"Had ... invested\" equivale a \"If ... had invested\". La principal va \"could have + participio\": \"could have cut\"."
+    },
+    {
+      "id": "cond3-e41",
+      "prompt": "The files {1} if the backup job {0} as scheduled.",
+      "verbs": [
+        "RUN",
+        "NOT DISAPPEAR"
+      ],
+      "answers": [
+        [
+          "had run"
+        ],
+        [
+          "wouldn't have disappeared",
+          "would not have disappeared"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido (principal primero). La cláusula \"if\" lleva Past Perfect (\"had run\") y la principal \"wouldn't have + participio\": \"wouldn't have disappeared\"."
+    },
+    {
+      "id": "cond3-e42",
+      "prompt": "If the negotiation {0} better, we {1} a higher margin.",
+      "verbs": [
+        "GO",
+        "SECURE"
+      ],
+      "answers": [
+        [
+          "had gone"
+        ],
+        [
+          "would have secured",
+          "would've secured"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had gone\"); en la principal va \"would have + participio\": \"would have secured\"."
+    },
+    {
+      "id": "cond3-e43",
+      "prompt": "If the prototype {0} the investors, they {1} a second round.",
+      "verbs": [
+        "CONVINCE",
+        "MIGHT FUND"
+      ],
+      "answers": [
+        [
+          "had convinced"
+        ],
+        [
+          "might have funded",
+          "might've funded"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had convinced\"); en la principal, \"might have + participio\" expresa posibilidad: \"might have funded\"."
+    },
+    {
+      "id": "cond3-e44",
+      "prompt": "If the team {0} the incident, they {1} a postmortem the same day.",
+      "verbs": [
+        "LOG",
+        "COULD WRITE"
+      ],
+      "answers": [
+        [
+          "had logged"
+        ],
+        [
+          "could have written",
+          "could've written"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con modal pasado. En la cláusula \"if\" va Past Perfect (\"had logged\"); en la principal, \"could have + participio\" expresa capacidad pasada: \"could have written\"."
+    },
+    {
+      "id": "cond3-e45",
+      "prompt": "Had the auditor {0} the discrepancy, the fine {1} so high.",
+      "verbs": [
+        "REPORT",
+        "NOT BE"
+      ],
+      "answers": [
+        [
+          "reported"
+        ],
+        [
+          "wouldn't have been",
+          "would not have been"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional: \"Had ... reported\" equivale a \"If ... had reported\". Por eso {0} es solo el participio y la principal va \"wouldn't have + participio\": \"wouldn't have been\"."
+    },
+    {
+      "id": "cond3-e46",
+      "prompt": "If the engineers {0} the patch, the ransomware {1} the network.",
+      "verbs": [
+        "APPLY",
+        "NOT REACH"
+      ],
+      "answers": [
+        [
+          "had applied"
+        ],
+        [
+          "wouldn't have reached",
+          "would not have reached"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional. En la cláusula \"if\" va Past Perfect (\"had applied\"); en la principal va \"would have + participio\" en negativo: \"wouldn't have reached\"."
+    },
+    {
+      "id": "cond3-e47",
+      "prompt": "The customer {1} the upgrade if our reps {0} the benefits.",
+      "verbs": [
+        "EXPLAIN",
+        "BUY"
+      ],
+      "answers": [
+        [
+          "had explained"
+        ],
+        [
+          "would have bought",
+          "would've bought"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con orden invertido (principal primero). La cláusula \"if\" lleva Past Perfect (\"had explained\") y la principal \"would have + participio\": \"would have bought\"."
+    },
+    {
+      "id": "cond3-e48",
+      "prompt": "If only we {0} the meeting notes, the misunderstanding {1}.",
+      "verbs": [
+        "SHARE",
+        "NOT HAPPEN"
+      ],
+      "answers": [
+        [
+          "had shared"
+        ],
+        [
+          "wouldn't have happened",
+          "would not have happened"
+        ]
+      ],
+      "justification": "La clave aquí es el 3rd Conditional con \"if only\" (lamento por el pasado). La cláusula lleva Past Perfect (\"had shared\") y la principal \"wouldn't have + participio\": \"wouldn't have happened\"."
+    },
+    {
+      "id": "cond3-e49",
+      "prompt": "Had the board {0} the proposal, the company {1} into Asia last year.",
+      "verbs": [
+        "BACK",
+        "MIGHT EXPAND"
+      ],
+      "answers": [
+        [
+          "backed"
+        ],
+        [
+          "might have expanded",
+          "might've expanded"
+        ]
+      ],
+      "justification": "La clave aquí es la inversión formal del 3rd Conditional con modal pasado: \"Had ... backed\" equivale a \"If ... had backed\". La principal va \"might have + participio\": \"might have expanded\"."
+    }
+  ]
+}

@@ -1,0 +1,909 @@
+{
+  "id": "conditional-second",
+  "name": "2nd Conditional",
+  "explanation": "2nd Conditional: situación irreal o improbable en el presente/futuro. If + Past Simple (be → were/was) en la condición y would + verbo base en la principal (admite could/might/may). Incluye la inversión formal Were ... to. Cada oración tiene dos cláusulas: {0} y {1}.",
+  "keyHint": "Se trata de una situación hipotética o improbable en el presente o futuro.",
+  "original": [
+    {
+      "id": "cond-21",
+      "num": 21,
+      "prompt": "If I {0} you, I {1} your children go out alone at night.",
+      "verbs": [
+        "BE",
+        "NOT LET"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "wouldn't let",
+          "would not let"
+        ]
+      ],
+      "justification": "La clave aquí es la hipótesis del presente (\"If I were you\"), típica del 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\" (\"was\" informal). En la principal va \"would + verbo base\"; en negativo: \"wouldn't let\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "cond2-e1",
+      "prompt": "If we {0} more budget, we {1} a second team.",
+      "verbs": [
+        "HAVE",
+        "HIRE"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "would hire",
+          "'d hire"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional (situación irreal del presente). En la cláusula \"if\" va Past Simple (\"had\"); en la principal va \"would + verbo base\": \"would hire\"."
+    },
+    {
+      "id": "cond2-e2",
+      "prompt": "If the API {0} faster, our clients {1} much happier.",
+      "verbs": [
+        "BE",
+        "BE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\" (\"was\" informal). En la principal va \"would + verbo base\": \"would be\"."
+    },
+    {
+      "id": "cond2-e3",
+      "prompt": "If I {0} the manager, I {1} remote work.",
+      "verbs": [
+        "BE",
+        "ALLOW"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would allow",
+          "'d allow"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\". En la principal va \"would + verbo base\": \"would allow\"."
+    },
+    {
+      "id": "cond2-e4",
+      "prompt": "If the team {0} the data, they {1} better decisions.",
+      "verbs": [
+        "HAVE",
+        "CAN MAKE"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "could make"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de habilidad. En la cláusula \"if\" va Past Simple (\"had\"); en la principal, \"could + verbo base\" sustituye a \"would\": \"could make\"."
+    },
+    {
+      "id": "cond2-e5",
+      "prompt": "If we {0} the price, sales {1} significantly.",
+      "verbs": [
+        "LOWER",
+        "MIGHT RISE"
+      ],
+      "answers": [
+        [
+          "lowered"
+        ],
+        [
+          "might rise"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de posibilidad. En la cláusula \"if\" va Past Simple (\"lowered\"); en la principal, \"might + verbo base\" indica posibilidad: \"might rise\"."
+    },
+    {
+      "id": "cond2-e6",
+      "prompt": "If the client {0} more time, we {1} extra features.",
+      "verbs": [
+        "REQUEST",
+        "MAY ADD"
+      ],
+      "answers": [
+        [
+          "requested"
+        ],
+        [
+          "may add"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de posibilidad débil. En la cláusula \"if\" va Past Simple (\"requested\"); en la principal, \"may + verbo base\": \"may add\"."
+    },
+    {
+      "id": "cond2-e7",
+      "prompt": "Were the vendor to {0} late, we {1} the release.",
+      "verbs": [
+        "DELIVER",
+        "POSTPONE"
+      ],
+      "answers": [
+        [
+          "deliver"
+        ],
+        [
+          "would postpone",
+          "'d postpone"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con inversión formal \"Were + sujeto + to + verbo base\" (hipótesis formal). Por eso {0} es el verbo base (\"deliver\") y la principal va \"would + verbo base\": \"would postpone\"."
+    },
+    {
+      "id": "cond2-e8",
+      "prompt": "We {1} the deadline if we {0} two more developers.",
+      "verbs": [
+        "HAVE",
+        "MEET"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "would meet",
+          "'d meet"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con orden invertido (principal primero, sin coma). La cláusula \"if\" va en Past Simple (\"had\") y la principal en \"would + verbo base\": \"would meet\"."
+    },
+    {
+      "id": "cond2-e9",
+      "prompt": "If the servers {0} more RAM, the app {1} the traffic spike.",
+      "verbs": [
+        "HAVE",
+        "CAN HANDLE"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "could handle"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de habilidad. En la cláusula \"if\" va Past Simple (\"had\"); en la principal, \"could + verbo base\" reemplaza a \"would\": \"could handle\"."
+    },
+    {
+      "id": "cond2-e10",
+      "prompt": "If we {0} the onboarding flow, conversions {1} noticeably.",
+      "verbs": [
+        "SIMPLIFY",
+        "MIGHT IMPROVE"
+      ],
+      "answers": [
+        [
+          "simplified"
+        ],
+        [
+          "might improve"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de posibilidad. En la cláusula \"if\" va Past Simple (\"simplified\"); en la principal, \"might + verbo base\" indica posibilidad: \"might improve\"."
+    },
+    {
+      "id": "cond2-e11",
+      "prompt": "If the sprints {0} shorter, the team {1} more focused.",
+      "verbs": [
+        "BE",
+        "MAY STAY"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "may stay"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de posibilidad débil. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\" (\"was\" informal). En la principal, \"may + verbo base\": \"may stay\"."
+    },
+    {
+      "id": "cond2-e12",
+      "prompt": "If you {0} caching, the dashboard {1} much faster.",
+      "verbs": [
+        "ENABLE",
+        "SHOULD LOAD"
+      ],
+      "answers": [
+        [
+          "enabled"
+        ],
+        [
+          "should load"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de expectativa. En la cláusula \"if\" va Past Simple (\"enabled\"); en la principal, \"should + verbo base\" expresa lo esperable: \"should load\"."
+    },
+    {
+      "id": "cond2-e13",
+      "prompt": "If the client {0} a full refund, we {1} to escalate the case.",
+      "verbs": [
+        "DEMAND",
+        "WOULD HAVE"
+      ],
+      "answers": [
+        [
+          "demanded"
+        ],
+        [
+          "would have",
+          "'d have"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"demanded\"); en la principal, \"would have to\" indica obligación hipotética: \"would have\" (to escalate)."
+    },
+    {
+      "id": "cond2-e14",
+      "prompt": "If he {0} about quality, he {1} the code before merging.",
+      "verbs": [
+        "CARE",
+        "OUGHT TO REVIEW"
+      ],
+      "answers": [
+        [
+          "cared"
+        ],
+        [
+          "ought to review"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de expectativa moral. En la cláusula \"if\" va Past Simple (\"cared\"); en la principal, \"ought to + verbo base\": \"ought to review\"."
+    },
+    {
+      "id": "cond2-e15",
+      "prompt": "Unless we {0} the tests, we {1} the pipeline.",
+      "verbs": [
+        "AUTOMATE",
+        "NOT TRUST"
+      ],
+      "answers": [
+        [
+          "automated"
+        ],
+        [
+          "wouldn't trust",
+          "would not trust"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con \"unless\" (= \"if not\"). En la cláusula va Past Simple (\"automated\") y la principal en negativo con \"would\": \"wouldn't trust\"."
+    },
+    {
+      "id": "cond2-e16",
+      "prompt": "As long as the budget {0} it, we {1} the platform.",
+      "verbs": [
+        "ALLOW",
+        "EXPAND"
+      ],
+      "answers": [
+        [
+          "allowed"
+        ],
+        [
+          "would expand",
+          "'d expand"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con el conector \"as long as\". En la condición va Past Simple (\"allowed\") y la principal \"would + verbo base\": \"would expand\"."
+    },
+    {
+      "id": "cond2-e17",
+      "prompt": "Provided that the data {0} accurate, the model {1} reliable forecasts.",
+      "verbs": [
+        "BE",
+        "PRODUCE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would produce",
+          "'d produce"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con \"provided that\". En la condición va Past Simple; con \"be\" se prefiere \"were\". En la principal, \"would + verbo base\": \"would produce\"."
+    },
+    {
+      "id": "cond2-e18",
+      "prompt": "Even if we {0} the price, loyal customers {1}.",
+      "verbs": [
+        "DOUBLE",
+        "STAY"
+      ],
+      "answers": [
+        [
+          "doubled"
+        ],
+        [
+          "would stay",
+          "'d stay"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional concesivo con \"even if\". En la condición va Past Simple (\"doubled\") y la principal \"would + verbo base\": \"would stay\"."
+    },
+    {
+      "id": "cond2-e19",
+      "prompt": "Were the company to {0} remote work, productivity {1}.",
+      "verbs": [
+        "BAN",
+        "MIGHT DROP"
+      ],
+      "answers": [
+        [
+          "ban"
+        ],
+        [
+          "might drop"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con inversión formal \"Were + sujeto + to + verbo base\". Por eso {0} es el verbo base (\"ban\") y la principal usa el modal \"might + verbo base\": \"might drop\"."
+    },
+    {
+      "id": "cond2-e20",
+      "prompt": "Were the budget to {0}, we {1} more contractors.",
+      "verbs": [
+        "DOUBLE",
+        "CAN HIRE"
+      ],
+      "answers": [
+        [
+          "double"
+        ],
+        [
+          "could hire"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con inversión formal \"Were + sujeto + to + verbo base\" (\"double\") y modal de habilidad en la principal: \"could hire\"."
+    },
+    {
+      "id": "cond2-e21",
+      "prompt": "If I {0} the product owner, I {1} the entire backlog.",
+      "verbs": [
+        "BE",
+        "REPRIORITIZE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would reprioritize",
+          "'d reprioritize"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional (hipótesis irreal del presente). En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\". En la principal, \"would + verbo base\": \"would reprioritize\"."
+    },
+    {
+      "id": "cond2-e22",
+      "prompt": "If the CEO {0} more transparent, the staff {1} her decisions.",
+      "verbs": [
+        "BE",
+        "TRUST"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would trust",
+          "'d trust"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\". En la principal, \"would + verbo base\": \"would trust\"."
+    },
+    {
+      "id": "cond2-e23",
+      "prompt": "The app {1} offline if it {0} a local cache.",
+      "verbs": [
+        "HAVE",
+        "CAN WORK"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "could work"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con orden invertido (principal primero). La condición va en Past Simple (\"had\") y la principal con modal de habilidad: \"could work\"."
+    },
+    {
+      "id": "cond2-e24",
+      "prompt": "We {1} the root cause faster if we {0} better logging.",
+      "verbs": [
+        "HAVE",
+        "MIGHT FIND"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "might find"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con orden invertido y modal de posibilidad. La condición va en Past Simple (\"had\") y la principal \"might + verbo base\": \"might find\"."
+    },
+    {
+      "id": "cond2-e25",
+      "prompt": "If the client {0} so many last-minute changes, we {1} on time.",
+      "verbs": [
+        "NOT REQUEST",
+        "DELIVER"
+      ],
+      "answers": [
+        [
+          "didn't request",
+          "did not request"
+        ],
+        [
+          "would deliver",
+          "'d deliver"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con condición negativa. En la cláusula \"if\" va Past Simple negativo (\"didn't request\") y la principal \"would + verbo base\": \"would deliver\"."
+    },
+    {
+      "id": "cond2-e26",
+      "prompt": "If management {0} the team more, morale {1}.",
+      "verbs": [
+        "TRUST",
+        "NOT DROP"
+      ],
+      "answers": [
+        [
+          "trusted"
+        ],
+        [
+          "wouldn't drop",
+          "would not drop"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"trusted\") y la principal en negativo con \"would\": \"wouldn't drop\"."
+    },
+    {
+      "id": "cond2-e27",
+      "prompt": "If the stakeholders {0} to our advice, the project {1} on schedule.",
+      "verbs": [
+        "LISTEN",
+        "STAY"
+      ],
+      "answers": [
+        [
+          "listened"
+        ],
+        [
+          "would stay",
+          "'d stay"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"listened\") y la principal \"would + verbo base\": \"would stay\"."
+    },
+    {
+      "id": "cond2-e28",
+      "prompt": "If our startup {0} more funding, we {1} into new markets.",
+      "verbs": [
+        "RAISE",
+        "CAN EXPAND"
+      ],
+      "answers": [
+        [
+          "raised"
+        ],
+        [
+          "could expand"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de habilidad. En la cláusula \"if\" va Past Simple (\"raised\"); en la principal, \"could + verbo base\": \"could expand\"."
+    },
+    {
+      "id": "cond2-e29",
+      "prompt": "If the release {0} this Friday, QA {1} enough time to test.",
+      "verbs": [
+        "SHIP",
+        "NOT HAVE"
+      ],
+      "answers": [
+        [
+          "shipped"
+        ],
+        [
+          "wouldn't have",
+          "would not have"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"shipped\") y la principal en negativo con \"would\": \"wouldn't have\" (enough time)."
+    },
+    {
+      "id": "cond2-e30",
+      "prompt": "If the API {0} rate limits, the integration {1} much more stable.",
+      "verbs": [
+        "NOT HAVE",
+        "BE"
+      ],
+      "answers": [
+        [
+          "didn't have",
+          "did not have"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con condición negativa. En la cláusula \"if\" va Past Simple negativo (\"didn't have\") y la principal \"would + verbo base\": \"would be\"."
+    },
+    {
+      "id": "cond2-e31",
+      "prompt": "If we {0} microservices, scaling {1} far simpler.",
+      "verbs": [
+        "ADOPT",
+        "BE"
+      ],
+      "answers": [
+        [
+          "adopted"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"adopted\") y la principal \"would + verbo base\": \"would be\"."
+    },
+    {
+      "id": "cond2-e32",
+      "prompt": "If the database {0} indexed properly, queries {1} in milliseconds.",
+      "verbs": [
+        "BE",
+        "RUN"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would run",
+          "'d run"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\". En la principal, \"would + verbo base\": \"would run\"."
+    },
+    {
+      "id": "cond2-e33",
+      "prompt": "Customers {1} less if the support team {0} faster.",
+      "verbs": [
+        "RESPOND",
+        "MIGHT CHURN"
+      ],
+      "answers": [
+        [
+          "responded"
+        ],
+        [
+          "might churn"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con orden invertido y modal de posibilidad. La condición va en Past Simple (\"responded\") y la principal \"might + verbo base\": \"might churn\"."
+    },
+    {
+      "id": "cond2-e34",
+      "prompt": "If I {0} in charge of hiring, I {1} the whole process.",
+      "verbs": [
+        "BE",
+        "STREAMLINE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would streamline",
+          "'d streamline"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\". En la principal, \"would + verbo base\": \"would streamline\"."
+    },
+    {
+      "id": "cond2-e35",
+      "prompt": "Unless the vendor {0} the SLA, we {1} a new provider.",
+      "verbs": [
+        "MEET",
+        "CONSIDER"
+      ],
+      "answers": [
+        [
+          "met"
+        ],
+        [
+          "would consider",
+          "'d consider"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con \"unless\" (= \"if not\"). En la condición va Past Simple (\"met\") y la principal \"would + verbo base\": \"would consider\"."
+    },
+    {
+      "id": "cond2-e36",
+      "prompt": "If the meeting {0} an agenda, it {1} half the time.",
+      "verbs": [
+        "HAVE",
+        "MIGHT TAKE"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "might take"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de posibilidad. En la cláusula \"if\" va Past Simple (\"had\") y la principal \"might + verbo base\": \"might take\"."
+    },
+    {
+      "id": "cond2-e37",
+      "prompt": "The roadmap {1} more realistic if we {0} the team's velocity.",
+      "verbs": [
+        "KNOW",
+        "BE"
+      ],
+      "answers": [
+        [
+          "knew"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con orden invertido (principal primero). La condición va en Past Simple (\"knew\") y la principal \"would + verbo base\": \"would be\"."
+    },
+    {
+      "id": "cond2-e38",
+      "prompt": "If the office {0} closer, fewer employees {1} to relocate.",
+      "verbs": [
+        "BE",
+        "REFUSE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would refuse",
+          "'d refuse"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\". En la principal, \"would + verbo base\": \"would refuse\"."
+    },
+    {
+      "id": "cond2-e39",
+      "prompt": "Provided that the rollout {0} smoothly, we {1} it to all regions.",
+      "verbs": [
+        "GO",
+        "EXTEND"
+      ],
+      "answers": [
+        [
+          "went"
+        ],
+        [
+          "would extend",
+          "'d extend"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con \"provided that\". En la condición va Past Simple (\"went\") y la principal \"would + verbo base\": \"would extend\"."
+    },
+    {
+      "id": "cond2-e40",
+      "prompt": "If the codebase {0} less technical debt, onboarding {1} much easier.",
+      "verbs": [
+        "HAVE",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"had\") y la principal \"would + verbo base\": \"would be\"."
+    },
+    {
+      "id": "cond2-e41",
+      "prompt": "If we {0} the standup to ten minutes, the team {1} more time to code.",
+      "verbs": [
+        "LIMIT",
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "limited"
+        ],
+        [
+          "would have",
+          "'d have"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"limited\") y la principal \"would + verbo base\": \"would have\"."
+    },
+    {
+      "id": "cond2-e42",
+      "prompt": "As long as the metrics {0} positive, investors {1} calm.",
+      "verbs": [
+        "STAY",
+        "REMAIN"
+      ],
+      "answers": [
+        [
+          "stayed"
+        ],
+        [
+          "would remain",
+          "'d remain"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con el conector \"as long as\". En la condición va Past Simple (\"stayed\") y la principal \"would + verbo base\": \"would remain\"."
+    },
+    {
+      "id": "cond2-e43",
+      "prompt": "If the deployment {0} automated, we {1} so many manual errors.",
+      "verbs": [
+        "BE",
+        "NOT MAKE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "wouldn't make",
+          "would not make"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple; con \"be\" se prefiere \"were\". En la principal va negativo con \"would\": \"wouldn't make\"."
+    },
+    {
+      "id": "cond2-e44",
+      "prompt": "Even if the demo {0}, the client {1} the contract.",
+      "verbs": [
+        "FAIL",
+        "MIGHT SIGN"
+      ],
+      "answers": [
+        [
+          "failed"
+        ],
+        [
+          "might sign"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional concesivo con \"even if\" y modal de posibilidad. En la condición va Past Simple (\"failed\") y la principal \"might + verbo base\": \"might sign\"."
+    },
+    {
+      "id": "cond2-e45",
+      "prompt": "If churn {0} below five percent, revenue {1} predictable.",
+      "verbs": [
+        "STAY",
+        "BECOME"
+      ],
+      "answers": [
+        [
+          "stayed"
+        ],
+        [
+          "would become",
+          "'d become"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"stayed\") y la principal \"would + verbo base\": \"would become\"."
+    },
+    {
+      "id": "cond2-e46",
+      "prompt": "Were the board to {0} the merger, the stock {1}.",
+      "verbs": [
+        "APPROVE",
+        "SOAR"
+      ],
+      "answers": [
+        [
+          "approve"
+        ],
+        [
+          "would soar",
+          "'d soar"
+        ]
+      ],
+      "justification": "La clave aquí es un 2nd Conditional con inversión formal \"Were + sujeto + to + verbo base\" (\"approve\") y la principal \"would + verbo base\": \"would soar\"."
+    },
+    {
+      "id": "cond2-e47",
+      "prompt": "If the QA team {0} more resources, releases {1} far fewer bugs.",
+      "verbs": [
+        "GET",
+        "CONTAIN"
+      ],
+      "answers": [
+        [
+          "got"
+        ],
+        [
+          "would contain",
+          "'d contain"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional. En la cláusula \"if\" va Past Simple (\"got\") y la principal \"would + verbo base\": \"would contain\"."
+    },
+    {
+      "id": "cond2-e48",
+      "prompt": "We {1} the legacy system tomorrow if migration {0} so risky.",
+      "verbs": [
+        "NOT BE",
+        "REPLACE"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would replace",
+          "'d replace"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con orden invertido y condición negativa. La condición va en Past Simple; con \"be\" se prefiere \"weren't\" (\"wasn't\" informal). La principal va \"would + verbo base\": \"would replace\"."
+    },
+    {
+      "id": "cond2-e49",
+      "prompt": "If the dashboard {0} real-time data, managers {1} faster decisions.",
+      "verbs": [
+        "SHOW",
+        "CAN MAKE"
+      ],
+      "answers": [
+        [
+          "showed"
+        ],
+        [
+          "could make"
+        ]
+      ],
+      "justification": "La clave aquí es el 2nd Conditional con modal de habilidad. En la cláusula \"if\" va Past Simple (\"showed\"); en la principal, \"could + verbo base\": \"could make\"."
+    }
+  ]
+}

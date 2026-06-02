@@ -1,0 +1,743 @@
+{
+  "id": "present-continuous",
+  "name": "Present Continuous",
+  "explanation": "Describe acciones en curso en el momento de hablar o situaciones temporales. Forma: am/is/are + verbo-ing.",
+  "original": [
+    {
+      "id": "pc-7b",
+      "num": 7,
+      "prompt": "I have been learning English for the past two years and now I {0} Russian too.",
+      "verbs": [
+        "STUDY"
+      ],
+      "answers": [
+        [
+          "am studying",
+          "'m studying"
+        ]
+      ],
+      "justification": "La clave aquí es \"now\", que señala una acción en curso en este momento; por lo tanto va Present Continuous. La regla del Present Continuous es \"am/is/are + verbo-ing\"; con el sujeto \"I\" usamos \"am\": \"am studying\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "pc-e1",
+      "prompt": "Look! The children {0} in the garden.",
+      "verbs": [
+        "PLAY"
+      ],
+      "answers": [
+        [
+          "are playing",
+          "'re playing"
+        ]
+      ],
+      "justification": "La clave aquí es \"Look!\", que llama la atención sobre algo que ocurre justo ahora; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"the children\" usamos \"are\": \"are playing\"."
+    },
+    {
+      "id": "pc-e2",
+      "prompt": "She {0} a very interesting book at the moment.",
+      "verbs": [
+        "READ"
+      ],
+      "answers": [
+        [
+          "is reading",
+          "'s reading"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que señala una acción temporal en curso; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"she\" (3ª persona singular) usamos \"is\": \"is reading\"."
+    },
+    {
+      "id": "pc-e3",
+      "prompt": "I {0} for my exam this week, so I can't go out.",
+      "verbs": [
+        "STUDY"
+      ],
+      "answers": [
+        [
+          "am studying",
+          "'m studying"
+        ]
+      ],
+      "justification": "La clave aquí es \"this week\", que marca un periodo temporal alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"I\" usamos \"am\": \"am studying\"."
+    },
+    {
+      "id": "pc-e4",
+      "prompt": "They {0} a new house right now.",
+      "verbs": [
+        "BUILD"
+      ],
+      "answers": [
+        [
+          "are building",
+          "'re building"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en progreso en este preciso instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"they\" usamos \"are\": \"are building\"."
+    },
+    {
+      "id": "pc-e5",
+      "prompt": "Why {0} you {1}? We are in a library!",
+      "verbs": [
+        "SHOUT"
+      ],
+      "answers": [
+        [
+          "are"
+        ],
+        [
+          "shouting"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por algo que está pasando ahora mismo (estás gritando en este momento); por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con \"you\" usamos \"are\": \"Why are you shouting?\"."
+    },
+    {
+      "id": "pc-e6",
+      "prompt": "The DevOps team {0} the new release to production right now.",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "is deploying",
+          "'s deploying"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en curso en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the team\" usamos \"is\": \"is deploying\"."
+    },
+    {
+      "id": "pc-e7",
+      "prompt": "Our servers {0} unusually slowly this morning.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "are running",
+          "'re running"
+        ]
+      ],
+      "justification": "La clave aquí es \"this morning\", un periodo temporal alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"our servers\" usamos \"are\": \"are running\"."
+    },
+    {
+      "id": "pc-e8",
+      "prompt": "I {0} the API logs at the moment to find the bug.",
+      "verbs": [
+        "CHECK"
+      ],
+      "answers": [
+        [
+          "am checking",
+          "'m checking"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que señala una acción temporal en curso; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"I\" usamos \"am\": \"am checking\"."
+    },
+    {
+      "id": "pc-e9",
+      "prompt": "The build {0} right now because of a broken dependency.",
+      "verbs": [
+        "NOT WORK"
+      ],
+      "answers": [
+        [
+          "isn't working",
+          "is not working",
+          "'s not working"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que apunta a algo que ocurre en este instante; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con \"the build\" usamos \"is\": \"isn't working\"."
+    },
+    {
+      "id": "pc-e10",
+      "prompt": "Why {0} the client {1} about the latest invoice?",
+      "verbs": [
+        "COMPLAIN"
+      ],
+      "answers": [
+        [
+          "is"
+        ],
+        [
+          "complaining"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por algo que está pasando ahora; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con \"the client\" usamos \"is\": \"Why is the client complaining?\"."
+    },
+    {
+      "id": "pc-e11",
+      "prompt": "We {0} a new authentication service this sprint.",
+      "verbs": [
+        "BUILD"
+      ],
+      "answers": [
+        [
+          "are building",
+          "'re building"
+        ]
+      ],
+      "justification": "La clave aquí es \"this sprint\", un periodo temporal alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"we\" usamos \"are\": \"are building\"."
+    },
+    {
+      "id": "pc-e12",
+      "prompt": "The project manager {0} the standup meeting at the moment.",
+      "verbs": [
+        "LEAD"
+      ],
+      "answers": [
+        [
+          "is leading",
+          "'s leading"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que indica una acción en curso; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the project manager\" usamos \"is\": \"is leading\"."
+    },
+    {
+      "id": "pc-e13",
+      "prompt": "I {0} on the frontend today; I'm focused on the backend instead.",
+      "verbs": [
+        "NOT WORK"
+      ],
+      "answers": [
+        [
+          "am not working",
+          "'m not working"
+        ]
+      ],
+      "justification": "La clave aquí es \"today\", un marco temporal del presente que contrasta dos tareas en curso; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con \"I\" usamos \"am\": \"am not working\"."
+    },
+    {
+      "id": "pc-e14",
+      "prompt": "Listen! The on-call engineer {0} about the outage right now.",
+      "verbs": [
+        "TALK"
+      ],
+      "answers": [
+        [
+          "is talking",
+          "'s talking"
+        ]
+      ],
+      "justification": "La clave aquí es \"Listen!\", que llama la atención sobre algo que ocurre en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con \"the engineer\" usamos \"is\": \"is talking\"."
+    },
+    {
+      "id": "pc-e15",
+      "prompt": "{0} you {1} the demo for the client this afternoon?",
+      "verbs": [
+        "PREPARE"
+      ],
+      "answers": [
+        [
+          "are",
+          "Are"
+        ],
+        [
+          "preparing"
+        ]
+      ],
+      "justification": "La clave aquí es \"this afternoon\", un plan temporal alrededor del presente; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con \"you\" usamos \"are\": \"Are you preparing?\"."
+    },
+    {
+      "id": "pc-e16",
+      "prompt": "The QA team {0} the new payment flow right now.",
+      "verbs": [
+        "TEST"
+      ],
+      "answers": [
+        [
+          "is testing",
+          "'s testing"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en progreso en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the QA team\" usamos \"is\": \"is testing\"."
+    },
+    {
+      "id": "pc-e17",
+      "prompt": "Two new developers {0} the codebase this week.",
+      "verbs": [
+        "ONBOARD"
+      ],
+      "answers": [
+        [
+          "are onboarding",
+          "'re onboarding"
+        ]
+      ],
+      "justification": "La clave aquí es \"this week\", un periodo temporal alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"two new developers\" usamos \"are\": \"are onboarding\"."
+    },
+    {
+      "id": "pc-e18",
+      "prompt": "The database {0} any new connections at the moment.",
+      "verbs": [
+        "NOT ACCEPT"
+      ],
+      "answers": [
+        [
+          "isn't accepting",
+          "is not accepting",
+          "'s not accepting"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que señala un estado temporal en curso; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con \"the database\" usamos \"is\": \"isn't accepting\"."
+    },
+    {
+      "id": "pc-e19",
+      "prompt": "What {0} the support team {1} about the recurring crash?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "is"
+        ],
+        [
+          "doing"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por una acción en curso ahora mismo; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con \"the support team\" usamos \"is\": \"What is the support team doing?\"."
+    },
+    {
+      "id": "pc-e20",
+      "prompt": "I {0} the release notes while the pipeline finishes.",
+      "verbs": [
+        "WRITE"
+      ],
+      "answers": [
+        [
+          "am writing",
+          "'m writing"
+        ]
+      ],
+      "justification": "La clave aquí es la acción simultánea \"while the pipeline finishes\", que ocurre en este momento; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"I\" usamos \"am\": \"am writing\"."
+    },
+    {
+      "id": "pc-e21",
+      "prompt": "Our clients {0} more features in every meeting these days.",
+      "verbs": [
+        "REQUEST"
+      ],
+      "answers": [
+        [
+          "are requesting",
+          "'re requesting"
+        ]
+      ],
+      "justification": "La clave aquí es \"these days\", un periodo temporal alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"our clients\" usamos \"are\": \"are requesting\"."
+    },
+    {
+      "id": "pc-e22",
+      "prompt": "The senior developer {0} the junior on the new framework right now.",
+      "verbs": [
+        "TRAIN"
+      ],
+      "answers": [
+        [
+          "is training",
+          "'s training"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en curso en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con \"the senior developer\" usamos \"is\": \"is training\"."
+    },
+    {
+      "id": "pc-e23",
+      "prompt": "We {0} the legacy system this quarter; we're upgrading it instead.",
+      "verbs": [
+        "NOT MAINTAIN"
+      ],
+      "answers": [
+        [
+          "aren't maintaining",
+          "are not maintaining",
+          "'re not maintaining"
+        ]
+      ],
+      "justification": "La clave aquí es \"this quarter\", un periodo temporal del presente; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con \"we\" usamos \"are\": \"aren't maintaining\"."
+    },
+    {
+      "id": "pc-e24",
+      "prompt": "Why {0} the dashboard {1} the latest metrics?",
+      "verbs": [
+        "NOT SHOW"
+      ],
+      "answers": [
+        [
+          "isn't",
+          "is not"
+        ],
+        [
+          "showing"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por algo que ocurre (o falla) ahora mismo; por lo tanto va Present Continuous. En pregunta negativa la regla es \"isn't/aren't + sujeto + verbo-ing\"; con \"the dashboard\" usamos \"isn't\": \"Why isn't the dashboard showing?\"."
+    },
+    {
+      "id": "pc-e25",
+      "prompt": "The marketing team and the developers {0} on the launch campaign this month.",
+      "verbs": [
+        "COLLABORATE"
+      ],
+      "answers": [
+        [
+          "are collaborating",
+          "'re collaborating"
+        ]
+      ],
+      "justification": "La clave aquí es \"this month\", un periodo temporal alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural compuesto usamos \"are\": \"are collaborating\"."
+    },
+    {
+      "id": "pc-e26",
+      "prompt": "The CTO {0} a keynote at the tech conference this week.",
+      "verbs": [
+        "GIVE"
+      ],
+      "answers": [
+        [
+          "is giving",
+          "'s giving"
+        ]
+      ],
+      "justification": "La clave aquí es \"this week\", que marca un plan acordado dentro del marco del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the CTO\" usamos \"is\": \"is giving\"."
+    },
+    {
+      "id": "pc-e27",
+      "prompt": "We {0} to a microservices architecture this year.",
+      "verbs": [
+        "MIGRATE"
+      ],
+      "answers": [
+        [
+          "are migrating",
+          "'re migrating"
+        ]
+      ],
+      "justification": "La clave aquí es \"this year\", un periodo extenso que rodea el presente y describe una transición en curso; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"we\" usamos \"are\": \"are migrating\"."
+    },
+    {
+      "id": "pc-e28",
+      "prompt": "The interns {0} the technical documentation right now.",
+      "verbs": [
+        "UPDATE"
+      ],
+      "answers": [
+        [
+          "are updating",
+          "'re updating"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en progreso en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"the interns\" usamos \"are\": \"are updating\"."
+    },
+    {
+      "id": "pc-e29",
+      "prompt": "{0} the sales team {1} the new CRM this quarter?",
+      "verbs": [
+        "ADOPT"
+      ],
+      "answers": [
+        [
+          "Are",
+          "are"
+        ],
+        [
+          "adopting"
+        ]
+      ],
+      "justification": "La clave aquí es \"this quarter\", un periodo temporal alrededor del presente; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con el sujeto plural \"the sales team\" usamos \"are\": \"Are the sales team adopting?\"."
+    },
+    {
+      "id": "pc-e30",
+      "prompt": "The CEO {0} in back-to-back meetings all morning.",
+      "verbs": [
+        "SIT"
+      ],
+      "answers": [
+        [
+          "is sitting",
+          "'s sitting"
+        ]
+      ],
+      "justification": "La clave aquí es \"all morning\", un periodo temporal del presente que enmarca una situación en curso; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the CEO\" usamos \"is\": \"is sitting\"."
+    },
+    {
+      "id": "pc-e31",
+      "prompt": "I {0} the pull request right now, so give me five minutes.",
+      "verbs": [
+        "REVIEW"
+      ],
+      "answers": [
+        [
+          "am reviewing",
+          "'m reviewing"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en progreso en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"I\" usamos \"am\": \"am reviewing\"."
+    },
+    {
+      "id": "pc-e32",
+      "prompt": "The new feature {0} as expected at the moment.",
+      "verbs": [
+        "NOT BEHAVE"
+      ],
+      "answers": [
+        [
+          "isn't behaving",
+          "is not behaving",
+          "'s not behaving"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que señala un estado temporal en curso; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con \"the new feature\" usamos \"is\": \"isn't behaving\"."
+    },
+    {
+      "id": "pc-e33",
+      "prompt": "More and more companies {0} remote work these days.",
+      "verbs": [
+        "EMBRACE"
+      ],
+      "answers": [
+        [
+          "are embracing",
+          "'re embracing"
+        ]
+      ],
+      "justification": "La clave aquí es \"these days\", que describe una tendencia cambiante alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"more and more companies\" usamos \"are\": \"are embracing\"."
+    },
+    {
+      "id": "pc-e34",
+      "prompt": "Why {0} the pipeline {1} on the integration tests?",
+      "verbs": [
+        "FAIL"
+      ],
+      "answers": [
+        [
+          "is"
+        ],
+        [
+          "failing"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por algo que está ocurriendo (o fallando) ahora mismo; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con \"the pipeline\" usamos \"is\": \"Why is the pipeline failing?\"."
+    },
+    {
+      "id": "pc-e35",
+      "prompt": "We {0} any new candidates this month because of the hiring freeze.",
+      "verbs": [
+        "NOT INTERVIEW"
+      ],
+      "answers": [
+        [
+          "aren't interviewing",
+          "are not interviewing",
+          "'re not interviewing"
+        ]
+      ],
+      "justification": "La clave aquí es \"this month\", un periodo temporal del presente; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con \"we\" usamos \"are\": \"aren't interviewing\"."
+    },
+    {
+      "id": "pc-e36",
+      "prompt": "The designers {0} the entire user interface this sprint.",
+      "verbs": [
+        "REDESIGN"
+      ],
+      "answers": [
+        [
+          "are redesigning",
+          "'re redesigning"
+        ]
+      ],
+      "justification": "La clave aquí es \"this sprint\", un periodo temporal alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"the designers\" usamos \"are\": \"are redesigning\"."
+    },
+    {
+      "id": "pc-e37",
+      "prompt": "Our monthly revenue {0} steadily quarter after quarter.",
+      "verbs": [
+        "GROW"
+      ],
+      "answers": [
+        [
+          "is growing",
+          "'s growing"
+        ]
+      ],
+      "justification": "La clave aquí es \"steadily quarter after quarter\", que describe una tendencia en desarrollo; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"our monthly revenue\" usamos \"is\": \"is growing\"."
+    },
+    {
+      "id": "pc-e38",
+      "prompt": "{0} you {1} on the migration script at the moment?",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "Are",
+          "are"
+        ],
+        [
+          "working"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que señala una acción en curso; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con \"you\" usamos \"are\": \"Are you working?\"."
+    },
+    {
+      "id": "pc-e39",
+      "prompt": "The vendor {0} our support emails this week.",
+      "verbs": [
+        "NOT ANSWER"
+      ],
+      "answers": [
+        [
+          "isn't answering",
+          "is not answering",
+          "'s not answering"
+        ]
+      ],
+      "justification": "La clave aquí es \"this week\", un periodo temporal del presente; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con el sujeto singular \"the vendor\" usamos \"is\": \"isn't answering\"."
+    },
+    {
+      "id": "pc-e40",
+      "prompt": "Listen, the architect {0} the new system design to the team.",
+      "verbs": [
+        "EXPLAIN"
+      ],
+      "answers": [
+        [
+          "is explaining",
+          "'s explaining"
+        ]
+      ],
+      "justification": "La clave aquí es \"Listen\", que llama la atención sobre algo que ocurre justo ahora; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the architect\" usamos \"is\": \"is explaining\"."
+    },
+    {
+      "id": "pc-e41",
+      "prompt": "The stakeholders {0} the budget proposal right now.",
+      "verbs": [
+        "DISCUSS"
+      ],
+      "answers": [
+        [
+          "are discussing",
+          "'re discussing"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en progreso en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"the stakeholders\" usamos \"are\": \"are discussing\"."
+    },
+    {
+      "id": "pc-e42",
+      "prompt": "I {0} the meeting today because I'm on leave.",
+      "verbs": [
+        "NOT ATTEND"
+      ],
+      "answers": [
+        [
+          "am not attending",
+          "'m not attending"
+        ]
+      ],
+      "justification": "La clave aquí es \"today\", un marco temporal del presente; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con \"I\" usamos \"am\": \"am not attending\"."
+    },
+    {
+      "id": "pc-e43",
+      "prompt": "Why {0} the data team {1} those logs at the moment?",
+      "verbs": [
+        "ANALYZE"
+      ],
+      "answers": [
+        [
+          "is"
+        ],
+        [
+          "analyzing",
+          "analysing"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que apunta a una acción en curso ahora mismo; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con \"the data team\" usamos \"is\": \"Why is the data team analyzing?\"."
+    },
+    {
+      "id": "pc-e44",
+      "prompt": "The number of active users {0} every day this month.",
+      "verbs": [
+        "RISE"
+      ],
+      "answers": [
+        [
+          "is rising",
+          "'s rising"
+        ]
+      ],
+      "justification": "La clave aquí es \"every day this month\", que describe una tendencia creciente alrededor del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the number of active users\" usamos \"is\": \"is rising\"."
+    },
+    {
+      "id": "pc-e45",
+      "prompt": "We {0} the contract with the new supplier this afternoon.",
+      "verbs": [
+        "SIGN"
+      ],
+      "answers": [
+        [
+          "are signing",
+          "'re signing"
+        ]
+      ],
+      "justification": "La clave aquí es \"this afternoon\", un plan acordado dentro del marco del presente; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto \"we\" usamos \"are\": \"are signing\"."
+    },
+    {
+      "id": "pc-e46",
+      "prompt": "The system {0} backups at the moment, so performance is slow.",
+      "verbs": [
+        "PERFORM"
+      ],
+      "answers": [
+        [
+          "is performing",
+          "'s performing"
+        ]
+      ],
+      "justification": "La clave aquí es \"at the moment\", que señala una acción temporal en curso; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto singular \"the system\" usamos \"is\": \"is performing\"."
+    },
+    {
+      "id": "pc-e47",
+      "prompt": "The developers {0} the bug in the payment module right now.",
+      "verbs": [
+        "FIX"
+      ],
+      "answers": [
+        [
+          "are fixing",
+          "'re fixing"
+        ]
+      ],
+      "justification": "La clave aquí es \"right now\", que indica una acción en progreso en este instante; por lo tanto va Present Continuous. La regla es \"am/is/are + verbo-ing\"; con el sujeto plural \"the developers\" usamos \"are\": \"are fixing\"."
+    },
+    {
+      "id": "pc-e48",
+      "prompt": "{0} the manager {1} anyone to the new project this week?",
+      "verbs": [
+        "ASSIGN"
+      ],
+      "answers": [
+        [
+          "Is",
+          "is"
+        ],
+        [
+          "assigning"
+        ]
+      ],
+      "justification": "La clave aquí es \"this week\", un periodo temporal del presente; por lo tanto va Present Continuous. En pregunta, la regla invierte el orden: \"am/is/are + sujeto + verbo-ing\"; con el sujeto singular \"the manager\" usamos \"is\": \"Is the manager assigning?\"."
+    },
+    {
+      "id": "pc-e49",
+      "prompt": "The company {0} new staff this year because of the recession.",
+      "verbs": [
+        "NOT HIRE"
+      ],
+      "answers": [
+        [
+          "isn't hiring",
+          "is not hiring",
+          "'s not hiring"
+        ]
+      ],
+      "justification": "La clave aquí es \"this year\", un periodo extenso que rodea el presente; por lo tanto va Present Continuous. En negativo la regla es \"am/is/are + not + verbo-ing\"; con el sujeto singular \"the company\" usamos \"is\": \"isn't hiring\"."
+    }
+  ]
+}

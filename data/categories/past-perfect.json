@@ -1,0 +1,733 @@
+{
+  "id": "past-perfect",
+  "name": "Past Perfect",
+  "explanation": "Acción que ocurrió ANTES de otra acción o momento en el pasado. Forma: had + participio pasado.",
+  "original": [
+    {
+      "id": "pperf-16",
+      "num": 16,
+      "prompt": "He was imprisoned because he {0} several serious crimes.",
+      "verbs": [
+        "COMMIT"
+      ],
+      "answers": [
+        [
+          "had committed"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados y uno es anterior al otro: los crímenes ocurrieron antes de ir a prisión; por lo tanto el más antiguo va en Past Perfect. La regla es \"had + participio\"; el participio de \"commit\" se escribe con doble t: \"had committed\"."
+    },
+    {
+      "id": "pperf-22",
+      "num": 22,
+      "prompt": "How long {0} your dog before it died?",
+      "verbs": [
+        "YOU, HAVE"
+      ],
+      "answers": [
+        [
+          "had you had"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before it died\", que marca un segundo evento pasado; lo que ocurrió antes va en Past Perfect. La regla en pregunta es \"had + sujeto + participio\"; con \"you\" y el participio de \"have\" (\"had\") queda: \"had you had?\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "pperf-e1",
+      "prompt": "When I arrived, the film {0} already started.",
+      "verbs": [
+        "START"
+      ],
+      "answers": [
+        [
+          "had already started",
+          "had started already"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"When I arrived\", un punto del pasado; la película había empezado antes de ese momento. Por lo tanto va Past Perfect. La regla es \"had + participio\" y \"already\" va en medio: \"had already started\"."
+    },
+    {
+      "id": "pperf-e2",
+      "prompt": "She {0} never {1} sushi before she went to Japan.",
+      "verbs": [
+        "EAT"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "eaten"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before she went to Japan\", un evento pasado; la falta de experiencia es anterior a ese momento. Por lo tanto va Past Perfect. La regla es \"had + participio\" con \"never\" en medio; el participio de \"eat\" es \"eaten\": \"had never eaten\"."
+    },
+    {
+      "id": "pperf-e3",
+      "prompt": "They {0} the house before they moved in.",
+      "verbs": [
+        "PAINT"
+      ],
+      "answers": [
+        [
+          "had painted"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before they moved in\", un evento pasado; pintar la casa ocurrió antes de mudarse. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"paint\" es regular: \"had painted\"."
+    },
+    {
+      "id": "pperf-e4",
+      "prompt": "I realized I {0} my phone at home.",
+      "verbs": [
+        "LEAVE"
+      ],
+      "answers": [
+        [
+          "had left"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: darse cuenta y, antes, haber dejado el teléfono; lo anterior va en Past Perfect. La regla es \"had + participio\"; el participio de \"leave\" es \"left\": \"had left\"."
+    },
+    {
+      "id": "pperf-e5",
+      "prompt": "He {0} in London for ten years before he moved to Madrid.",
+      "verbs": [
+        "LIVE"
+      ],
+      "answers": [
+        [
+          "had lived",
+          "had been living"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before he moved to Madrid\", un evento pasado; vivir en Londres es anterior a esa mudanza. Por lo tanto va Past Perfect. La regla es \"had + participio\"; el participio de \"live\" es \"lived\": \"had lived\"."
+    },
+    {
+      "id": "pperf-e6",
+      "prompt": "By the time the manager arrived, the team {0} the bug.",
+      "verbs": [
+        "FIX"
+      ],
+      "answers": [
+        [
+          "had fixed",
+          "'d fixed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time the manager arrived\", un momento pasado; arreglar el bug ocurrió antes de esa llegada. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"fix\" es regular: \"had fixed\"."
+    },
+    {
+      "id": "pperf-e7",
+      "prompt": "The server {0} already {1} before they noticed the alert.",
+      "verbs": [
+        "CRASH"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "crashed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before they noticed\", un evento pasado; la caída del servidor es anterior a ese momento. Por lo tanto va Past Perfect. La regla es \"had + participio\" con \"already\" en medio; \"crash\" es regular: \"had already crashed\"."
+    },
+    {
+      "id": "pperf-e8",
+      "prompt": "We couldn't deploy because the team {0} the tests.",
+      "verbs": [
+        "NOT FINISH"
+      ],
+      "answers": [
+        [
+          "hadn't finished",
+          "had not finished"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: no poder desplegar y, antes, no haber terminado los tests; lo anterior va en Past Perfect. La regla es \"had + participio\" en negativo: \"hadn't finished\"."
+    },
+    {
+      "id": "pperf-e9",
+      "prompt": "{0} the client {1} the contract before the meeting started?",
+      "verbs": [
+        "SIGN"
+      ],
+      "answers": [
+        [
+          "Had"
+        ],
+        [
+          "signed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before the meeting started\", un evento pasado; firmar el contrato sería anterior. Por lo tanto va Past Perfect. La regla en pregunta es \"had + sujeto + participio\"; \"sign\" es regular: \"Had the client signed?\"."
+    },
+    {
+      "id": "pperf-e10",
+      "prompt": "After she {0} the report, she sent it to the CEO.",
+      "verbs": [
+        "WRITE"
+      ],
+      "answers": [
+        [
+          "had written",
+          "'d written"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"After ... she sent\", dos momentos pasados; escribir el informe es anterior al envío. Por lo tanto va Past Perfect. La regla es \"had + participio\"; el participio de \"write\" es \"written\": \"had written\"."
+    },
+    {
+      "id": "pperf-e11",
+      "prompt": "The startup {0} out of funding before it could launch the product.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "had run",
+          "'d run"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before it could launch\", un evento pasado; quedarse sin fondos es anterior. Por lo tanto va Past Perfect. La regla es \"had + participio\"; el participio de \"run\" es \"run\": \"had run\"."
+    },
+    {
+      "id": "pperf-e12",
+      "prompt": "When the auditor came in, we {0} all the invoices.",
+      "verbs": [
+        "ALREADY, CHECK"
+      ],
+      "answers": [
+        [
+          "had already checked",
+          "'d already checked"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"When the auditor came in\", un punto del pasado; revisar las facturas ocurrió antes. Por lo tanto va Past Perfect. La regla es \"had + participio\" con \"already\" en medio; \"check\" es regular: \"had already checked\"."
+    },
+    {
+      "id": "pperf-e13",
+      "prompt": "They {0} the budget before the quarter ended.",
+      "verbs": [
+        "NOT APPROVE"
+      ],
+      "answers": [
+        [
+          "hadn't approved",
+          "had not approved"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before the quarter ended\", un evento pasado; no aprobar el presupuesto es anterior. Por lo tanto va Past Perfect. La regla es \"had + participio\" en negativo; \"approve\" es regular: \"hadn't approved\"."
+    },
+    {
+      "id": "pperf-e14",
+      "prompt": "By the time support replied, the customer {0} the account.",
+      "verbs": [
+        "CANCEL"
+      ],
+      "answers": [
+        [
+          "had cancelled",
+          "had canceled",
+          "'d cancelled",
+          "'d canceled"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time support replied\", un momento pasado; cancelar la cuenta ocurrió antes. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"cancel\" admite \"cancelled/canceled\": \"had cancelled\"."
+    },
+    {
+      "id": "pperf-e15",
+      "prompt": "The developer realized she {0} the wrong branch.",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "had deployed",
+          "'d deployed"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: darse cuenta y, antes, haber desplegado la rama equivocada; lo anterior va en Past Perfect. La regla es \"had + participio\"; \"deploy\" es regular: \"had deployed\"."
+    },
+    {
+      "id": "pperf-e16",
+      "prompt": "{0} you {1} the email before the system went offline?",
+      "verbs": [
+        "SEND"
+      ],
+      "answers": [
+        [
+          "Had"
+        ],
+        [
+          "sent"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before the system went offline\", un evento pasado; enviar el correo sería anterior. Por lo tanto va Past Perfect. La regla en pregunta es \"had + sujeto + participio\"; el participio de \"send\" es \"sent\": \"Had you sent?\"."
+    },
+    {
+      "id": "pperf-e17",
+      "prompt": "Sales dropped because the company {0} its prices too much.",
+      "verbs": [
+        "RAISE"
+      ],
+      "answers": [
+        [
+          "had raised",
+          "'d raised"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: la caída de ventas y, antes, haber subido los precios; lo anterior va en Past Perfect. La regla es \"had + participio\"; \"raise\" es regular: \"had raised\"."
+    },
+    {
+      "id": "pperf-e18",
+      "prompt": "Before the demo began, the engineers {0} the database.",
+      "verbs": [
+        "BACK UP"
+      ],
+      "answers": [
+        [
+          "had backed up",
+          "'d backed up"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"Before the demo began\", un evento pasado; respaldar la base de datos es anterior. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"back up\" es regular: \"had backed up\"."
+    },
+    {
+      "id": "pperf-e19",
+      "prompt": "The interns {0} the meeting because nobody {1} them.",
+      "verbs": [
+        "MISS",
+        "NOT INVITE"
+      ],
+      "answers": [
+        [
+          "missed"
+        ],
+        [
+          "had invited",
+          "'d invited"
+        ]
+      ],
+      "justification": "La clave aquí es que la falta de invitación es anterior a perderse la reunión; el evento más antiguo va en Past Perfect mientras el otro va en Past Simple. La regla es \"had + participio\"; \"invite\" es regular: en negativo dentro de la causa queda \"had invited\" (precedido por la negación con \"nobody\")."
+    },
+    {
+      "id": "pperf-e20",
+      "prompt": "By 2010 the firm {0} three offices in Asia.",
+      "verbs": [
+        "OPEN"
+      ],
+      "answers": [
+        [
+          "had opened",
+          "'d opened"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By 2010\", un punto del pasado; abrir las oficinas ocurrió antes de esa fecha. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"open\" es regular: \"had opened\"."
+    },
+    {
+      "id": "pperf-e21",
+      "prompt": "The QA team {0} the release until the logs were reviewed.",
+      "verbs": [
+        "NOT APPROVE"
+      ],
+      "answers": [
+        [
+          "hadn't approved",
+          "had not approved"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados y la falta de aprobación es anterior a revisar los logs; lo anterior va en Past Perfect. La regla es \"had + participio\" en negativo; \"approve\" es regular: \"hadn't approved\"."
+    },
+    {
+      "id": "pperf-e22",
+      "prompt": "When the CFO joined the call, the analysts {0} the numbers.",
+      "verbs": [
+        "ALREADY, PRESENT"
+      ],
+      "answers": [
+        [
+          "had already presented",
+          "'d already presented"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"When the CFO joined the call\", un punto del pasado; presentar las cifras ocurrió antes. Por lo tanto va Past Perfect. La regla es \"had + participio\" con \"already\" en medio; \"present\" es regular: \"had already presented\"."
+    },
+    {
+      "id": "pperf-e23",
+      "prompt": "{0} the vendor {1} the issue before you escalated the ticket?",
+      "verbs": [
+        "RESOLVE"
+      ],
+      "answers": [
+        [
+          "Had"
+        ],
+        [
+          "resolved"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before you escalated the ticket\", un evento pasado; resolver el problema sería anterior. Por lo tanto va Past Perfect. La regla en pregunta es \"had + sujeto + participio\"; \"resolve\" es regular: \"Had the vendor resolved?\"."
+    },
+    {
+      "id": "pperf-e24",
+      "prompt": "We lost the data because someone {0} the backup script.",
+      "verbs": [
+        "DELETE"
+      ],
+      "answers": [
+        [
+          "had deleted",
+          "'d deleted"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: perder los datos y, antes, haber borrado el script de respaldo; lo anterior va en Past Perfect. La regla es \"had + participio\"; \"delete\" es regular: \"had deleted\"."
+    },
+    {
+      "id": "pperf-e25",
+      "prompt": "After the board {0} the merger, the stock price jumped.",
+      "verbs": [
+        "APPROVE"
+      ],
+      "answers": [
+        [
+          "had approved",
+          "'d approved"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"After ... the stock price jumped\", dos momentos pasados; aprobar la fusión es anterior a la subida. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"approve\" es regular: \"had approved\"."
+    },
+    {
+      "id": "pperf-e26",
+      "prompt": "After the team {0} the root cause, they wrote a detailed postmortem.",
+      "verbs": [
+        "IDENTIFY"
+      ],
+      "answers": [
+        [
+          "had identified",
+          "'d identified"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"After ... they wrote\", dos momentos pasados; identificar la causa raíz es anterior a escribir el postmortem. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"identify\" es regular: \"had identified\"."
+    },
+    {
+      "id": "pperf-e27",
+      "prompt": "By Friday, the vendor still {0} the security patch.",
+      "verbs": [
+        "NOT RELEASE"
+      ],
+      "answers": [
+        [
+          "hadn't released",
+          "had not released"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By Friday\", un punto del pasado; hasta ese momento la acción no había ocurrido. Por lo tanto va Past Perfect en negativo. La regla es \"had + not + participio\"; \"release\" es regular: \"hadn't released\"."
+    },
+    {
+      "id": "pperf-e28",
+      "prompt": "By the time the investors arrived, the founders {0} the pitch deck.",
+      "verbs": [
+        "FINISH"
+      ],
+      "answers": [
+        [
+          "had finished",
+          "'d finished"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time the investors arrived\", un momento pasado; terminar la presentación ocurrió antes. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"finish\" es regular: \"had finished\"."
+    },
+    {
+      "id": "pperf-e29",
+      "prompt": "{0} the developers {1} the hotfix before the outage spread?",
+      "verbs": [
+        "PUSH"
+      ],
+      "answers": [
+        [
+          "Had"
+        ],
+        [
+          "pushed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before the outage spread\", un evento pasado; subir el hotfix sería anterior. Por lo tanto va Past Perfect. La regla en pregunta es \"had + sujeto + participio\"; \"push\" es regular: \"Had the developers pushed?\"."
+    },
+    {
+      "id": "pperf-e30",
+      "prompt": "When marketing launched the campaign, sales {0} already {1}.",
+      "verbs": [
+        "DROP"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "dropped"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"When marketing launched\", un punto del pasado; la caída de ventas ocurrió antes. Por lo tanto va Past Perfect. La regla es \"had + participio\" con \"already\" en medio; \"drop\" es regular: \"had already dropped\"."
+    },
+    {
+      "id": "pperf-e31",
+      "prompt": "It was the first time the company {0} a product entirely remotely.",
+      "verbs": [
+        "LAUNCH"
+      ],
+      "answers": [
+        [
+          "had launched",
+          "'d launched"
+        ]
+      ],
+      "justification": "La clave aquí es la estructura \"It was the first time ...\", que se refiere a una experiencia anterior a ese momento pasado. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"launch\" es regular: \"had launched\"."
+    },
+    {
+      "id": "pperf-e32",
+      "prompt": "The demo failed because the engineer {0} the wrong config file.",
+      "verbs": [
+        "UPLOAD"
+      ],
+      "answers": [
+        [
+          "had uploaded",
+          "'d uploaded"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: el fallo del demo y, antes, haber subido el archivo equivocado; lo anterior va en Past Perfect. La regla es \"had + participio\"; \"upload\" es regular: \"had uploaded\"."
+    },
+    {
+      "id": "pperf-e33",
+      "prompt": "The auditors {0} the books until the new CFO took over.",
+      "verbs": [
+        "NOT REVIEW"
+      ],
+      "answers": [
+        [
+          "hadn't reviewed",
+          "had not reviewed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"until the new CFO took over\", un evento pasado; hasta entonces no habían revisado las cuentas. Por lo tanto va Past Perfect en negativo. La regla es \"had + not + participio\"; \"review\" es regular: \"hadn't reviewed\"."
+    },
+    {
+      "id": "pperf-e34",
+      "prompt": "After she {0} the keynote, she answered questions for an hour.",
+      "verbs": [
+        "GIVE"
+      ],
+      "answers": [
+        [
+          "had given",
+          "'d given"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"After ... she answered\", dos momentos pasados; dar la charla es anterior a responder preguntas. Por lo tanto va Past Perfect. La regla es \"had + participio\"; el participio de \"give\" es \"given\": \"had given\"."
+    },
+    {
+      "id": "pperf-e35",
+      "prompt": "{0} the client {1} the invoice before the deadline passed?",
+      "verbs": [
+        "PAY"
+      ],
+      "answers": [
+        [
+          "Had"
+        ],
+        [
+          "paid"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before the deadline passed\", un evento pasado; pagar la factura sería anterior. Por lo tanto va Past Perfect. La regla en pregunta es \"had + sujeto + participio\"; el participio de \"pay\" es \"paid\": \"Had the client paid?\"."
+    },
+    {
+      "id": "pperf-e36",
+      "prompt": "By the end of Q3, the startup {0} all its runway.",
+      "verbs": [
+        "SPEND"
+      ],
+      "answers": [
+        [
+          "had spent",
+          "'d spent"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the end of Q3\", un punto del pasado; gastar todo el capital ocurrió antes de esa fecha. Por lo tanto va Past Perfect. La regla es \"had + participio\"; el participio de \"spend\" es \"spent\": \"had spent\"."
+    },
+    {
+      "id": "pperf-e37",
+      "prompt": "When IT restored the service, most users {0} a ticket hours earlier.",
+      "verbs": [
+        "ALREADY, FILE"
+      ],
+      "answers": [
+        [
+          "had already filed",
+          "'d already filed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"When IT restored the service\", un punto del pasado; abrir el ticket ocurrió antes (\"hours earlier\"). Por lo tanto va Past Perfect. La regla es \"had + participio\" con \"already\" en medio; \"file\" es regular: \"had already filed\"."
+    },
+    {
+      "id": "pperf-e38",
+      "prompt": "The attackers stole the data before the team {0} the firewall rules.",
+      "verbs": [
+        "UPDATE"
+      ],
+      "answers": [
+        [
+          "had updated",
+          "'d updated"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before the team ...\", dos momentos pasados; actualizar las reglas del firewall habría sido anterior al robo. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"update\" es regular: \"had updated\"."
+    },
+    {
+      "id": "pperf-e39",
+      "prompt": "Adoption was slow because the company {0} the new tool properly.",
+      "verbs": [
+        "NOT DOCUMENT"
+      ],
+      "answers": [
+        [
+          "hadn't documented",
+          "had not documented"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: la baja adopción y, antes, no haber documentado bien la herramienta; lo anterior va en Past Perfect. La regla es \"had + not + participio\"; \"document\" es regular: \"hadn't documented\"."
+    },
+    {
+      "id": "pperf-e40",
+      "prompt": "The site went down just after we {0} the latest build.",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "had deployed",
+          "'d deployed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"just after we ...\", dos momentos pasados; desplegar el build es anterior a la caída del sitio. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"deploy\" es regular: \"had deployed\"."
+    },
+    {
+      "id": "pperf-e41",
+      "prompt": "{0} you {1} the credentials before the system locked you out?",
+      "verbs": [
+        "SAVE"
+      ],
+      "answers": [
+        [
+          "Had"
+        ],
+        [
+          "saved"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before the system locked you out\", un evento pasado; guardar las credenciales sería anterior. Por lo tanto va Past Perfect. La regla en pregunta es \"had + sujeto + participio\"; \"save\" es regular: \"Had you saved?\"."
+    },
+    {
+      "id": "pperf-e42",
+      "prompt": "After the board {0} the decision, there was no turning back.",
+      "verbs": [
+        "TAKE"
+      ],
+      "answers": [
+        [
+          "had taken",
+          "'d taken"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"After ... there was\", dos momentos pasados; tomar la decisión es anterior. Por lo tanto va Past Perfect. La regla es \"had + participio\"; el participio de \"take\" es \"taken\": \"had taken\"."
+    },
+    {
+      "id": "pperf-e43",
+      "prompt": "By the time the call ended, we {0} on a single requirement.",
+      "verbs": [
+        "NOT AGREE"
+      ],
+      "answers": [
+        [
+          "hadn't agreed",
+          "had not agreed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time the call ended\", un momento pasado; hasta entonces no habíamos llegado a un acuerdo. Por lo tanto va Past Perfect en negativo. La regla es \"had + not + participio\"; \"agree\" es regular: \"hadn't agreed\"."
+    },
+    {
+      "id": "pperf-e44",
+      "prompt": "The customer churned before support {0} a chance to call back.",
+      "verbs": [
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "had had",
+          "'d had"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"before support ...\", dos momentos pasados; tener la oportunidad sería anterior a la pérdida del cliente. Por lo tanto va Past Perfect. La regla es \"had + participio\"; el participio de \"have\" es \"had\": \"had had\"."
+    },
+    {
+      "id": "pperf-e45",
+      "prompt": "By noon, the servers {0} thousands of requests.",
+      "verbs": [
+        "PROCESS"
+      ],
+      "answers": [
+        [
+          "had processed",
+          "'d processed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By noon\", un punto del pasado; procesar las peticiones ocurrió antes de ese momento. Por lo tanto va Past Perfect. La regla es \"had + participio\"; \"process\" es regular: \"had processed\"."
+    },
+    {
+      "id": "pperf-e46",
+      "prompt": "The merger collapsed because neither side {0} the terms carefully.",
+      "verbs": [
+        "READ"
+      ],
+      "answers": [
+        [
+          "had read",
+          "'d read"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: el fracaso de la fusión y, antes, no haber leído bien los términos; lo anterior va en Past Perfect. La regla es \"had + participio\"; el participio de \"read\" se escribe igual: \"had read\"."
+    },
+    {
+      "id": "pperf-e47",
+      "prompt": "They had to rewrite everything because the contractor {0} the app on outdated frameworks.",
+      "verbs": [
+        "BUILD"
+      ],
+      "answers": [
+        [
+          "had built",
+          "'d built"
+        ]
+      ],
+      "justification": "La clave aquí es que hay dos momentos pasados: tener que reescribir y, antes, haber construido la app sobre frameworks obsoletos; lo anterior va en Past Perfect. La regla es \"had + participio\"; el participio de \"build\" es \"built\": \"had built\"."
+    },
+    {
+      "id": "pperf-e48",
+      "prompt": "When the new manager joined, the team {0} already {1} three sprints.",
+      "verbs": [
+        "COMPLETE"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "completed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"When the new manager joined\", un punto del pasado; completar los sprints ocurrió antes. Por lo tanto va Past Perfect. La regla es \"had + participio\" con \"already\" en medio; \"complete\" es regular: \"had already completed\"."
+    }
+  ]
+}

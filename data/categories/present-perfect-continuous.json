@@ -1,0 +1,739 @@
+{
+  "id": "present-perfect-continuous",
+  "name": "Present Perfect Continuous",
+  "explanation": "Enfatiza la duración de una acción que empezó en el pasado y continúa (o acaba de terminar). Forma: have/has been + verbo-ing.",
+  "original": [
+    {
+      "id": "ppc-1a",
+      "num": 1,
+      "prompt": "I {0} here for three hours now but I haven't caught a single fish yet.",
+      "verbs": [
+        "SIT"
+      ],
+      "answers": [
+        [
+          "have been sitting",
+          "'ve been sitting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for three hours now\", que enfatiza cuánto tiempo lleva ocurriendo la acción hasta el presente; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"I\" usamos \"have been\": \"have been sitting\"."
+    },
+    {
+      "id": "ppc-7a",
+      "num": 7,
+      "prompt": "I {0} English for the past two years and now I am studying Russian too.",
+      "verbs": [
+        "LEARN"
+      ],
+      "answers": [
+        [
+          "have been learning",
+          "'ve been learning"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for the past two years\", que mide la duración de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"I\" usamos \"have been\": \"have been learning\"."
+    },
+    {
+      "id": "ppc-8",
+      "num": 8,
+      "prompt": "Mum {0} in the garden the whole day.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "has been working",
+          "'s been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"the whole day\", que enfatiza la duración de la acción hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; como el sujeto \"Mum\" es 3ª persona singular, usamos \"has been\": \"has been working\"."
+    },
+    {
+      "id": "ppc-17",
+      "num": 17,
+      "prompt": "Where on earth have you been? — I {0} for ages.",
+      "verbs": [
+        "WAIT"
+      ],
+      "answers": [
+        [
+          "have been waiting",
+          "'ve been waiting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for ages\", que enfatiza cuánto tiempo se lleva esperando hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\" (no basta con \"been waiting\", falta el auxiliar); con \"I\" usamos \"have been\": \"have been waiting\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "ppc-e1",
+      "prompt": "It {0} all morning.",
+      "verbs": [
+        "RAIN"
+      ],
+      "answers": [
+        [
+          "has been raining",
+          "'s been raining"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all morning\", que enfatiza la duración de la acción hasta el presente; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"it\" usamos \"has been\": \"has been raining\"."
+    },
+    {
+      "id": "ppc-e2",
+      "prompt": "They {0} for two hours and they still haven't found a solution.",
+      "verbs": [
+        "TRY"
+      ],
+      "answers": [
+        [
+          "have been trying",
+          "'ve been trying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for two hours\" junto con un resultado presente (todavía no han encontrado solución); por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"they\" usamos \"have been\": \"have been trying\"."
+    },
+    {
+      "id": "ppc-e3",
+      "prompt": "How long {0} you {1} English?",
+      "verbs": [
+        "STUDY"
+      ],
+      "answers": [
+        [
+          "have"
+        ],
+        [
+          "been studying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de una acción que sigue en curso; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"you\" usamos \"have ... been studying\": \"How long have you been studying...?\"."
+    },
+    {
+      "id": "ppc-e4",
+      "prompt": "She {0} too much coffee lately.",
+      "verbs": [
+        "DRINK"
+      ],
+      "answers": [
+        [
+          "has been drinking",
+          "'s been drinking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"lately\", que señala un periodo reciente con acción repetida hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"she\" usamos \"has been\": \"has been drinking\"."
+    },
+    {
+      "id": "ppc-e5",
+      "prompt": "We {0} on this project since January.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "have been working",
+          "'ve been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since January\", que marca el inicio en el pasado de una actividad que continúa hasta hoy; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"we\" usamos \"have been\": \"have been working\"."
+    },
+    {
+      "id": "ppc-e6",
+      "prompt": "The engineers {0} on the outage since midnight.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "have been working",
+          "'ve been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since midnight\", que marca el inicio en el pasado de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the engineers\" (plural) usamos \"have been\": \"have been working\"."
+    },
+    {
+      "id": "ppc-e7",
+      "prompt": "Our main server {0} continuously since the last deploy.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "has been running",
+          "'s been running"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the last deploy\", que enfatiza la duración de una acción que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"our main server\" (3ª persona singular) usamos \"has been\": \"has been running\"."
+    },
+    {
+      "id": "ppc-e8",
+      "prompt": "How long {0} the build {1}?",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "has"
+        ],
+        [
+          "been running"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de una acción aún en curso; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"the build\" usamos \"has ... been running\": \"How long has the build been running?\"."
+    },
+    {
+      "id": "ppc-e9",
+      "prompt": "I {0} enough sleep since the product launch.",
+      "verbs": [
+        "NOT GET"
+      ],
+      "answers": [
+        [
+          "haven't been getting",
+          "have not been getting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the product launch\", que marca el inicio de un periodo que sigue afectando al presente; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"I\" usamos \"haven't been\": \"haven't been getting\"."
+    },
+    {
+      "id": "ppc-e10",
+      "prompt": "How long {0} you {1} this bug?",
+      "verbs": [
+        "CHASE"
+      ],
+      "answers": [
+        [
+          "have"
+        ],
+        [
+          "been chasing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de una acción que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"you\" usamos \"have ... been chasing\": \"How long have you been chasing this bug?\"."
+    },
+    {
+      "id": "ppc-e11",
+      "prompt": "The QA team {0} the new release since Monday.",
+      "verbs": [
+        "TEST"
+      ],
+      "answers": [
+        [
+          "has been testing",
+          "'s been testing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since Monday\", que marca el inicio en el pasado de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the QA team\" (colectivo en singular) usamos \"has been\": \"has been testing\"."
+    },
+    {
+      "id": "ppc-e12",
+      "prompt": "My laptop {0} strangely since the last update.",
+      "verbs": [
+        "BEHAVE"
+      ],
+      "answers": [
+        [
+          "has been behaving",
+          "'s been behaving"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the last update\", que enfatiza un comportamiento que continúa hasta el presente; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"my laptop\" (3ª persona singular) usamos \"has been\": \"has been behaving\"."
+    },
+    {
+      "id": "ppc-e13",
+      "prompt": "The deployment pipeline {0} properly lately.",
+      "verbs": [
+        "NOT WORK"
+      ],
+      "answers": [
+        [
+          "hasn't been working",
+          "has not been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"lately\", que señala un periodo reciente que llega hasta ahora; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"the deployment pipeline\" usamos \"hasn't been\": \"hasn't been working\"."
+    },
+    {
+      "id": "ppc-e14",
+      "prompt": "We {0} for the vendor's response since yesterday afternoon.",
+      "verbs": [
+        "WAIT"
+      ],
+      "answers": [
+        [
+          "have been waiting",
+          "'ve been waiting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since yesterday afternoon\", que marca el inicio de una espera que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"we\" usamos \"have been\": \"have been waiting\"."
+    },
+    {
+      "id": "ppc-e15",
+      "prompt": "She {0} the error logs for hours trying to find the cause.",
+      "verbs": [
+        "READ"
+      ],
+      "answers": [
+        [
+          "has been reading",
+          "'s been reading"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for hours\", que enfatiza cuánto tiempo lleva ocurriendo la acción hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"she\" usamos \"has been\": \"has been reading\"."
+    },
+    {
+      "id": "ppc-e16",
+      "prompt": "How long {0} the customers {1} about the slow checkout?",
+      "verbs": [
+        "COMPLAIN"
+      ],
+      "answers": [
+        [
+          "have"
+        ],
+        [
+          "been complaining"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de una acción repetida que llega hasta el presente; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"the customers\" (plural) usamos \"have ... been complaining\": \"How long have the customers been complaining...?\"."
+    },
+    {
+      "id": "ppc-e17",
+      "prompt": "The developers {0} on the same feature for two sprints.",
+      "verbs": [
+        "FOCUS"
+      ],
+      "answers": [
+        [
+          "have been focusing",
+          "'ve been focusing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for two sprints\", que mide la duración de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the developers\" (plural) usamos \"have been\": \"have been focusing\"."
+    },
+    {
+      "id": "ppc-e18",
+      "prompt": "Our monitoring tool {0} any alerts since the config change.",
+      "verbs": [
+        "NOT SEND"
+      ],
+      "answers": [
+        [
+          "hasn't been sending",
+          "has not been sending"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the config change\", que marca el inicio de un periodo que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"our monitoring tool\" usamos \"hasn't been\": \"hasn't been sending\"."
+    },
+    {
+      "id": "ppc-e19",
+      "prompt": "I {0} to reproduce the crash all morning.",
+      "verbs": [
+        "TRY"
+      ],
+      "answers": [
+        [
+          "have been trying",
+          "'ve been trying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all morning\", que enfatiza la duración de la acción hasta el presente; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"I\" usamos \"have been\": \"have been trying\"."
+    },
+    {
+      "id": "ppc-e20",
+      "prompt": "The marketing team {0} the campaign data since the quarter began.",
+      "verbs": [
+        "ANALYZE"
+      ],
+      "answers": [
+        [
+          "has been analyzing",
+          "'s been analyzing",
+          "has been analysing",
+          "'s been analysing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the quarter began\", que marca el inicio en el pasado de una actividad que continúa hasta hoy; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the marketing team\" (colectivo en singular) usamos \"has been\": \"has been analyzing\"."
+    },
+    {
+      "id": "ppc-e21",
+      "prompt": "What {0} you {1} on since the morning standup?",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "have"
+        ],
+        [
+          "been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar la pregunta abierta con \"since the morning standup\", que enfatiza una actividad en curso hasta ahora; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"you\" usamos \"have ... been working\": \"What have you been working on...?\"."
+    },
+    {
+      "id": "ppc-e22",
+      "prompt": "He {0} the database for performance issues for hours.",
+      "verbs": [
+        "MONITOR"
+      ],
+      "answers": [
+        [
+          "has been monitoring",
+          "'s been monitoring"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for hours\", que enfatiza cuánto tiempo lleva ocurriendo la acción hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"he\" usamos \"has been\": \"has been monitoring\"."
+    },
+    {
+      "id": "ppc-e23",
+      "prompt": "They {0} the documentation since the API changed.",
+      "verbs": [
+        "NOT UPDATE"
+      ],
+      "answers": [
+        [
+          "haven't been updating",
+          "have not been updating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the API changed\", que marca el inicio de un periodo que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"they\" usamos \"haven't been\": \"haven't been updating\"."
+    },
+    {
+      "id": "ppc-e24",
+      "prompt": "The support team {0} tickets non-stop since the outage started.",
+      "verbs": [
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "has been handling",
+          "'s been handling"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the outage started\", que marca el inicio en el pasado de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the support team\" (colectivo en singular) usamos \"has been\": \"has been handling\"."
+    },
+    {
+      "id": "ppc-e25",
+      "prompt": "How long {0} your team {1} to migrate to the cloud?",
+      "verbs": [
+        "TRY"
+      ],
+      "answers": [
+        [
+          "has"
+        ],
+        [
+          "been trying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de un esfuerzo que continúa hasta el presente; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"your team\" (colectivo en singular) usamos \"has ... been trying\": \"How long has your team been trying...?\"."
+    },
+    {
+      "id": "ppc-e26",
+      "prompt": "Our finance department {0} the quarterly budget all week.",
+      "verbs": [
+        "REVIEW"
+      ],
+      "answers": [
+        [
+          "has been reviewing",
+          "'s been reviewing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all week\", que enfatiza la duración de la acción hasta el presente; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"our finance department\" (colectivo en singular) usamos \"has been\": \"has been reviewing\"."
+    },
+    {
+      "id": "ppc-e27",
+      "prompt": "I {0} with the vendor about the contract since Tuesday.",
+      "verbs": [
+        "NEGOTIATE"
+      ],
+      "answers": [
+        [
+          "have been negotiating",
+          "'ve been negotiating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since Tuesday\", que marca el inicio en el pasado de una actividad que continúa hasta hoy; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"I\" usamos \"have been\": \"have been negotiating\"."
+    },
+    {
+      "id": "ppc-e28",
+      "prompt": "How long {0} the developers {1} the legacy code?",
+      "verbs": [
+        "REFACTOR"
+      ],
+      "answers": [
+        [
+          "have"
+        ],
+        [
+          "been refactoring"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de una acción aún en curso; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"the developers\" (plural) usamos \"have ... been refactoring\": \"How long have the developers been refactoring...?\"."
+    },
+    {
+      "id": "ppc-e29",
+      "prompt": "The new hire {0} our onboarding docs lately.",
+      "verbs": [
+        "NOT READ"
+      ],
+      "answers": [
+        [
+          "hasn't been reading",
+          "has not been reading"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"lately\", que señala un periodo reciente que llega hasta ahora; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"the new hire\" (3ª persona singular) usamos \"hasn't been\": \"hasn't been reading\"."
+    },
+    {
+      "id": "ppc-e30",
+      "prompt": "They {0} the microservice to handle more traffic for weeks.",
+      "verbs": [
+        "SCALE"
+      ],
+      "answers": [
+        [
+          "have been scaling",
+          "'ve been scaling"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for weeks\", que mide la duración de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"they\" usamos \"have been\": \"have been scaling\"."
+    },
+    {
+      "id": "ppc-e31",
+      "prompt": "He {0} the sprint retrospectives since he joined the team.",
+      "verbs": [
+        "NOT ATTEND"
+      ],
+      "answers": [
+        [
+          "hasn't been attending",
+          "has not been attending"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since he joined the team\", que marca el inicio de un periodo que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"he\" usamos \"hasn't been\": \"hasn't been attending\"."
+    },
+    {
+      "id": "ppc-e32",
+      "prompt": "What {0} the product team {1} during the workshop?",
+      "verbs": [
+        "DISCUSS"
+      ],
+      "answers": [
+        [
+          "has"
+        ],
+        [
+          "been discussing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar la pregunta abierta sobre una actividad en curso durante el workshop; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"the product team\" (colectivo en singular) usamos \"has ... been discussing\": \"What has the product team been discussing...?\"."
+    },
+    {
+      "id": "ppc-e33",
+      "prompt": "We {0} customer feedback into the roadmap all quarter.",
+      "verbs": [
+        "INTEGRATE"
+      ],
+      "answers": [
+        [
+          "have been integrating",
+          "'ve been integrating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all quarter\", que enfatiza la duración de la acción hasta el presente; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"we\" usamos \"have been\": \"have been integrating\"."
+    },
+    {
+      "id": "ppc-e34",
+      "prompt": "The CFO {0} closely with the auditors since the review began.",
+      "verbs": [
+        "COLLABORATE"
+      ],
+      "answers": [
+        [
+          "has been collaborating",
+          "'s been collaborating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the review began\", que marca el inicio en el pasado de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the CFO\" (3ª persona singular) usamos \"has been\": \"has been collaborating\"."
+    },
+    {
+      "id": "ppc-e35",
+      "prompt": "How long {0} you {1} the API integration?",
+      "verbs": [
+        "DEBUG"
+      ],
+      "answers": [
+        [
+          "have"
+        ],
+        [
+          "been debugging"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de una acción que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"you\" usamos \"have ... been debugging\": \"How long have you been debugging...?\"."
+    },
+    {
+      "id": "ppc-e36",
+      "prompt": "The senior engineer {0} the junior devs for months.",
+      "verbs": [
+        "MENTOR"
+      ],
+      "answers": [
+        [
+          "has been mentoring",
+          "'s been mentoring"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for months\", que mide la duración de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the senior engineer\" (3ª persona singular) usamos \"has been\": \"has been mentoring\"."
+    },
+    {
+      "id": "ppc-e37",
+      "prompt": "The sales reps {0} their quotas this quarter.",
+      "verbs": [
+        "NOT HIT"
+      ],
+      "answers": [
+        [
+          "haven't been hitting",
+          "have not been hitting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"this quarter\", un periodo que sigue en curso hasta el presente; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"the sales reps\" (plural) usamos \"haven't been\": \"haven't been hitting\"."
+    },
+    {
+      "id": "ppc-e38",
+      "prompt": "Our CI server {0} builds slowly since the last upgrade.",
+      "verbs": [
+        "PROCESS"
+      ],
+      "answers": [
+        [
+          "has been processing",
+          "'s been processing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the last upgrade\", que marca el inicio en el pasado de un comportamiento que continúa hasta hoy; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"our CI server\" (3ª persona singular) usamos \"has been\": \"has been processing\"."
+    },
+    {
+      "id": "ppc-e39",
+      "prompt": "I {0} enough breaks lately and now I feel burned out.",
+      "verbs": [
+        "NOT TAKE"
+      ],
+      "answers": [
+        [
+          "haven't been taking",
+          "have not been taking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"lately\", que señala un periodo reciente que llega hasta ahora; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"I\" usamos \"haven't been\": \"haven't been taking\"."
+    },
+    {
+      "id": "ppc-e40",
+      "prompt": "How long {0} the company {1} the layoffs in the press?",
+      "verbs": [
+        "DENY"
+      ],
+      "answers": [
+        [
+          "has"
+        ],
+        [
+          "been denying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\", que pregunta por la duración de una acción repetida que llega hasta el presente; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"the company\" (3ª persona singular) usamos \"has ... been denying\": \"How long has the company been denying...?\"."
+    },
+    {
+      "id": "ppc-e41",
+      "prompt": "The interns {0} the API documentation all afternoon.",
+      "verbs": [
+        "UPDATE"
+      ],
+      "answers": [
+        [
+          "have been updating",
+          "'ve been updating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all afternoon\", que enfatiza la duración de la acción hasta el presente; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the interns\" (plural) usamos \"have been\": \"have been updating\"."
+    },
+    {
+      "id": "ppc-e42",
+      "prompt": "She {0} the dashboards for anomalies since the alert fired.",
+      "verbs": [
+        "WATCH"
+      ],
+      "answers": [
+        [
+          "has been watching",
+          "'s been watching"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the alert fired\", que marca el inicio en el pasado de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"she\" usamos \"has been\": \"has been watching\"."
+    },
+    {
+      "id": "ppc-e43",
+      "prompt": "We {0} much progress on the bug lately.",
+      "verbs": [
+        "NOT MAKE"
+      ],
+      "answers": [
+        [
+          "haven't been making",
+          "have not been making"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"lately\", que señala un periodo reciente que llega hasta ahora; por lo tanto va Present Perfect Continuous. La regla en negativo es \"have/has + not + been + verbo-ing\"; con \"we\" usamos \"haven't been\": \"haven't been making\"."
+    },
+    {
+      "id": "ppc-e44",
+      "prompt": "What {0} the recruiters {1} to attract talent recently?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "have"
+        ],
+        [
+          "been doing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar la pregunta abierta con \"recently\", que enfatiza una actividad en curso hasta ahora; por lo tanto va Present Perfect Continuous. La regla en pregunta es \"have/has + sujeto + been + verbo-ing\"; con \"the recruiters\" (plural) usamos \"have ... been doing\": \"What have the recruiters been doing...?\"."
+    },
+    {
+      "id": "ppc-e45",
+      "prompt": "The backend team {0} the database queries for two days.",
+      "verbs": [
+        "OPTIMIZE"
+      ],
+      "answers": [
+        [
+          "has been optimizing",
+          "'s been optimizing",
+          "has been optimising",
+          "'s been optimising"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for two days\", que mide la duración de una actividad que sigue en curso; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"the backend team\" (colectivo en singular) usamos \"has been\": \"has been optimizing\"."
+    },
+    {
+      "id": "ppc-e46",
+      "prompt": "He {0} late at the office since the launch was announced.",
+      "verbs": [
+        "STAY"
+      ],
+      "answers": [
+        [
+          "has been staying",
+          "'s been staying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the launch was announced\", que marca el inicio en el pasado de un hábito que continúa hasta ahora; por lo tanto va Present Perfect Continuous. La regla es \"have/has been + verbo-ing\"; con \"he\" usamos \"has been\": \"has been staying\"."
+    }
+  ]
+}

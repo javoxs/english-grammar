@@ -1,0 +1,685 @@
+{
+  "id": "past-perfect-continuous",
+  "name": "Past Perfect Continuous",
+  "explanation": "Enfatiza la duración de una acción que ocurrió antes de otro momento o acción en el pasado. Forma: had been + verbo-ing.",
+  "original": [
+    {
+      "id": "ppcon-15",
+      "num": 15,
+      "prompt": "The scientist suddenly saw the answer to the problem that he {0} with for the last two months.",
+      "verbs": [
+        "DEAL"
+      ],
+      "answers": [
+        [
+          "had been dealing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for the last two months\" junto a un evento pasado (cuando vio la respuesta): la acción venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been dealing\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "ppcon-e1",
+      "prompt": "She was tired because she {0} all night.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had been working"
+        ]
+      ],
+      "justification": "La clave aquí es que la acción (trabajar toda la noche) tuvo una duración previa que explica un estado pasado posterior (estar cansada). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been working\"."
+    },
+    {
+      "id": "ppcon-e2",
+      "prompt": "They {0} for hours before the bus finally arrived.",
+      "verbs": [
+        "WAIT"
+      ],
+      "answers": [
+        [
+          "had been waiting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for hours\" junto a \"before the bus arrived\": la espera venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been waiting\"."
+    },
+    {
+      "id": "ppcon-e3",
+      "prompt": "He {0} on the project for six months before the company closed.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for six months\" junto a \"before the company closed\": la actividad venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been working\"."
+    },
+    {
+      "id": "ppcon-e4",
+      "prompt": "How long {0} you {1} before you found a job?",
+      "verbs": [
+        "SEARCH"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "been searching"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\" junto a \"before you found a job\": se pregunta por la duración previa a ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en pregunta es \"had + sujeto + been + verbo-ing\": \"had you been searching?\"."
+    },
+    {
+      "id": "ppcon-e5",
+      "prompt": "The ground was wet because it {0} for days.",
+      "verbs": [
+        "RAIN"
+      ],
+      "answers": [
+        [
+          "had been raining"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for days\" explicando un estado pasado (el suelo estaba mojado): la lluvia venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been raining\"."
+    },
+    {
+      "id": "ppcon-e6",
+      "prompt": "My eyes hurt because I {0} at the screen for hours.",
+      "verbs": [
+        "STARE"
+      ],
+      "answers": [
+        [
+          "had been staring"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for hours\" explicando un estado pasado (me dolían los ojos): la acción venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been staring\"."
+    },
+    {
+      "id": "ppcon-e7",
+      "prompt": "When the teacher arrived, the students {0} for twenty minutes.",
+      "verbs": [
+        "TALK"
+      ],
+      "answers": [
+        [
+          "had been talking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for twenty minutes\" junto a un evento pasado (cuando llegó el profesor): la conversación venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been talking\"."
+    },
+    {
+      "id": "ppcon-e8",
+      "prompt": "She finally passed the exam she {0} for all year.",
+      "verbs": [
+        "STUDY"
+      ],
+      "answers": [
+        [
+          "had been studying"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for all year\" junto a un evento pasado (aprobar el examen): el estudio venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been studying\"."
+    },
+    {
+      "id": "ppcon-e9",
+      "prompt": "We {0} for the train when we heard the announcement.",
+      "verbs": [
+        "WAIT"
+      ],
+      "answers": [
+        [
+          "had been waiting"
+        ]
+      ],
+      "justification": "La clave aquí es que la espera venía durando antes de otro evento pasado (cuando oímos el anuncio). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been waiting\"."
+    },
+    {
+      "id": "ppcon-e10",
+      "prompt": "His hands were dirty because he {0} in the garden.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had been working"
+        ]
+      ],
+      "justification": "La clave aquí es que la actividad (trabajar en el jardín) tuvo una duración previa que explica un estado pasado (tener las manos sucias). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been working\"."
+    },
+    {
+      "id": "ppcon-e11",
+      "prompt": "The players were exhausted because they {0} for ninety minutes.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "had been running"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for ninety minutes\" explicando un estado pasado (estar agotados): la acción venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been running\"."
+    },
+    {
+      "id": "ppcon-e12",
+      "prompt": "How long {0} she {1} before she got the promotion?",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\" junto a \"before she got the promotion\": se pregunta por la duración previa a ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en pregunta es \"had + sujeto + been + verbo-ing\": \"had she been working?\"."
+    },
+    {
+      "id": "ppcon-e13",
+      "prompt": "By the time we got home, we {0} for ten hours straight.",
+      "verbs": [
+        "DRIVE"
+      ],
+      "answers": [
+        [
+          "had been driving"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time we got home\" junto a \"for ten hours\": la acción venía durando antes de ese momento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been driving\"."
+    },
+    {
+      "id": "ppcon-e14",
+      "prompt": "The baby's cheeks were red because she {0}.",
+      "verbs": [
+        "CRY"
+      ],
+      "answers": [
+        [
+          "had been crying"
+        ]
+      ],
+      "justification": "La clave aquí es que la acción (llorar) tuvo una duración previa que explica un estado pasado (mejillas rojas). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been crying\"."
+    },
+    {
+      "id": "ppcon-e15",
+      "prompt": "I {0} about the problem all week before I found the solution.",
+      "verbs": [
+        "THINK"
+      ],
+      "answers": [
+        [
+          "had been thinking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all week\" junto a \"before I found the solution\": la reflexión venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been thinking\"."
+    },
+    {
+      "id": "ppcon-e16",
+      "prompt": "The developers {0} the legacy module for hours before they finally found the bug.",
+      "verbs": [
+        "DEBUG"
+      ],
+      "answers": [
+        [
+          "had been debugging"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for hours\" junto a \"before they finally found the bug\": la depuración venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been debugging\"."
+    },
+    {
+      "id": "ppcon-e17",
+      "prompt": "The production server {0} since Monday when the outage hit.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "had been running"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since Monday\" junto a un evento pasado (cuando llegó la caída): el servidor venía funcionando desde antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been running\"."
+    },
+    {
+      "id": "ppcon-e18",
+      "prompt": "The team {0} on the release for weeks before it finally went live.",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for weeks\" junto a \"before it finally went live\": el trabajo venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been working\"."
+    },
+    {
+      "id": "ppcon-e19",
+      "prompt": "Our support agents {0} customer tickets all morning before the system crashed.",
+      "verbs": [
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "had been handling"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all morning\" junto a \"before the system crashed\": la gestión de tickets venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been handling\"."
+    },
+    {
+      "id": "ppcon-e20",
+      "prompt": "The analyst was exhausted because she {0} the quarterly data for ten hours straight.",
+      "verbs": [
+        "REVIEW"
+      ],
+      "answers": [
+        [
+          "had been reviewing"
+        ]
+      ],
+      "justification": "La clave aquí es que la acción (revisar los datos) tuvo una duración previa (\"for ten hours straight\") que explica un estado pasado (estar agotada). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been reviewing\"."
+    },
+    {
+      "id": "ppcon-e21",
+      "prompt": "How long {0} the engineers {1} the database before they spotted the leak?",
+      "verbs": [
+        "MONITOR"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "been monitoring"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\" junto a \"before they spotted the leak\": se pregunta por la duración previa a ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en pregunta es \"had + sujeto + been + verbo-ing\": \"had the engineers been monitoring?\"."
+    },
+    {
+      "id": "ppcon-e22",
+      "prompt": "The client was upset because the integration {0} for three days without a response.",
+      "verbs": [
+        "FAIL"
+      ],
+      "answers": [
+        [
+          "had been failing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for three days\" explicando un estado pasado (el cliente estaba molesto): el fallo venía ocurriendo antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been failing\"."
+    },
+    {
+      "id": "ppcon-e23",
+      "prompt": "By the time the deadline arrived, the designers {0} the prototype for a month.",
+      "verbs": [
+        "BUILD"
+      ],
+      "answers": [
+        [
+          "had been building"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time the deadline arrived\" junto a \"for a month\": la construcción del prototipo venía durando antes de ese momento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been building\"."
+    },
+    {
+      "id": "ppcon-e24",
+      "prompt": "When the CEO walked in, the managers {0} the budget for over an hour.",
+      "verbs": [
+        "DISCUSS"
+      ],
+      "answers": [
+        [
+          "had been discussing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for over an hour\" junto a un evento pasado (cuando entró el CEO): la discusión venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been discussing\"."
+    },
+    {
+      "id": "ppcon-e25",
+      "prompt": "The marketing team {0} the new campaign since January before it was finally approved.",
+      "verbs": [
+        "PLAN"
+      ],
+      "answers": [
+        [
+          "had been planning"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since January\" junto a \"before it was finally approved\": la planificación venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been planning\"."
+    },
+    {
+      "id": "ppcon-e26",
+      "prompt": "The QA team {0} the application for two weeks before the launch was postponed.",
+      "verbs": [
+        "TEST"
+      ],
+      "answers": [
+        [
+          "had been testing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for two weeks\" junto a \"before the launch was postponed\": las pruebas venían durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been testing\"."
+    },
+    {
+      "id": "ppcon-e27",
+      "prompt": "Sales {0} steadily for months before the new competitor appeared.",
+      "verbs": [
+        "GROW"
+      ],
+      "answers": [
+        [
+          "had been growing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for months\" junto a \"before the new competitor appeared\": el crecimiento venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been growing\"."
+    },
+    {
+      "id": "ppcon-e28",
+      "prompt": "The intern's screen was full of errors because he {0} the script without testing it.",
+      "verbs": [
+        "RUN"
+      ],
+      "answers": [
+        [
+          "had been running"
+        ]
+      ],
+      "justification": "La clave aquí es que la acción (ejecutar el script) tuvo una duración previa que explica un estado pasado (la pantalla llena de errores). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been running\"."
+    },
+    {
+      "id": "ppcon-e29",
+      "prompt": "How long {0} the company {1} that supplier before the contract ended?",
+      "verbs": [
+        "USE"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "been using"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\" junto a \"before the contract ended\": se pregunta por la duración previa a ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en pregunta es \"had + sujeto + been + verbo-ing\": \"had the company been using?\"."
+    },
+    {
+      "id": "ppcon-e30",
+      "prompt": "The DevOps engineer {0} the deployment pipeline all night before the demo.",
+      "verbs": [
+        "FIX"
+      ],
+      "answers": [
+        [
+          "had been fixing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"all night\" junto a \"before the demo\": la reparación venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been fixing\"."
+    },
+    {
+      "id": "ppcon-e31",
+      "prompt": "The recruiters {0} for a senior architect for months before they filled the role.",
+      "verbs": [
+        "SEARCH"
+      ],
+      "answers": [
+        [
+          "had been searching"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for months\" junto a \"before they filled the role\": la búsqueda venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been searching\"."
+    },
+    {
+      "id": "ppcon-e32",
+      "prompt": "The accountants were stressed because they {0} the figures since dawn.",
+      "verbs": [
+        "CHECK"
+      ],
+      "answers": [
+        [
+          "had been checking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since dawn\" explicando un estado pasado (estar estresados): la revisión venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been checking\"."
+    },
+    {
+      "id": "ppcon-e33",
+      "prompt": "By the time the auditors arrived, the staff {0} the records for hours.",
+      "verbs": [
+        "ORGANIZE"
+      ],
+      "answers": [
+        [
+          "had been organizing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time the auditors arrived\" junto a \"for hours\": la organización venía durando antes de ese momento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been organizing\"."
+    },
+    {
+      "id": "ppcon-e34",
+      "prompt": "The product manager {0} feedback from users for a quarter before the redesign started.",
+      "verbs": [
+        "COLLECT"
+      ],
+      "answers": [
+        [
+          "had been collecting"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for a quarter\" junto a \"before the redesign started\": la recolección de feedback venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been collecting\"."
+    },
+    {
+      "id": "ppcon-e35",
+      "prompt": "The network was unstable because the router {0} packets for the entire afternoon.",
+      "verbs": [
+        "DROP"
+      ],
+      "answers": [
+        [
+          "had been dropping"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for the entire afternoon\" explicando un estado pasado (la red inestable): la pérdida de paquetes venía durando antes de ese momento. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been dropping\"."
+    },
+    {
+      "id": "ppcon-e36",
+      "prompt": "The monitoring system {0} alerts properly before the crash, so nobody noticed.",
+      "verbs": [
+        "NOT SEND"
+      ],
+      "answers": [
+        [
+          "hadn't been sending",
+          "had not been sending"
+        ]
+      ],
+      "justification": "La clave aquí es que el fallo venía ocurriendo durante un periodo previo a otro evento pasado (el crash). Por lo tanto va Past Perfect Continuous. La regla en negativo es \"had + not + been + verbo-ing\": \"hadn't been sending\"."
+    },
+    {
+      "id": "ppcon-e37",
+      "prompt": "How long {0} the developers {1} the API before they replaced it?",
+      "verbs": [
+        "MAINTAIN"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "been maintaining"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\" junto a \"before they replaced it\": se pregunta por la duración previa a ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en pregunta es \"had + sujeto + been + verbo-ing\": \"had the developers been maintaining?\"."
+    },
+    {
+      "id": "ppcon-e38",
+      "prompt": "The sales team {0} the deal for months before the client backed out.",
+      "verbs": [
+        "NEGOTIATE"
+      ],
+      "answers": [
+        [
+          "had been negotiating"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for months\" junto a \"before the client backed out\": la negociación venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been negotiating\"."
+    },
+    {
+      "id": "ppcon-e39",
+      "prompt": "The cache {0} stale data since the morning before anyone caught it.",
+      "verbs": [
+        "SERVE"
+      ],
+      "answers": [
+        [
+          "had been serving"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the morning\" junto a \"before anyone caught it\": el problema venía ocurriendo desde antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been serving\"."
+    },
+    {
+      "id": "ppcon-e40",
+      "prompt": "The backups {0} correctly for weeks before the audit revealed the gap.",
+      "verbs": [
+        "NOT RUN"
+      ],
+      "answers": [
+        [
+          "hadn't been running",
+          "had not been running"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for weeks\" junto a \"before the audit revealed the gap\": el fallo venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en negativo es \"had + not + been + verbo-ing\": \"hadn't been running\"."
+    },
+    {
+      "id": "ppcon-e41",
+      "prompt": "By the time the investors arrived, the founders {0} the pitch for hours.",
+      "verbs": [
+        "REHEARSE"
+      ],
+      "answers": [
+        [
+          "had been rehearsing"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"By the time the investors arrived\" junto a \"for hours\": el ensayo venía durando antes de ese momento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been rehearsing\"."
+    },
+    {
+      "id": "ppcon-e42",
+      "prompt": "How long {0} the server {1} memory before it finally crashed?",
+      "verbs": [
+        "LEAK"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "been leaking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\" junto a \"before it finally crashed\": se pregunta por la duración previa a ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en pregunta es \"had + sujeto + been + verbo-ing\": \"had the server been leaking?\"."
+    },
+    {
+      "id": "ppcon-e43",
+      "prompt": "The analysts {0} the market since spring before the report was published.",
+      "verbs": [
+        "TRACK"
+      ],
+      "answers": [
+        [
+          "had been tracking"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since spring\" junto a \"before the report was published\": el seguimiento venía durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been tracking\"."
+    },
+    {
+      "id": "ppcon-e44",
+      "prompt": "The team {0} the staging environment before the bug reached production.",
+      "verbs": [
+        "NOT MONITOR"
+      ],
+      "answers": [
+        [
+          "hadn't been monitoring",
+          "had not been monitoring"
+        ]
+      ],
+      "justification": "La clave aquí es que la ausencia de monitoreo se extendía durante el periodo previo a otro evento pasado (que el bug llegara a producción). Por lo tanto va Past Perfect Continuous. La regla en negativo es \"had + not + been + verbo-ing\": \"hadn't been monitoring\"."
+    },
+    {
+      "id": "ppcon-e45",
+      "prompt": "The CEO was furious because the PR team {0} the crisis badly for days.",
+      "verbs": [
+        "MANAGE"
+      ],
+      "answers": [
+        [
+          "had been managing"
+        ]
+      ],
+      "justification": "La clave aquí es que la acción (gestionar la crisis) venía durando \"for days\" y explica un estado pasado (que el CEO estuviera furioso). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been managing\"."
+    },
+    {
+      "id": "ppcon-e46",
+      "prompt": "How long {0} you {1} on the prototype before the funding was cut?",
+      "verbs": [
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had"
+        ],
+        [
+          "been working"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"How long\" junto a \"before the funding was cut\": se pregunta por la duración previa a ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla en pregunta es \"had + sujeto + been + verbo-ing\": \"had you been working?\"."
+    },
+    {
+      "id": "ppcon-e47",
+      "prompt": "The new feature was buggy because the engineers {0} corners for weeks.",
+      "verbs": [
+        "CUT"
+      ],
+      "answers": [
+        [
+          "had been cutting"
+        ]
+      ],
+      "justification": "La clave aquí es que la práctica (recortar atajos) venía durando \"for weeks\" y explica un estado pasado (que la función tuviera errores). Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been cutting\"."
+    },
+    {
+      "id": "ppcon-e48",
+      "prompt": "The customers {0} about slow load times since launch before the team finally reacted.",
+      "verbs": [
+        "COMPLAIN"
+      ],
+      "answers": [
+        [
+          "had been complaining"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since launch\" junto a \"before the team finally reacted\": las quejas venían durando antes de ese evento pasado. Por lo tanto va Past Perfect Continuous. La regla es \"had been + verbo-ing\": \"had been complaining\"."
+    },
+    {
+      "id": "ppcon-e49",
+      "prompt": "Profits were down because the company {0} in marketing for months.",
+      "verbs": [
+        "NOT INVEST"
+      ],
+      "answers": [
+        [
+          "hadn't been investing",
+          "had not been investing"
+        ]
+      ],
+      "justification": "La clave aquí es que la falta de inversión venía durando \"for months\" y explica un estado pasado (que los beneficios cayeran). Por lo tanto va Past Perfect Continuous. La regla en negativo es \"had + not + been + verbo-ing\": \"hadn't been investing\"."
+    }
+  ]
+}

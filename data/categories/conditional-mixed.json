@@ -1,0 +1,934 @@
+{
+  "id": "conditional-mixed",
+  "name": "Mixed Conditional",
+  "explanation": "Mixed Conditional: mezcla de marcos temporales. Pasado → presente (If + Past Perfect, would + verbo base, con marcas como now/today) o presente → pasado (If + Past Simple irreal, would have + participio, con marcas como yesterday). Cada oración tiene dos cláusulas: {0} y {1}.",
+  "keyHint": "Se trata de una situación que mezcla marcos temporales (p. ej. una condición del pasado con un resultado en el presente, o al revés).",
+  "original": [],
+  "extra": [
+    {
+      "id": "condm-e1",
+      "prompt": "If we {0} to the cloud last year, the team {1} much faster now.",
+      "verbs": [
+        "MIGRATE",
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had migrated"
+        ],
+        [
+          "would work",
+          "'d work"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had migrated\", causa pasada) y la principal en \"would + verbo base\" porque la consecuencia es presente (\"now\"): \"would work\"."
+    },
+    {
+      "id": "condm-e2",
+      "prompt": "If she {0} computer science, she {1} our lead engineer today.",
+      "verbs": [
+        "STUDY",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had studied"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had studied\") y la principal en \"would + verbo base\" por la consecuencia presente (\"today\"): \"would be\"."
+    },
+    {
+      "id": "condm-e3",
+      "prompt": "If I {0} so busy, I {1} the report yesterday.",
+      "verbs": [
+        "NOT BE",
+        "FINISH"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have finished",
+          "would've finished"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"would have finished\"."
+    },
+    {
+      "id": "condm-e4",
+      "prompt": "If we {0} the contract, we {1} abroad by now.",
+      "verbs": [
+        "WIN",
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had won"
+        ],
+        [
+          "would be working",
+          "'d be working"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con aspecto continuo: la cláusula \"if\" va en Past Perfect (\"had won\", causa pasada) y la principal en \"would be + verbo-ing\" por la consecuencia presente en curso (\"by now\"): \"would be working\"."
+    },
+    {
+      "id": "condm-e5",
+      "prompt": "If the team {0} the framework two years ago, our codebase {1} cleaner today.",
+      "verbs": [
+        "ADOPT",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had adopted"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had adopted\", causa pasada) y la principal en \"would + verbo base\" por la consecuencia presente (\"today\"): \"would be\"."
+    },
+    {
+      "id": "condm-e6",
+      "prompt": "If we {0} the senior architect, the system {1} this load now.",
+      "verbs": [
+        "NOT LOSE",
+        "CAN HANDLE"
+      ],
+      "answers": [
+        [
+          "hadn't lost",
+          "had not lost"
+        ],
+        [
+          "could handle"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect negativo (\"hadn't lost\") y la principal con modal de habilidad por la consecuencia presente (\"now\"): \"could handle\"."
+    },
+    {
+      "id": "condm-e7",
+      "prompt": "If the company {0} in training, employees {1} more productive these days.",
+      "verbs": [
+        "INVEST",
+        "MIGHT BE"
+      ],
+      "answers": [
+        [
+          "had invested"
+        ],
+        [
+          "might be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had invested\") y la principal con \"might\" por la consecuencia presente (\"these days\"): \"might be\"."
+    },
+    {
+      "id": "condm-e8",
+      "prompt": "If I {0} the project lead, I {1} that risky deploy last Friday.",
+      "verbs": [
+        "NOT BE",
+        "NOT APPROVE"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "wouldn't have approved",
+          "would not have approved"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last Friday\"): \"wouldn't have approved\"."
+    },
+    {
+      "id": "condm-e9",
+      "prompt": "If our servers {0} so robust, the site {1} during yesterday's spike.",
+      "verbs": [
+        "NOT BE",
+        "CRASH"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have crashed",
+          "would've crashed"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", cualidad presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"would have crashed\"."
+    },
+    {
+      "id": "condm-e10",
+      "prompt": "If she {0} the certification, she {1} on the cloud team now.",
+      "verbs": [
+        "EARN",
+        "WORK"
+      ],
+      "answers": [
+        [
+          "had earned"
+        ],
+        [
+          "would be working",
+          "'d be working"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con aspecto continuo (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had earned\") y la principal en \"would be + verbo-ing\" por la consecuencia presente en curso (\"now\"): \"would be working\"."
+    },
+    {
+      "id": "condm-e11",
+      "prompt": "If we {0} the bug in QA, the client {1} so frustrated today.",
+      "verbs": [
+        "CATCH",
+        "NOT BE"
+      ],
+      "answers": [
+        [
+          "had caught"
+        ],
+        [
+          "wouldn't be",
+          "would not be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had caught\") y la principal en \"would + verbo base\" negativo por la consecuencia presente (\"today\"): \"wouldn't be\"."
+    },
+    {
+      "id": "condm-e12",
+      "prompt": "If the manager {0} the deadlines, the team {1} so many late nights last month.",
+      "verbs": [
+        "UNDERSTAND",
+        "NOT WORK"
+      ],
+      "answers": [
+        [
+          "understood"
+        ],
+        [
+          "wouldn't have worked",
+          "would not have worked"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"understood\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last month\"): \"wouldn't have worked\"."
+    },
+    {
+      "id": "condm-e13",
+      "prompt": "Had we {0} the warning signs, the platform {1} stable now.",
+      "verbs": [
+        "HEED",
+        "BE"
+      ],
+      "answers": [
+        [
+          "heeded"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con inversión formal: \"Had + sujeto + participio\" reemplaza a \"If we had heeded\". La principal va en \"would + verbo base\" por la consecuencia presente (\"now\"): \"would be\"."
+    },
+    {
+      "id": "condm-e14",
+      "prompt": "Had the founders {0} the patent, the company {1} royalties today.",
+      "verbs": [
+        "FILE",
+        "COLLECT"
+      ],
+      "answers": [
+        [
+          "filed"
+        ],
+        [
+          "would be collecting",
+          "'d be collecting"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con inversión formal (\"Had the founders filed\" = \"If the founders had filed\") y aspecto continuo. La principal va \"would be + verbo-ing\" por la consecuencia presente (\"today\"): \"would be collecting\"."
+    },
+    {
+      "id": "condm-e15",
+      "prompt": "If I {0} fluent in Python, I {1} that script much faster last week.",
+      "verbs": [
+        "BE",
+        "CAN WRITE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "could have written",
+          "could've written"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"were\", habilidad presente) y la principal con modal pasado \"could have + participio\" por la consecuencia pasada (\"last week\"): \"could have written\"."
+    },
+    {
+      "id": "condm-e16",
+      "prompt": "If the startup {0} the offer, the founders {1} millionaires by now.",
+      "verbs": [
+        "ACCEPT",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had accepted"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had accepted\") y la principal en \"would + verbo base\" por la consecuencia presente (\"by now\"): \"would be\"."
+    },
+    {
+      "id": "condm-e17",
+      "prompt": "If the documentation {0} so poor, the new hire {1} the setup yesterday.",
+      "verbs": [
+        "NOT BE",
+        "FINISH"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have finished",
+          "would've finished"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"would have finished\"."
+    },
+    {
+      "id": "condm-e18",
+      "prompt": "If we {0} the database earlier, the queries {1} instant today.",
+      "verbs": [
+        "OPTIMIZE",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had optimized"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had optimized\") y la principal en \"would + verbo base\" por la consecuencia presente (\"today\"): \"would be\"."
+    },
+    {
+      "id": "condm-e19",
+      "prompt": "If she {0} on the call, she {1} the issue in the last meeting.",
+      "verbs": [
+        "BE",
+        "MIGHT SPOT"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "might have spotted",
+          "might've spotted"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"were\", hábito presente) y la principal con modal pasado \"might have + participio\" por la consecuencia pasada (\"last meeting\"): \"might have spotted\"."
+    },
+    {
+      "id": "condm-e20",
+      "prompt": "If the company {0} remote work sooner, it {1} top talent now.",
+      "verbs": [
+        "EMBRACE",
+        "ATTRACT"
+      ],
+      "answers": [
+        [
+          "had embraced"
+        ],
+        [
+          "would attract",
+          "'d attract"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had embraced\") y la principal en \"would + verbo base\" por la consecuencia presente (\"now\"): \"would attract\"."
+    },
+    {
+      "id": "condm-e21",
+      "prompt": "If our process {0} so manual, we {1} those errors last quarter.",
+      "verbs": [
+        "NOT BE",
+        "AVOID"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have avoided",
+          "would've avoided"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last quarter\"): \"would have avoided\"."
+    },
+    {
+      "id": "condm-e22",
+      "prompt": "If I {0} that job offer, I {1} in Berlin right now.",
+      "verbs": [
+        "TAKE",
+        "LIVE"
+      ],
+      "answers": [
+        [
+          "had taken"
+        ],
+        [
+          "would be living",
+          "'d be living"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con aspecto continuo (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had taken\") y la principal en \"would be + verbo-ing\" por la consecuencia presente en curso (\"right now\"): \"would be living\"."
+    },
+    {
+      "id": "condm-e23",
+      "prompt": "If the team {0} the incident, the dashboard {1} green now.",
+      "verbs": [
+        "RESOLVE",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had resolved"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had resolved\") y la principal en \"would + verbo base\" por la consecuencia presente (\"now\"): \"would be\"."
+    },
+    {
+      "id": "condm-e24",
+      "prompt": "If the client {0} so demanding, the project {1} on budget last month.",
+      "verbs": [
+        "NOT BE",
+        "STAY"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have stayed",
+          "would've stayed"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", rasgo presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last month\"): \"would have stayed\"."
+    },
+    {
+      "id": "condm-e25",
+      "prompt": "If we {0} more automated tests, the release {1} smoother now.",
+      "verbs": [
+        "WRITE",
+        "CAN BE"
+      ],
+      "answers": [
+        [
+          "had written"
+        ],
+        [
+          "could be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had written\") y la principal con modal de habilidad por la consecuencia presente (\"now\"): \"could be\"."
+    },
+    {
+      "id": "condm-e26",
+      "prompt": "If I {0} the admin password, I {1} the server yesterday.",
+      "verbs": [
+        "KNOW",
+        "RESTART"
+      ],
+      "answers": [
+        [
+          "knew"
+        ],
+        [
+          "would have restarted",
+          "would've restarted"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"knew\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"would have restarted\"."
+    },
+    {
+      "id": "condm-e27",
+      "prompt": "If management {0} our warnings, the product {1} on the market today.",
+      "verbs": [
+        "HEED",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had heeded"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had heeded\") y la principal en \"would + verbo base\" por la consecuencia presente (\"today\"): \"would be\"."
+    },
+    {
+      "id": "condm-e28",
+      "prompt": "Were the team not {0} so thin, we {1} the outage faster yesterday.",
+      "verbs": [
+        "STRETCH",
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "stretched"
+        ],
+        [
+          "would have handled",
+          "would've handled"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado) con inversión formal: \"Were the team not stretched\" = \"If the team weren't stretched\" (estado presente). La principal va en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"would have handled\"."
+    },
+    {
+      "id": "condm-e29",
+      "prompt": "If the investors {0} in us early, we {1} a bigger office now.",
+      "verbs": [
+        "BELIEVE",
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "had believed"
+        ],
+        [
+          "would have",
+          "'d have"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had believed\") y la principal en \"would + verbo base\" por la consecuencia presente (\"now\"): \"would have\"."
+    },
+    {
+      "id": "condm-e30",
+      "prompt": "If the codebase {0} so fragile, the hotfix {1} the outage last night.",
+      "verbs": [
+        "NOT BE",
+        "NOT CAUSE"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "wouldn't have caused",
+          "would not have caused"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last night\"): \"wouldn't have caused\"."
+    },
+    {
+      "id": "condm-e31",
+      "prompt": "If we {0} the competitor, our market share {1} higher today.",
+      "verbs": [
+        "ACQUIRE",
+        "MIGHT BE"
+      ],
+      "answers": [
+        [
+          "had acquired"
+        ],
+        [
+          "might be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had acquired\") y la principal con \"might\" por la consecuencia presente (\"today\"): \"might be\"."
+    },
+    {
+      "id": "condm-e32",
+      "prompt": "If the API {0} better documented, I {1} so much time debugging yesterday.",
+      "verbs": [
+        "BE",
+        "NOT WASTE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "wouldn't have wasted",
+          "would not have wasted"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"were\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"wouldn't have wasted\"."
+    },
+    {
+      "id": "condm-e33",
+      "prompt": "If she {0} the promotion, she {1} the new team by now.",
+      "verbs": [
+        "ACCEPT",
+        "LEAD"
+      ],
+      "answers": [
+        [
+          "had accepted"
+        ],
+        [
+          "would be leading",
+          "'d be leading"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con aspecto continuo (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had accepted\") y la principal en \"would be + verbo-ing\" por la consecuencia presente en curso (\"by now\"): \"would be leading\"."
+    },
+    {
+      "id": "condm-e34",
+      "prompt": "If our pricing {0} so complex, the customer {1} the deal last week.",
+      "verbs": [
+        "NOT BE",
+        "CLOSE"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have closed",
+          "would've closed"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last week\"): \"would have closed\"."
+    },
+    {
+      "id": "condm-e35",
+      "prompt": "If the engineers {0} the legacy code, the system {1} so slow today.",
+      "verbs": [
+        "REFACTOR",
+        "NOT BE"
+      ],
+      "answers": [
+        [
+          "had refactored"
+        ],
+        [
+          "wouldn't be",
+          "would not be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had refactored\") y la principal en \"would + verbo base\" negativo por la consecuencia presente (\"today\"): \"wouldn't be\"."
+    },
+    {
+      "id": "condm-e36",
+      "prompt": "Had the company {0} cybersecurity seriously, our data {1} safe now.",
+      "verbs": [
+        "TAKE",
+        "BE"
+      ],
+      "answers": [
+        [
+          "taken"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con inversión formal (\"Had the company taken\" = \"If the company had taken\"). La principal va en \"would + verbo base\" por la consecuencia presente (\"now\"): \"would be\"."
+    },
+    {
+      "id": "condm-e37",
+      "prompt": "If the manager {0} more approachable, the intern {1} for help yesterday.",
+      "verbs": [
+        "BE",
+        "ASK"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "would have asked",
+          "would've asked"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"were\", rasgo presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"would have asked\"."
+    },
+    {
+      "id": "condm-e38",
+      "prompt": "If we {0} the roadmap last year, we {1} ahead of competitors now.",
+      "verbs": [
+        "FOLLOW",
+        "CAN BE"
+      ],
+      "answers": [
+        [
+          "had followed"
+        ],
+        [
+          "could be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had followed\") y la principal con modal de habilidad por la consecuencia presente (\"now\"): \"could be\"."
+    },
+    {
+      "id": "condm-e39",
+      "prompt": "If I {0} on vacation, I {1} that critical incident last weekend.",
+      "verbs": [
+        "NOT BE",
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have handled",
+          "would've handled"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last weekend\"): \"would have handled\"."
+    },
+    {
+      "id": "condm-e40",
+      "prompt": "If the team {0} agile sooner, deliveries {1} predictable these days.",
+      "verbs": [
+        "GO",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had gone"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had gone\") y la principal en \"would + verbo base\" por la consecuencia presente (\"these days\"): \"would be\"."
+    },
+    {
+      "id": "condm-e41",
+      "prompt": "If our infrastructure {0} so outdated, the migration {1} smoothly last month.",
+      "verbs": [
+        "NOT BE",
+        "GO"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have gone",
+          "would've gone"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last month\"): \"would have gone\"."
+    },
+    {
+      "id": "condm-e42",
+      "prompt": "If we {0} that contract, we {1} with the client right now.",
+      "verbs": [
+        "SIGN",
+        "MEET"
+      ],
+      "answers": [
+        [
+          "had signed"
+        ],
+        [
+          "would be meeting",
+          "'d be meeting"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con aspecto continuo (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had signed\") y la principal en \"would be + verbo-ing\" por la consecuencia presente en curso (\"right now\"): \"would be meeting\"."
+    },
+    {
+      "id": "condm-e43",
+      "prompt": "If the budget {0} bigger, we {1} more engineers last quarter.",
+      "verbs": [
+        "BE",
+        "MIGHT HIRE"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "might have hired",
+          "might've hired"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"were\", estado presente) y la principal con modal pasado \"might have + participio\" por la consecuencia pasada (\"last quarter\"): \"might have hired\"."
+    },
+    {
+      "id": "condm-e44",
+      "prompt": "If the CTO {0} the framework, our apps {1} compatible today.",
+      "verbs": [
+        "STANDARDIZE",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had standardized"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had standardized\") y la principal en \"would + verbo base\" por la consecuencia presente (\"today\"): \"would be\"."
+    },
+    {
+      "id": "condm-e45",
+      "prompt": "If the test suite {0} so slow, the team {1} more often yesterday.",
+      "verbs": [
+        "NOT BE",
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have deployed",
+          "would've deployed"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"yesterday\"): \"would have deployed\"."
+    },
+    {
+      "id": "condm-e46",
+      "prompt": "If we {0} customer feedback earlier, the product {1} more popular now.",
+      "verbs": [
+        "GATHER",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had gathered"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had gathered\") y la principal en \"would + verbo base\" por la consecuencia presente (\"now\"): \"would be\"."
+    },
+    {
+      "id": "condm-e47",
+      "prompt": "Had we {0} the outage, the team {1} on features now.",
+      "verbs": [
+        "AVOID",
+        "CAN FOCUS"
+      ],
+      "answers": [
+        [
+          "avoided"
+        ],
+        [
+          "could focus"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional con inversión formal (\"Had we avoided\" = \"If we had avoided\"). La principal usa modal de habilidad por la consecuencia presente (\"now\"): \"could focus\"."
+    },
+    {
+      "id": "condm-e48",
+      "prompt": "If the onboarding {0} so confusing, the new hires {1} productive last week.",
+      "verbs": [
+        "NOT BE",
+        "BECOME"
+      ],
+      "answers": [
+        [
+          "weren't",
+          "wasn't",
+          "were not"
+        ],
+        [
+          "would have become",
+          "would've become"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"weren't\", estado presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last week\"): \"would have become\"."
+    },
+    {
+      "id": "condm-e49",
+      "prompt": "If the company {0} in the cloud, scaling {1} effortless today.",
+      "verbs": [
+        "INVEST",
+        "BE"
+      ],
+      "answers": [
+        [
+          "had invested"
+        ],
+        [
+          "would be",
+          "'d be"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (pasado → presente). La cláusula \"if\" va en Past Perfect (\"had invested\") y la principal en \"would + verbo base\" por la consecuencia presente (\"today\"): \"would be\"."
+    },
+    {
+      "id": "condm-e50",
+      "prompt": "If I {0} better at delegating, I {1} so overwhelmed last sprint.",
+      "verbs": [
+        "BE",
+        "NOT FEEL"
+      ],
+      "answers": [
+        [
+          "were",
+          "was"
+        ],
+        [
+          "wouldn't have felt",
+          "would not have felt"
+        ]
+      ],
+      "justification": "La clave aquí es un Mixed Conditional (presente → pasado). La cláusula \"if\" va en Past Simple irreal (\"were\", habilidad presente) y la principal en \"would have + participio\" por la consecuencia pasada (\"last sprint\"): \"wouldn't have felt\"."
+    }
+  ]
+}

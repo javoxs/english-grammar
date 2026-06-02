@@ -1,0 +1,749 @@
+{
+  "id": "present-perfect",
+  "name": "Present Perfect",
+  "explanation": "Conecta el pasado con el presente. Se usa con <em>since</em>, <em>for</em>, <em>yet</em>, <em>already</em>, <em>never</em> y experiencias de vida. Forma: have/has + participio pasado.",
+  "original": [
+    {
+      "id": "pp-1b",
+      "num": 1,
+      "prompt": "I have been sitting here for three hours now but I {0} a single fish yet.",
+      "verbs": [
+        "NOT CATCH"
+      ],
+      "answers": [
+        [
+          "haven't caught",
+          "have not caught"
+        ]
+      ],
+      "justification": "La clave aquí es \"yet\", que indica un resultado acumulado hasta ahora (todavía no ha pasado); por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"I\" usamos \"have\", y el participio irregular de \"catch\" es \"caught\" (no \"catched\"): \"haven't caught\"."
+    },
+    {
+      "id": "pp-4a",
+      "num": 4,
+      "prompt": "She {0} the sea in her whole life.",
+      "verbs": [
+        "NEVER SEE"
+      ],
+      "answers": [
+        [
+          "has never seen"
+        ]
+      ],
+      "justification": "La clave aquí es \"in her whole life\" junto con \"never\", que expresan una experiencia de vida hasta el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"she\" usamos \"has\", y \"never\" va entre el auxiliar y el participio: \"has never seen\"."
+    },
+    {
+      "id": "pp-5",
+      "num": 5,
+      "prompt": "I {0} a tie since I was at school.",
+      "verbs": [
+        "NOT WEAR"
+      ],
+      "answers": [
+        [
+          "haven't worn",
+          "have not worn"
+        ]
+      ],
+      "justification": "La clave aquí es detectar la palabra \"since\", que nos indica un punto en el pasado conectado con el presente; por lo tanto va Present Perfect (con \"since\" no se usa Past Simple). La regla es \"have/has + participio\"; con \"I\" usamos \"have\", y el participio de \"wear\" es \"worn\": \"haven't worn\"."
+    },
+    {
+      "id": "pp-6",
+      "num": 6,
+      "prompt": "I {0} about their affair since last year!",
+      "verbs": [
+        "KNOW"
+      ],
+      "answers": [
+        [
+          "have known"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since last year\", que marca un estado que empezó en el pasado y continúa hasta hoy; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"I\" usamos \"have\", y el participio de \"know\" es \"known\": \"have known\"."
+    },
+    {
+      "id": "pp-9a",
+      "num": 9,
+      "prompt": "We {0} lovely weather for the last two weeks.",
+      "verbs": [
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "have had"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for the last two weeks\", que mide un periodo desde el pasado hasta el presente; por lo tanto va Present Perfect (no Past Perfect, porque no hay otro punto de referencia anterior en el pasado). La regla es \"have/has + participio\"; con \"we\" usamos \"have\" y el participio de \"have\" es \"had\": \"have had\"."
+    },
+    {
+      "id": "pp-19",
+      "num": 19,
+      "prompt": "Things {0} a lot since I was a girl.",
+      "verbs": [
+        "CHANGE"
+      ],
+      "answers": [
+        [
+          "have changed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since I was a girl\", que conecta un punto del pasado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con el sujeto plural \"things\" usamos \"have\", y el participio de \"change\" es \"changed\": \"have changed\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "pp-e1",
+      "prompt": "I {0} this film three times already.",
+      "verbs": [
+        "SEE"
+      ],
+      "answers": [
+        [
+          "have seen",
+          "'ve seen"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"already\", típica del Present Perfect, junto con una experiencia repetida hasta ahora; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"I\" usamos \"have\", y el participio de \"see\" es \"seen\": \"have seen\"."
+    },
+    {
+      "id": "pp-e2",
+      "prompt": "She {0} her keys. She can't find them anywhere.",
+      "verbs": [
+        "LOSE"
+      ],
+      "answers": [
+        [
+          "has lost",
+          "'s lost"
+        ]
+      ],
+      "justification": "La clave aquí es que hay un resultado presente de una acción pasada (perdió las llaves y ahora no las encuentra); por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"she\" usamos \"has\", y el participio de \"lose\" es \"lost\": \"has lost\"."
+    },
+    {
+      "id": "pp-e3",
+      "prompt": "{0} you ever {1} to Japan?",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "Have"
+        ],
+        [
+          "been"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"ever\", que pregunta por una experiencia de vida en cualquier momento hasta hoy; por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"you\" usamos \"Have\", y el participio de \"be\" es \"been\": \"Have you ever been...?\"."
+    },
+    {
+      "id": "pp-e4",
+      "prompt": "We {0} here since 2010.",
+      "verbs": [
+        "LIVE"
+      ],
+      "answers": [
+        [
+          "have lived",
+          "'ve lived"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since 2010\", que marca el comienzo en el pasado de algo que continúa hasta hoy; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"we\" usamos \"have\", y el participio de \"live\" es \"lived\": \"have lived\"."
+    },
+    {
+      "id": "pp-e5",
+      "prompt": "He {0} just {1} his dinner.",
+      "verbs": [
+        "FINISH"
+      ],
+      "answers": [
+        [
+          "has"
+        ],
+        [
+          "finished"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"just\", que indica una acción muy reciente con efecto en el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\", y \"just\" va entre el auxiliar y el participio; con \"he\" usamos \"has\": \"has just finished\"."
+    },
+    {
+      "id": "pp-e6",
+      "prompt": "The DevOps team {0} the database to the cloud already.",
+      "verbs": [
+        "MIGRATE"
+      ],
+      "answers": [
+        [
+          "has migrated",
+          "'s migrated"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"already\", típica del Present Perfect para una acción completada con efecto actual; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the DevOps team\" (singular) usamos \"has\", y el participio de \"migrate\" es \"migrated\": \"has migrated\"."
+    },
+    {
+      "id": "pp-e7",
+      "prompt": "We {0} three new clients this quarter.",
+      "verbs": [
+        "ONBOARD"
+      ],
+      "answers": [
+        [
+          "have onboarded",
+          "'ve onboarded"
+        ]
+      ],
+      "justification": "La clave aquí es \"this quarter\", un periodo que aún no ha terminado y conecta con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"we\" usamos \"have\", y el participio de \"onboard\" es \"onboarded\": \"have onboarded\"."
+    },
+    {
+      "id": "pp-e8",
+      "prompt": "The senior developer {0} the pull request yet.",
+      "verbs": [
+        "NOT REVIEW"
+      ],
+      "answers": [
+        [
+          "hasn't reviewed",
+          "has not reviewed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"yet\" en una frase negativa, que indica que algo todavía no ha ocurrido hasta ahora; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the senior developer\" usamos \"has\" en negativo, y el participio de \"review\" es \"reviewed\": \"hasn't reviewed\"."
+    },
+    {
+      "id": "pp-e9",
+      "prompt": "{0} you {1} the latest version to production?",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "Have"
+        ],
+        [
+          "deployed"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por un resultado completado con relevancia en el presente (si ya está en producción); por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"you\" usamos \"Have\", y el participio de \"deploy\" es \"deployed\": \"Have you deployed...?\"."
+    },
+    {
+      "id": "pp-e10",
+      "prompt": "Our support team {0} over fifty tickets since Monday.",
+      "verbs": [
+        "RESOLVE"
+      ],
+      "answers": [
+        [
+          "has resolved",
+          "'s resolved"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since Monday\", que marca un punto del pasado conectado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"our support team\" (singular) usamos \"has\", y el participio de \"resolve\" es \"resolved\": \"has resolved\"."
+    },
+    {
+      "id": "pp-e11",
+      "prompt": "The client {0} the contract recently.",
+      "verbs": [
+        "SIGN"
+      ],
+      "answers": [
+        [
+          "has signed",
+          "'s signed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"recently\", que sitúa una acción reciente con efecto en el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the client\" usamos \"has\", y el participio de \"sign\" es \"signed\": \"has signed\"."
+    },
+    {
+      "id": "pp-e12",
+      "prompt": "I {0} the bug report to the developers already.",
+      "verbs": [
+        "FORWARD"
+      ],
+      "answers": [
+        [
+          "have forwarded",
+          "'ve forwarded"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"already\", que indica una acción terminada con relevancia actual; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"I\" usamos \"have\", y el participio de \"forward\" es \"forwarded\": \"have forwarded\"."
+    },
+    {
+      "id": "pp-e13",
+      "prompt": "The project manager {0} the deadline twice this month.",
+      "verbs": [
+        "MOVE"
+      ],
+      "answers": [
+        [
+          "has moved",
+          "'s moved"
+        ]
+      ],
+      "justification": "La clave aquí es \"twice this month\", una experiencia repetida en un periodo que sigue abierto hasta hoy; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the project manager\" usamos \"has\", y el participio de \"move\" es \"moved\": \"has moved\"."
+    },
+    {
+      "id": "pp-e14",
+      "prompt": "{0} the QA team {1} the new feature yet?",
+      "verbs": [
+        "TEST"
+      ],
+      "answers": [
+        [
+          "Has"
+        ],
+        [
+          "tested"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"yet\" en una pregunta, que pregunta si algo ya ocurrió hasta el momento presente; por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"the QA team\" (singular) usamos \"Has\", y el participio de \"test\" es \"tested\": \"Has the QA team tested...?\"."
+    },
+    {
+      "id": "pp-e15",
+      "prompt": "Marketing {0} a single lead from that campaign so far.",
+      "verbs": [
+        "NOT GENERATE"
+      ],
+      "answers": [
+        [
+          "hasn't generated",
+          "has not generated"
+        ]
+      ],
+      "justification": "La clave aquí es \"so far\" en una frase negativa, que mide el resultado acumulado hasta ahora; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"marketing\" (departamento, singular) usamos \"has\" en negativo, y el participio de \"generate\" es \"generated\": \"hasn't generated\"."
+    },
+    {
+      "id": "pp-e16",
+      "prompt": "Our engineers {0} the legacy module in a modern framework.",
+      "verbs": [
+        "REWRITE"
+      ],
+      "answers": [
+        [
+          "have rewritten",
+          "'ve rewritten"
+        ]
+      ],
+      "justification": "La clave aquí es que hay un resultado completado con relevancia en el presente (el módulo ya está reescrito); por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"our engineers\" (plural) usamos \"have\", y el participio irregular de \"rewrite\" es \"rewritten\": \"have rewritten\"."
+    },
+    {
+      "id": "pp-e17",
+      "prompt": "The CEO {0} just {1} the quarterly results.",
+      "verbs": [
+        "ANNOUNCE"
+      ],
+      "answers": [
+        [
+          "has",
+          "'s"
+        ],
+        [
+          "announced"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"just\", que indica una acción muy reciente con efecto en el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\", y \"just\" va entre el auxiliar y el participio; con \"the CEO\" usamos \"has\": \"has just announced\"."
+    },
+    {
+      "id": "pp-e18",
+      "prompt": "I {0} never {1} such a clean codebase.",
+      "verbs": [
+        "SEE"
+      ],
+      "answers": [
+        [
+          "have",
+          "'ve"
+        ],
+        [
+          "seen"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"never\", que expresa una experiencia de vida hasta el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\", y \"never\" va entre el auxiliar y el participio; con \"I\" usamos \"have\", y el participio de \"see\" es \"seen\": \"have never seen\"."
+    },
+    {
+      "id": "pp-e19",
+      "prompt": "The new intern {0} already {1} two features to the app.",
+      "verbs": [
+        "ADD"
+      ],
+      "answers": [
+        [
+          "has",
+          "'s"
+        ],
+        [
+          "added"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"already\", típica del Present Perfect para algo completado antes de lo esperado; por lo tanto va Present Perfect. La regla es \"have/has + participio\", y \"already\" va entre el auxiliar y el participio; con \"the new intern\" usamos \"has\", y el participio de \"add\" es \"added\": \"has already added\"."
+    },
+    {
+      "id": "pp-e20",
+      "prompt": "We {0} the servers since the outage began.",
+      "verbs": [
+        "NOT RESTART"
+      ],
+      "answers": [
+        [
+          "haven't restarted",
+          "have not restarted"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the outage began\", que conecta un punto del pasado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"we\" usamos \"have\" en negativo, y el participio de \"restart\" es \"restarted\": \"haven't restarted\"."
+    },
+    {
+      "id": "pp-e21",
+      "prompt": "{0} you {1} from the recruiter yet?",
+      "verbs": [
+        "HEAR"
+      ],
+      "answers": [
+        [
+          "Have"
+        ],
+        [
+          "heard"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"yet\" en una pregunta, que pregunta si algo ya ha ocurrido hasta ahora; por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"you\" usamos \"Have\", y el participio irregular de \"hear\" es \"heard\": \"Have you heard...?\"."
+    },
+    {
+      "id": "pp-e22",
+      "prompt": "The finance department {0} the budget for next year.",
+      "verbs": [
+        "APPROVE"
+      ],
+      "answers": [
+        [
+          "has approved",
+          "'s approved"
+        ]
+      ],
+      "justification": "La clave aquí es que hay un resultado completado con relevancia en el presente (el presupuesto ya está aprobado); por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the finance department\" (singular) usamos \"has\", y el participio de \"approve\" es \"approved\": \"has approved\"."
+    },
+    {
+      "id": "pp-e23",
+      "prompt": "The sales reps {0} their target for the third month in a row.",
+      "verbs": [
+        "HIT"
+      ],
+      "answers": [
+        [
+          "have hit",
+          "'ve hit"
+        ]
+      ],
+      "justification": "La clave aquí es \"for the third month in a row\", una experiencia repetida que llega hasta el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the sales reps\" (plural) usamos \"have\", y el participio de \"hit\" es \"hit\" (invariable): \"have hit\"."
+    },
+    {
+      "id": "pp-e24",
+      "prompt": "The system administrator {0} all the user accounts since the breach.",
+      "verbs": [
+        "LOCK"
+      ],
+      "answers": [
+        [
+          "has locked",
+          "'s locked"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the breach\", que marca un punto del pasado conectado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the system administrator\" usamos \"has\", y el participio de \"lock\" es \"locked\": \"has locked\"."
+    },
+    {
+      "id": "pp-e25",
+      "prompt": "Our company {0} remote work since the pandemic started.",
+      "verbs": [
+        "ADOPT"
+      ],
+      "answers": [
+        [
+          "has adopted",
+          "'s adopted"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the pandemic started\", que conecta un punto del pasado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"our company\" (singular) usamos \"has\", y el participio de \"adopt\" es \"adopted\": \"has adopted\"."
+    },
+    {
+      "id": "pp-e26",
+      "prompt": "The team {0} the new API documentation already.",
+      "verbs": [
+        "PUBLISH"
+      ],
+      "answers": [
+        [
+          "has published",
+          "'s published"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"already\", típica del Present Perfect para una acción completada con efecto actual; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the team\" (singular) usamos \"has\", y el participio de \"publish\" es \"published\": \"has published\"."
+    },
+    {
+      "id": "pp-e27",
+      "prompt": "I {0} that error message before; it's a known issue.",
+      "verbs": [
+        "ENCOUNTER"
+      ],
+      "answers": [
+        [
+          "have encountered",
+          "'ve encountered"
+        ]
+      ],
+      "justification": "La clave aquí es \"before\", que apunta a una experiencia ocurrida en algún momento hasta hoy; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"I\" usamos \"have\", y el participio de \"encounter\" es \"encountered\": \"have encountered\"."
+    },
+    {
+      "id": "pp-e28",
+      "prompt": "{0} the vendor {1} the renewal quote yet?",
+      "verbs": [
+        "SEND"
+      ],
+      "answers": [
+        [
+          "Has"
+        ],
+        [
+          "sent"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"yet\" en una pregunta, que pregunta si algo ya ocurrió hasta el momento presente; por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"the vendor\" (singular) usamos \"Has\", y el participio irregular de \"send\" es \"sent\": \"Has the vendor sent...?\"."
+    },
+    {
+      "id": "pp-e29",
+      "prompt": "We {0} a single release since the security audit started.",
+      "verbs": [
+        "NOT SHIP"
+      ],
+      "answers": [
+        [
+          "haven't shipped",
+          "have not shipped"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the security audit started\", que conecta un punto del pasado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"we\" usamos \"have\" en negativo, y el participio de \"ship\" es \"shipped\": \"haven't shipped\"."
+    },
+    {
+      "id": "pp-e30",
+      "prompt": "The startup {0} for funding three times so far.",
+      "verbs": [
+        "APPLY"
+      ],
+      "answers": [
+        [
+          "has applied",
+          "'s applied"
+        ]
+      ],
+      "justification": "La clave aquí es \"so far\" junto con una experiencia repetida hasta ahora; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the startup\" (singular) usamos \"has\", y el participio de \"apply\" es \"applied\" (la -y tras consonante pasa a -ied): \"has applied\"."
+    },
+    {
+      "id": "pp-e31",
+      "prompt": "The developers {0} just {1} a critical hotfix.",
+      "verbs": [
+        "RELEASE"
+      ],
+      "answers": [
+        [
+          "have",
+          "'ve"
+        ],
+        [
+          "released"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"just\", que indica una acción muy reciente con efecto en el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\", y \"just\" va entre el auxiliar y el participio; con \"the developers\" (plural) usamos \"have\": \"have just released\"."
+    },
+    {
+      "id": "pp-e32",
+      "prompt": "Our team {0} the project on time for the past six months.",
+      "verbs": [
+        "DELIVER"
+      ],
+      "answers": [
+        [
+          "has delivered",
+          "'s delivered"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"for the past six months\", que mide un periodo desde el pasado hasta el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"our team\" (singular) usamos \"has\", y el participio de \"deliver\" es \"delivered\": \"has delivered\"."
+    },
+    {
+      "id": "pp-e33",
+      "prompt": "{0} you ever {1} a remote team across time zones?",
+      "verbs": [
+        "MANAGE"
+      ],
+      "answers": [
+        [
+          "Have"
+        ],
+        [
+          "managed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"ever\", que pregunta por una experiencia de vida en cualquier momento hasta hoy; por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"you\" usamos \"Have\", y el participio de \"manage\" es \"managed\": \"Have you ever managed...?\"."
+    },
+    {
+      "id": "pp-e34",
+      "prompt": "The client {0} the latest proposal yet.",
+      "verbs": [
+        "NOT APPROVE"
+      ],
+      "answers": [
+        [
+          "hasn't approved",
+          "has not approved"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"yet\" en una frase negativa, que indica que algo todavía no ha ocurrido hasta ahora; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the client\" usamos \"has\" en negativo, y el participio de \"approve\" es \"approved\": \"hasn't approved\"."
+    },
+    {
+      "id": "pp-e35",
+      "prompt": "I {0} just {1} an email from the recruiter.",
+      "verbs": [
+        "RECEIVE"
+      ],
+      "answers": [
+        [
+          "have",
+          "'ve"
+        ],
+        [
+          "received"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"just\", que indica una acción muy reciente con efecto en el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\", y \"just\" va entre el auxiliar y el participio; con \"I\" usamos \"have\": \"have just received\"."
+    },
+    {
+      "id": "pp-e36",
+      "prompt": "The number of subscribers {0} significantly since the rebrand.",
+      "verbs": [
+        "INCREASE"
+      ],
+      "answers": [
+        [
+          "has increased",
+          "'s increased"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since the rebrand\", que conecta un punto del pasado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the number of subscribers\" (singular) usamos \"has\", y el participio de \"increase\" es \"increased\": \"has increased\"."
+    },
+    {
+      "id": "pp-e37",
+      "prompt": "We {0} never {1} such a smooth deployment.",
+      "verbs": [
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "have",
+          "'ve"
+        ],
+        [
+          "had"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"never\", que expresa una experiencia de vida hasta el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\", y \"never\" va entre el auxiliar y el participio; con \"we\" usamos \"have\", y el participio de \"have\" es \"had\": \"have never had\"."
+    },
+    {
+      "id": "pp-e38",
+      "prompt": "{0} the auditors {1} the financial report already?",
+      "verbs": [
+        "REVIEW"
+      ],
+      "answers": [
+        [
+          "Have"
+        ],
+        [
+          "reviewed"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"already\" en una pregunta, que pregunta si algo ya se completó hasta el momento presente; por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"the auditors\" (plural) usamos \"Have\", y el participio de \"review\" es \"reviewed\": \"Have the auditors reviewed...?\"."
+    },
+    {
+      "id": "pp-e39",
+      "prompt": "The HR department {0} a new onboarding process recently.",
+      "verbs": [
+        "LAUNCH"
+      ],
+      "answers": [
+        [
+          "has launched",
+          "'s launched"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"recently\", que sitúa una acción reciente con efecto en el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the HR department\" (singular) usamos \"has\", y el participio de \"launch\" es \"launched\": \"has launched\"."
+    },
+    {
+      "id": "pp-e40",
+      "prompt": "The servers {0} stable since we upgraded the hardware.",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "have been",
+          "'ve been"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"since we upgraded the hardware\", que marca un punto del pasado conectado con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the servers\" (plural) usamos \"have\", y el participio de \"be\" es \"been\": \"have been\"."
+    },
+    {
+      "id": "pp-e41",
+      "prompt": "She {0} the company's revenue this year.",
+      "verbs": [
+        "DOUBLE"
+      ],
+      "answers": [
+        [
+          "has doubled",
+          "'s doubled"
+        ]
+      ],
+      "justification": "La clave aquí es \"this year\", un periodo que aún no ha terminado y conecta con el presente; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"she\" usamos \"has\", y el participio de \"double\" es \"doubled\": \"has doubled\"."
+    },
+    {
+      "id": "pp-e42",
+      "prompt": "Our competitors {0} their prices yet.",
+      "verbs": [
+        "NOT CUT"
+      ],
+      "answers": [
+        [
+          "haven't cut",
+          "have not cut"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"yet\" en una frase negativa, que indica que algo todavía no ha ocurrido hasta ahora; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"our competitors\" (plural) usamos \"have\" en negativo, y el participio de \"cut\" es \"cut\" (invariable): \"haven't cut\"."
+    },
+    {
+      "id": "pp-e43",
+      "prompt": "{0} the support team {1} the customer's complaint?",
+      "verbs": [
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "Has"
+        ],
+        [
+          "handled"
+        ]
+      ],
+      "justification": "La clave aquí es que se pregunta por un resultado completado con relevancia en el presente (si ya está resuelta la queja); por lo tanto va Present Perfect. La regla en pregunta es \"have/has + sujeto + participio\"; con \"the support team\" (singular) usamos \"Has\", y el participio de \"handle\" es \"handled\": \"Has the support team handled...?\"."
+    },
+    {
+      "id": "pp-e44",
+      "prompt": "The CFO {0} the merger documents already.",
+      "verbs": [
+        "FINALIZE"
+      ],
+      "answers": [
+        [
+          "has finalized",
+          "'s finalized",
+          "has finalised",
+          "'s finalised"
+        ]
+      ],
+      "justification": "La clave aquí es detectar \"already\", típica del Present Perfect para una acción completada con efecto actual; por lo tanto va Present Perfect. La regla es \"have/has + participio\"; con \"the CFO\" (singular) usamos \"has\", y el participio de \"finalize\" es \"finalized\" (variante británica \"finalised\"): \"has finalized\"."
+    }
+  ]
+}

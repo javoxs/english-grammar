@@ -1,0 +1,691 @@
+{
+  "id": "question-tags",
+  "name": "Question Tags",
+  "explanation": "Los question tags son mini-preguntas al final de una oración para confirmar información. Si la oración principal es afirmativa, el tag es negativo (y viceversa). El tag repite el auxiliar/modal del enunciado principal.",
+  "original": [
+    {
+      "id": "qt-1",
+      "prompt": "It's a lovely day, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "isn't it",
+          "is not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar del enunciado. En este caso el verbo es \"is\" (afirmativo) y el sujeto \"it\", por lo tanto usa el auxiliar \"is\" en negativo (\"isn't\") y luego el sujeto en pronombre: \"isn't it?\"."
+    },
+    {
+      "id": "qt-2",
+      "prompt": "You don't like spicy food, {0}?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "do you"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el auxiliar es \"don't\" (negativo) y el sujeto \"you\", por lo tanto usa el auxiliar \"do\" en afirmativo y luego el sujeto: \"do you?\"."
+    },
+    {
+      "id": "qt-3",
+      "prompt": "She can speak three languages, {0}?",
+      "verbs": [
+        "CAN, NOT"
+      ],
+      "answers": [
+        [
+          "can't she",
+          "cannot she"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal/auxiliar. En este caso el modal es \"can\" (afirmativo) y el sujeto \"she\", por lo tanto usa el modal \"can\" en negativo (\"can't\") y luego el sujeto: \"can't she?\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "qt-e1",
+      "prompt": "They weren't at the party last night, {0}?",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "were they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el verbo es \"weren't\" (negativo) y el sujeto \"they\", por lo tanto usa el auxiliar \"were\" en afirmativo y luego el sujeto: \"were they?\"."
+    },
+    {
+      "id": "qt-e2",
+      "prompt": "You will call me tomorrow, {0}?",
+      "verbs": [
+        "WILL, NOT"
+      ],
+      "answers": [
+        [
+          "won't you",
+          "will not you"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal/auxiliar. En este caso el modal es \"will\" (afirmativo) y el sujeto \"you\", por lo tanto usa \"will\" en negativo (\"won't\") y luego el sujeto: \"won't you?\"."
+    },
+    {
+      "id": "qt-e3",
+      "prompt": "Let's go for a walk, {0}?",
+      "verbs": [
+        "SHALL"
+      ],
+      "answers": [
+        [
+          "shall we"
+        ]
+      ],
+      "justification": "La regla para los question tags tiene un caso especial: cuando la oración empieza con \"Let's…\" (una sugerencia), el tag siempre es \"shall we?\". Por lo tanto usa el auxiliar \"shall\" y el sujeto \"we\": \"shall we?\"."
+    },
+    {
+      "id": "qt-e4",
+      "prompt": "Open the window, {0}?",
+      "verbs": [
+        "WILL"
+      ],
+      "answers": [
+        [
+          "will you",
+          "'ll you"
+        ]
+      ],
+      "justification": "La regla para los question tags tiene un caso especial: cuando la oración es un imperativo (una orden o petición, como \"Open the window\"), el tag suele ser \"will you?\". Por lo tanto usa el auxiliar \"will\" y el sujeto \"you\": \"will you?\"."
+    },
+    {
+      "id": "qt-e5",
+      "prompt": "He has finished his homework, {0}?",
+      "verbs": [
+        "HAVE, NOT"
+      ],
+      "answers": [
+        [
+          "hasn't he",
+          "has not he"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el auxiliar del Present Perfect es \"has\" (afirmativo) y el sujeto \"he\", por lo tanto usa \"has\" en negativo (\"hasn't\") y luego el sujeto: \"hasn't he?\"."
+    },
+    {
+      "id": "qt-e6",
+      "prompt": "You've met her before, {0}?",
+      "verbs": [
+        "HAVE, NOT"
+      ],
+      "answers": [
+        [
+          "haven't you",
+          "have not you"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el auxiliar del Present Perfect es \"have\" (\"You've met\", afirmativo) y el sujeto \"you\", por lo tanto usa \"have\" en negativo (\"haven't\") y luego el sujeto: \"haven't you?\"."
+    },
+    {
+      "id": "qt-e7",
+      "prompt": "She doesn't work on Fridays, {0}?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "does she"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el auxiliar es \"doesn't\" (negativo, 3ª persona singular) y el sujeto \"she\", por lo tanto usa \"does\" en afirmativo y luego el sujeto: \"does she?\"."
+    },
+    {
+      "id": "qt-e8",
+      "prompt": "I'm your best friend, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "aren't I",
+          "are not I"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el verbo es \"am\" (afirmativo) y el sujeto \"I\"; como \"amn't\" no existe en inglés, la forma estándar es \"aren't I\". Por lo tanto usa \"aren't\" y luego el sujeto: \"aren't I?\"."
+    },
+    {
+      "id": "qt-e9",
+      "prompt": "The deploy went fine, {0}?",
+      "verbs": [
+        "DO, NOT"
+      ],
+      "answers": [
+        [
+          "didn't it",
+          "did not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el verbo es \"went\" (pasado simple, afirmativo) y no hay auxiliar visible, así que se usa \"did\"; el sujeto es \"the deploy\" (it). Por lo tanto va el auxiliar \"did\" en negativo y el pronombre: \"didn't it?\"."
+    },
+    {
+      "id": "qt-e10",
+      "prompt": "The servers aren't down, {0}?",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "are they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el verbo es \"aren't\" (negativo) y el sujeto \"the servers\" (they), por lo tanto usa \"are\" en afirmativo y el pronombre: \"are they?\"."
+    },
+    {
+      "id": "qt-e11",
+      "prompt": "You'll merge the PR before lunch, {0}?",
+      "verbs": [
+        "WILL, NOT"
+      ],
+      "answers": [
+        [
+          "won't you",
+          "will not you"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal. En este caso el modal es \"will\" (\"You'll\", afirmativo) y el sujeto \"you\", por lo tanto usa \"will\" en negativo (\"won't\") y el sujeto: \"won't you?\"."
+    },
+    {
+      "id": "qt-e12",
+      "prompt": "The team has shipped the release, {0}?",
+      "verbs": [
+        "HAVE, NOT"
+      ],
+      "answers": [
+        [
+          "hasn't it",
+          "has not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el auxiliar del Present Perfect es \"has\" (afirmativo) y el sujeto \"the team\" (it, como entidad singular), por lo tanto usa \"has\" en negativo (\"hasn't\") y el pronombre: \"hasn't it?\"."
+    },
+    {
+      "id": "qt-e13",
+      "prompt": "The developers haven't fixed the bug yet, {0}?",
+      "verbs": [
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "have they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el auxiliar del Present Perfect es \"haven't\" (negativo) y el sujeto \"the developers\" (they), por lo tanto usa \"have\" en afirmativo y el pronombre: \"have they?\"."
+    },
+    {
+      "id": "qt-e14",
+      "prompt": "The release was delayed by the outage, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "wasn't it",
+          "was not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el verbo es \"was\" (pasado, afirmativo) y el sujeto \"the release\" (it), por lo tanto usa \"was\" en negativo (\"wasn't\") y el pronombre: \"wasn't it?\"."
+    },
+    {
+      "id": "qt-e15",
+      "prompt": "The meetings were productive this week, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "weren't they",
+          "were not they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el verbo es \"were\" (pasado, afirmativo) y el sujeto \"the meetings\" (they), por lo tanto usa \"were\" en negativo (\"weren't\") y el pronombre: \"weren't they?\"."
+    },
+    {
+      "id": "qt-e16",
+      "prompt": "Our client doesn't use the legacy API anymore, {0}?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "does it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el auxiliar es \"doesn't\" (negativo, 3ª persona) y el sujeto \"our client\" (it, como empresa/entidad), por lo tanto usa \"does\" en afirmativo y el pronombre: \"does it?\"."
+    },
+    {
+      "id": "qt-e17",
+      "prompt": "The engineers ran the migration last night, {0}?",
+      "verbs": [
+        "DO, NOT"
+      ],
+      "answers": [
+        [
+          "didn't they",
+          "did not they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el verbo es \"ran\" (pasado simple, afirmativo) sin auxiliar visible, así que se usa \"did\"; el sujeto es \"the engineers\" (they). Por lo tanto va \"did\" en negativo y el pronombre: \"didn't they?\"."
+    },
+    {
+      "id": "qt-e18",
+      "prompt": "You can review the code today, {0}?",
+      "verbs": [
+        "CAN, NOT"
+      ],
+      "answers": [
+        [
+          "can't you",
+          "cannot you"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal. En este caso el modal es \"can\" (afirmativo) y el sujeto \"you\", por lo tanto usa \"can\" en negativo (\"can't\") y el sujeto: \"can't you?\"."
+    },
+    {
+      "id": "qt-e19",
+      "prompt": "We should back up the database first, {0}?",
+      "verbs": [
+        "SHOULD, NOT"
+      ],
+      "answers": [
+        [
+          "shouldn't we",
+          "should not we"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal. En este caso el modal es \"should\" (afirmativo) y el sujeto \"we\", por lo tanto usa \"should\" en negativo (\"shouldn't\") y el sujeto: \"shouldn't we?\"."
+    },
+    {
+      "id": "qt-e20",
+      "prompt": "The new feature must pass QA before launch, {0}?",
+      "verbs": [
+        "MUST, NOT"
+      ],
+      "answers": [
+        [
+          "mustn't it",
+          "must not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal. En este caso el modal es \"must\" (afirmativo) y el sujeto \"the new feature\" (it), por lo tanto usa \"must\" en negativo (\"mustn't\") y el pronombre: \"mustn't it?\"."
+    },
+    {
+      "id": "qt-e21",
+      "prompt": "The CI pipeline could fail under heavy load, {0}?",
+      "verbs": [
+        "COULD, NOT"
+      ],
+      "answers": [
+        [
+          "couldn't it",
+          "could not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal. En este caso el modal es \"could\" (afirmativo) y el sujeto \"the CI pipeline\" (it), por lo tanto usa \"could\" en negativo (\"couldn't\") y el pronombre: \"couldn't it?\"."
+    },
+    {
+      "id": "qt-e22",
+      "prompt": "Let's schedule the sprint review for Friday, {0}?",
+      "verbs": [
+        "SHALL"
+      ],
+      "answers": [
+        [
+          "shall we"
+        ]
+      ],
+      "justification": "La regla para los question tags tiene un caso especial: cuando la oración empieza con \"Let's…\" (una sugerencia), el tag siempre es \"shall we?\". Por lo tanto usa el auxiliar \"shall\" y el sujeto \"we\": \"shall we?\"."
+    },
+    {
+      "id": "qt-e23",
+      "prompt": "Send me the deployment logs, {0}?",
+      "verbs": [
+        "WILL"
+      ],
+      "answers": [
+        [
+          "will you",
+          "'ll you"
+        ]
+      ],
+      "justification": "La regla para los question tags tiene un caso especial: cuando la oración es un imperativo (una orden o petición, como \"Send me the logs\"), el tag suele ser \"will you?\". Por lo tanto usa el auxiliar \"will\" y el sujeto \"you\": \"will you?\"."
+    },
+    {
+      "id": "qt-e24",
+      "prompt": "The product manager will approve the budget, {0}?",
+      "verbs": [
+        "WILL, NOT"
+      ],
+      "answers": [
+        [
+          "won't she",
+          "will not she"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal. En este caso el modal es \"will\" (afirmativo) y el sujeto \"the product manager\" (she), por lo tanto usa \"will\" en negativo (\"won't\") y el pronombre: \"won't she?\"."
+    },
+    {
+      "id": "qt-e25",
+      "prompt": "The database isn't backed up automatically, {0}?",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "is it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el verbo es \"isn't\" (negativo) y el sujeto \"the database\" (it), por lo tanto usa \"is\" en afirmativo y el pronombre: \"is it?\"."
+    },
+    {
+      "id": "qt-e26",
+      "prompt": "The CTO didn't approve the new hire, {0}?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "did he"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el auxiliar es \"didn't\" (negativo, pasado) y el sujeto \"the CTO\" (he), por lo tanto usa \"did\" en afirmativo y el pronombre: \"did he?\"."
+    },
+    {
+      "id": "qt-e27",
+      "prompt": "The stakeholders have reviewed the roadmap, {0}?",
+      "verbs": [
+        "HAVE, NOT"
+      ],
+      "answers": [
+        [
+          "haven't they",
+          "have not they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el auxiliar del Present Perfect es \"have\" (afirmativo) y el sujeto \"the stakeholders\" (they), por lo tanto usa \"have\" en negativo (\"haven't\") y el pronombre: \"haven't they?\"."
+    },
+    {
+      "id": "qt-e28",
+      "prompt": "The onboarding docs are clear enough, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "aren't they",
+          "are not they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el verbo es \"are\" (afirmativo) y el sujeto \"the onboarding docs\" (they), por lo tanto usa \"are\" en negativo (\"aren't\") y el pronombre: \"aren't they?\"."
+    },
+    {
+      "id": "qt-e29",
+      "prompt": "You won't push to main without a review, {0}?",
+      "verbs": [
+        "WILL"
+      ],
+      "answers": [
+        [
+          "will you"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el modal. En este caso el modal es \"won't\" (negativo) y el sujeto \"you\", por lo tanto usa \"will\" en afirmativo y el sujeto: \"will you?\"."
+    },
+    {
+      "id": "qt-e30",
+      "prompt": "There's a meeting at noon, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "isn't there",
+          "is not there"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo. Con \"there is/are\" el tag repite \"there\" en lugar de un pronombre. Aquí el verbo es \"is\" (\"There's\", afirmativo), por lo tanto usa \"is\" en negativo y \"there\": \"isn't there?\"."
+    },
+    {
+      "id": "qt-e31",
+      "prompt": "There aren't any blockers left, {0}?",
+      "verbs": [
+        "BE"
+      ],
+      "answers": [
+        [
+          "are there"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo. Con \"there is/are\" el tag repite \"there\". Aquí el verbo es \"aren't\" (negativo), por lo tanto usa \"are\" en afirmativo y \"there\": \"are there?\"."
+    },
+    {
+      "id": "qt-e32",
+      "prompt": "The build is running now, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "isn't it",
+          "is not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el auxiliar del Present Continuous es \"is\" (afirmativo) y el sujeto \"the build\" (it), por lo tanto usa \"is\" en negativo (\"isn't\") y el pronombre: \"isn't it?\"."
+    },
+    {
+      "id": "qt-e33",
+      "prompt": "The developers are deploying tonight, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "aren't they",
+          "are not they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el auxiliar del Present Continuous es \"are\" (afirmativo) y el sujeto \"the developers\" (they), por lo tanto usa \"are\" en negativo (\"aren't\") y el pronombre: \"aren't they?\"."
+    },
+    {
+      "id": "qt-e34",
+      "prompt": "The new tool would save us time, {0}?",
+      "verbs": [
+        "WOULD, NOT"
+      ],
+      "answers": [
+        [
+          "wouldn't it",
+          "would not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el modal. En este caso el modal es \"would\" (afirmativo) y el sujeto \"the new tool\" (it), por lo tanto usa \"would\" en negativo (\"wouldn't\") y el pronombre: \"wouldn't it?\"."
+    },
+    {
+      "id": "qt-e35",
+      "prompt": "You wouldn't mind reviewing my PR, {0}?",
+      "verbs": [
+        "WOULD"
+      ],
+      "answers": [
+        [
+          "would you"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el modal. En este caso el modal es \"wouldn't\" (negativo) y el sujeto \"you\", por lo tanto usa \"would\" en afirmativo y el sujeto: \"would you?\"."
+    },
+    {
+      "id": "qt-e36",
+      "prompt": "She can't access the dashboard, {0}?",
+      "verbs": [
+        "CAN"
+      ],
+      "answers": [
+        [
+          "can she"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el modal. En este caso el modal es \"can't\" (negativo) y el sujeto \"she\", por lo tanto usa \"can\" en afirmativo y el sujeto: \"can she?\"."
+    },
+    {
+      "id": "qt-e37",
+      "prompt": "We shouldn't merge before the tests pass, {0}?",
+      "verbs": [
+        "SHOULD"
+      ],
+      "answers": [
+        [
+          "should we"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el modal. En este caso el modal es \"shouldn't\" (negativo) y el sujeto \"we\", por lo tanto usa \"should\" en afirmativo y el sujeto: \"should we?\"."
+    },
+    {
+      "id": "qt-e38",
+      "prompt": "The system used to crash every Monday, {0}?",
+      "verbs": [
+        "DO, NOT"
+      ],
+      "answers": [
+        [
+          "didn't it",
+          "did not it"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo. \"Used to\" se refiere al pasado y no tiene auxiliar propio, así que el tag usa \"did\". El sujeto es \"the system\" (it), por lo tanto va \"did\" en negativo y el pronombre: \"didn't it?\"."
+    },
+    {
+      "id": "qt-e39",
+      "prompt": "The intern has to sign the NDA, {0}?",
+      "verbs": [
+        "DO, NOT"
+      ],
+      "answers": [
+        [
+          "doesn't he",
+          "does not he"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo. \"Has to\" (obligación) usa el auxiliar \"do/does\", no \"have\". Con el sujeto \"the intern\" (he, 3ª persona) va \"does\" en negativo y el pronombre: \"doesn't he?\"."
+    },
+    {
+      "id": "qt-e40",
+      "prompt": "Don't forget to back up the database, {0}?",
+      "verbs": [
+        "WILL"
+      ],
+      "answers": [
+        [
+          "will you",
+          "'ll you"
+        ]
+      ],
+      "justification": "La regla para los question tags tiene un caso especial: cuando la oración es un imperativo (incluso negativo, como \"Don't forget…\"), el tag suele ser \"will you?\". Por lo tanto usa el auxiliar \"will\" y el sujeto \"you\": \"will you?\"."
+    },
+    {
+      "id": "qt-e41",
+      "prompt": "Somebody updated the config last night, {0}?",
+      "verbs": [
+        "DO, NOT"
+      ],
+      "answers": [
+        [
+          "didn't they",
+          "did not they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo. El verbo es \"updated\" (pasado, sin auxiliar visible), así que se usa \"did\"; con el sujeto indefinido \"somebody\" el pronombre del tag es \"they\". Por lo tanto va \"did\" en negativo: \"didn't they?\"."
+    },
+    {
+      "id": "qt-e42",
+      "prompt": "Nobody noticed the typo in production, {0}?",
+      "verbs": [
+        "DO"
+      ],
+      "answers": [
+        [
+          "did they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: una oración con palabra negativa como \"nobody\" se considera negativa, así que el tag va en afirmativo. El verbo es \"noticed\" (pasado, sin auxiliar), de modo que se usa \"did\"; con \"nobody\" el pronombre es \"they\": \"did they?\"."
+    },
+    {
+      "id": "qt-e43",
+      "prompt": "We'd better restart the service, {0}?",
+      "verbs": [
+        "HAVE, NOT"
+      ],
+      "answers": [
+        [
+          "hadn't we",
+          "had not we"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo. \"Had better\" (\"We'd better\") lleva el tag con \"had\". Con el sujeto \"we\" va \"had\" en negativo y el pronombre: \"hadn't we?\"."
+    },
+    {
+      "id": "qt-e44",
+      "prompt": "I was right about the memory leak, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "wasn't I",
+          "was not I"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En este caso el verbo es \"was\" (pasado, afirmativo) y el sujeto \"I\", por lo tanto usa \"was\" en negativo (\"wasn't\") y el sujeto: \"wasn't I?\"."
+    },
+    {
+      "id": "qt-e45",
+      "prompt": "The designer hasn't joined the call, {0}?",
+      "verbs": [
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "has she"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es negativa, el tag va en afirmativo, y se repite el auxiliar. En este caso el auxiliar del Present Perfect es \"hasn't\" (negativo) y el sujeto \"the designer\" (she), por lo tanto usa \"has\" en afirmativo y el pronombre: \"has she?\"."
+    },
+    {
+      "id": "qt-e46",
+      "prompt": "Let's not skip the retro, {0}?",
+      "verbs": [
+        "SHALL"
+      ],
+      "answers": [
+        [
+          "shall we"
+        ]
+      ],
+      "justification": "La regla para los question tags tiene un caso especial: cuando la oración empieza con \"Let's…\" (también en negativo, \"Let's not…\"), el tag siempre es \"shall we?\". Por lo tanto usa el auxiliar \"shall\" y el sujeto \"we\": \"shall we?\"."
+    },
+    {
+      "id": "qt-e47",
+      "prompt": "They're going to migrate the data this weekend, {0}?",
+      "verbs": [
+        "BE, NOT"
+      ],
+      "answers": [
+        [
+          "aren't they",
+          "are not they"
+        ]
+      ],
+      "justification": "La regla para los question tags es: si la oración principal es afirmativa, el tag va en negativo, y se repite el auxiliar. En la estructura \"be going to\" el auxiliar es \"are\" (\"They're\", afirmativo) y el sujeto \"they\", por lo tanto usa \"are\" en negativo (\"aren't\") y el pronombre: \"aren't they?\"."
+    }
+  ]
+}

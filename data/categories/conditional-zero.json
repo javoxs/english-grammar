@@ -1,0 +1,868 @@
+{
+  "id": "conditional-zero",
+  "name": "Zero Conditional",
+  "explanation": "Zero Conditional: condición y resultado siempre verdaderos (verdad general, ley física o regla automática). Ambas cláusulas en Present Simple (If + Present, Present). Cada oración tiene dos cláusulas: {0} y {1}.",
+  "keyHint": "Se trata de una verdad general o ley universal: la condición y su resultado siempre se cumplen.",
+  "original": [],
+  "extra": [
+    {
+      "id": "cond0-e1",
+      "prompt": "If the build {0}, the pipeline {1} the whole team.",
+      "verbs": [
+        "FAIL",
+        "NOTIFY"
+      ],
+      "answers": [
+        [
+          "fails"
+        ],
+        [
+          "notifies"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (verdad general / regla automática). Ambas cláusulas van en Present Simple, con -s en 3ª persona: \"fails\" → \"notifies\"."
+    },
+    {
+      "id": "cond0-e2",
+      "prompt": "If two developers {0} the same file, Git {1} a merge conflict.",
+      "verbs": [
+        "EDIT",
+        "RAISE"
+      ],
+      "answers": [
+        [
+          "edit"
+        ],
+        [
+          "raises"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (causa-efecto siempre verdadero). Ambas cláusulas van en Present Simple; \"two developers edit\" (sin -s) y \"Git raises\" (3ª persona con -s)."
+    },
+    {
+      "id": "cond0-e3",
+      "prompt": "We keep nightly backups in case the database {0}, so we {1} the data.",
+      "verbs": [
+        "FAIL",
+        "NOT LOSE"
+      ],
+      "answers": [
+        [
+          "fails"
+        ],
+        [
+          "don't lose",
+          "do not lose"
+        ]
+      ],
+      "justification": "La clave aquí es \"in case\" (precaución): la condición va en Present Simple (\"fails\", 3ª persona) y el resultado describe la consecuencia presente, también en Present Simple negativo: \"don't lose\"."
+    },
+    {
+      "id": "cond0-e4",
+      "prompt": "The deploy {1} only if every test {0}.",
+      "verbs": [
+        "PASS",
+        "RUN"
+      ],
+      "answers": [
+        [
+          "passes"
+        ],
+        [
+          "runs"
+        ]
+      ],
+      "justification": "La clave aquí es \"only if\" (restricción fuerte), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: la condición \"every test passes\" y el resultado \"the deploy runs\"."
+    },
+    {
+      "id": "cond0-e5",
+      "prompt": "When the CPU usage {0} 90 percent, the dashboard {1} an alert.",
+      "verbs": [
+        "REACH",
+        "TRIGGER"
+      ],
+      "answers": [
+        [
+          "reaches"
+        ],
+        [
+          "triggers"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (automatismo siempre cierto), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"usage reaches\" → \"dashboard triggers\"."
+    },
+    {
+      "id": "cond0-e6",
+      "prompt": "If a customer {0} the form, the CRM {1} a ticket automatically.",
+      "verbs": [
+        "SUBMIT",
+        "CREATE"
+      ],
+      "answers": [
+        [
+          "submits"
+        ],
+        [
+          "creates"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (causa-efecto automático). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"a customer submits\" → \"the CRM creates\"."
+    },
+    {
+      "id": "cond0-e7",
+      "prompt": "Whenever the cache {0}, response times {1}.",
+      "verbs": [
+        "EXPIRE",
+        "INCREASE"
+      ],
+      "answers": [
+        [
+          "expires"
+        ],
+        [
+          "increase"
+        ]
+      ],
+      "justification": "La clave aquí es \"whenever\" (regla siempre válida), con estructura de Zero Conditional. La condición lleva -s en 3ª persona (\"the cache expires\") y el resultado en plural va sin -s (\"response times increase\")."
+    },
+    {
+      "id": "cond0-e8",
+      "prompt": "The system {1} the user out if the session {0} idle for ten minutes.",
+      "verbs": [
+        "GO",
+        "LOG"
+      ],
+      "answers": [
+        [
+          "goes"
+        ],
+        [
+          "logs"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional con orden result-first (la principal va primero, sin coma). Ambas cláusulas en Present Simple con -s en 3ª persona: \"the session goes idle\" → \"the system logs the user out\"."
+    },
+    {
+      "id": "cond0-e9",
+      "prompt": "If the temperature in the server room {0}, the cooling system {1} on.",
+      "verbs": [
+        "RISE",
+        "TURN"
+      ],
+      "answers": [
+        [
+          "rises"
+        ],
+        [
+          "turns"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (regla física automática). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the temperature rises\" → \"the cooling system turns on\"."
+    },
+    {
+      "id": "cond0-e10",
+      "prompt": "Unless the API key {0} valid, the request {1}.",
+      "verbs": [
+        "BE",
+        "FAIL"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ],
+        [
+          "fails"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\") con Present + Present, lo que lo mantiene como Zero Conditional (regla siempre válida). La condición lleva \"is\" (3ª persona de be) y el resultado \"fails\"."
+    },
+    {
+      "id": "cond0-e11",
+      "prompt": "When developers {0} the style guide, code reviews {1} faster.",
+      "verbs": [
+        "FOLLOW",
+        "GO"
+      ],
+      "answers": [
+        [
+          "follow"
+        ],
+        [
+          "go"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (verdad general), con estructura de Zero Conditional. Ambos sujetos son plurales, así que el Present Simple va sin -s: \"developers follow\" → \"code reviews go faster\"."
+    },
+    {
+      "id": "cond0-e12",
+      "prompt": "If the invoice {0} unpaid, the account {1} suspended.",
+      "verbs": [
+        "REMAIN",
+        "GET"
+      ],
+      "answers": [
+        [
+          "remains"
+        ],
+        [
+          "gets"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (consecuencia automática). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the invoice remains unpaid\" → \"the account gets suspended\"."
+    },
+    {
+      "id": "cond0-e13",
+      "prompt": "The container {1} automatically if the health check {0}.",
+      "verbs": [
+        "FAIL",
+        "RESTART"
+      ],
+      "answers": [
+        [
+          "fails"
+        ],
+        [
+          "restarts"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional con orden result-first (la principal primero, sin coma). Ambas cláusulas en Present Simple con -s en 3ª persona: \"the health check fails\" → \"the container restarts\"."
+    },
+    {
+      "id": "cond0-e14",
+      "prompt": "If you {0} the wrong credentials, the gateway {1} access.",
+      "verbs": [
+        "ENTER",
+        "DENY"
+      ],
+      "answers": [
+        [
+          "enter"
+        ],
+        [
+          "denies"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (regla automática). Con \"you\" la condición va sin -s (\"enter\") y la principal en 3ª persona lleva -s (\"the gateway denies\")."
+    },
+    {
+      "id": "cond0-e15",
+      "prompt": "Whenever a deploy {0}, the monitoring tool {1} the metrics.",
+      "verbs": [
+        "FINISH",
+        "REFRESH"
+      ],
+      "answers": [
+        [
+          "finishes"
+        ],
+        [
+          "refreshes"
+        ]
+      ],
+      "justification": "La clave aquí es \"whenever\" (rutina siempre cierta), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -es en 3ª persona: \"a deploy finishes\" → \"the tool refreshes\"."
+    },
+    {
+      "id": "cond0-e16",
+      "prompt": "In case the primary server {0}, the load balancer {1} traffic to the backup.",
+      "verbs": [
+        "CRASH",
+        "ROUTE"
+      ],
+      "answers": [
+        [
+          "crashes"
+        ],
+        [
+          "routes"
+        ]
+      ],
+      "justification": "La clave aquí es \"in case\" (precaución) con Present + Present, lo que lo mantiene como Zero Conditional. Ambas cláusulas con -s en 3ª persona: \"the server crashes\" → \"the load balancer routes\"."
+    },
+    {
+      "id": "cond0-e17",
+      "prompt": "If the meeting {0} over an hour, people {1} focus.",
+      "verbs": [
+        "RUN",
+        "LOSE"
+      ],
+      "answers": [
+        [
+          "runs"
+        ],
+        [
+          "lose"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (verdad general). El sujeto singular lleva -s (\"the meeting runs\") y el plural va sin -s (\"people lose focus\")."
+    },
+    {
+      "id": "cond0-e18",
+      "prompt": "The pipeline {1} the artifacts only if the lint stage {0}.",
+      "verbs": [
+        "SUCCEED",
+        "PUBLISH"
+      ],
+      "answers": [
+        [
+          "succeeds"
+        ],
+        [
+          "publishes"
+        ]
+      ],
+      "justification": "La clave aquí es \"only if\" (restricción fuerte) con orden result-first y estructura de Zero Conditional. Ambas cláusulas con -s/-es en 3ª persona: \"the lint stage succeeds\" → \"the pipeline publishes\"."
+    },
+    {
+      "id": "cond0-e19",
+      "prompt": "When two services {0} the same port, the OS {1} an error.",
+      "verbs": [
+        "CLAIM",
+        "THROW"
+      ],
+      "answers": [
+        [
+          "claim"
+        ],
+        [
+          "throws"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (causa-efecto siempre cierto), con estructura de Zero Conditional. El sujeto plural va sin -s (\"two services claim\") y el singular lleva -s (\"the OS throws\")."
+    },
+    {
+      "id": "cond0-e20",
+      "prompt": "If a teammate {0} you on a thread, you {1} a notification.",
+      "verbs": [
+        "MENTION",
+        "RECEIVE"
+      ],
+      "answers": [
+        [
+          "mentions"
+        ],
+        [
+          "receive"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (automatismo). El sujeto singular lleva -s (\"a teammate mentions\") y con \"you\" la principal va sin -s (\"you receive\")."
+    },
+    {
+      "id": "cond0-e21",
+      "prompt": "Unless the data {0} encrypted, the auditor {1} the report.",
+      "verbs": [
+        "BE",
+        "REJECT"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ],
+        [
+          "rejects"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\") con Present + Present, estructura de Zero Conditional. La condición lleva \"is\" (3ª persona de be) y el resultado \"rejects\"."
+    },
+    {
+      "id": "cond0-e22",
+      "prompt": "When the queue {0} full, new jobs {1}.",
+      "verbs": [
+        "GET",
+        "WAIT"
+      ],
+      "answers": [
+        [
+          "gets"
+        ],
+        [
+          "wait"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (regla automática), con estructura de Zero Conditional. El sujeto singular lleva -s (\"the queue gets full\") y el plural va sin -s (\"new jobs wait\")."
+    },
+    {
+      "id": "cond0-e23",
+      "prompt": "If the budget {0} the limit, finance {1} the purchase.",
+      "verbs": [
+        "EXCEED",
+        "BLOCK"
+      ],
+      "answers": [
+        [
+          "exceeds"
+        ],
+        [
+          "blocks"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (política siempre aplicada). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the budget exceeds\" → \"finance blocks\"."
+    },
+    {
+      "id": "cond0-e24",
+      "prompt": "The browser {1} the page if the certificate {0} expired.",
+      "verbs": [
+        "BE",
+        "WARN"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ],
+        [
+          "warns"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional con orden result-first (sin coma). La condición lleva \"is\" (3ª persona de be: \"the certificate is expired\") y la principal \"warns\"."
+    },
+    {
+      "id": "cond0-e25",
+      "prompt": "When a client {0} a refund, the system {1} the transaction.",
+      "verbs": [
+        "REQUEST",
+        "REVERSE"
+      ],
+      "answers": [
+        [
+          "requests"
+        ],
+        [
+          "reverses"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (proceso automático), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"a client requests\" → \"the system reverses\"."
+    },
+    {
+      "id": "cond0-e26",
+      "prompt": "If the build {0} no errors, QA {1} testing.",
+      "verbs": [
+        "CONTAIN",
+        "BEGIN"
+      ],
+      "answers": [
+        [
+          "contains"
+        ],
+        [
+          "begins"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (consecuencia siempre cierta). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the build contains no errors\" → \"QA begins\"."
+    },
+    {
+      "id": "cond0-e27",
+      "prompt": "The PR {1} only if both reviewers {0} it.",
+      "verbs": [
+        "APPROVE",
+        "MERGE"
+      ],
+      "answers": [
+        [
+          "approve"
+        ],
+        [
+          "merges"
+        ]
+      ],
+      "justification": "La clave aquí es \"only if\" (restricción fuerte) con orden result-first y estructura de Zero Conditional. El sujeto plural va sin -s (\"both reviewers approve\") y el singular lleva -s (\"the PR merges\")."
+    },
+    {
+      "id": "cond0-e28",
+      "prompt": "When the log file {0} the size limit, the system {1} it.",
+      "verbs": [
+        "HIT",
+        "ROTATE"
+      ],
+      "answers": [
+        [
+          "hits"
+        ],
+        [
+          "rotates"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (automatismo), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the log file hits\" → \"the system rotates\"."
+    },
+    {
+      "id": "cond0-e29",
+      "prompt": "If sales {0} the quarterly target, the team {1} a bonus.",
+      "verbs": [
+        "REACH",
+        "GET"
+      ],
+      "answers": [
+        [
+          "reach"
+        ],
+        [
+          "gets"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (regla siempre válida). El sujeto plural va sin -s (\"sales reach\") y el singular lleva -s (\"the team gets\")."
+    },
+    {
+      "id": "cond0-e30",
+      "prompt": "Unless the contract {0} a deadline, the vendor {1} no rush.",
+      "verbs": [
+        "SPECIFY",
+        "FEEL"
+      ],
+      "answers": [
+        [
+          "specifies"
+        ],
+        [
+          "feels"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\") con Present + Present, estructura de Zero Conditional. Ambas cláusulas con -s en 3ª persona: \"the contract specifies\" → \"the vendor feels\"."
+    },
+    {
+      "id": "cond0-e31",
+      "prompt": "The alarm {1} whenever the motion sensor {0} movement.",
+      "verbs": [
+        "DETECT",
+        "SOUND"
+      ],
+      "answers": [
+        [
+          "detects"
+        ],
+        [
+          "sounds"
+        ]
+      ],
+      "justification": "La clave aquí es \"whenever\" con orden result-first (sin coma) y estructura de Zero Conditional. Ambas cláusulas con -s en 3ª persona: \"the motion sensor detects\" → \"the alarm sounds\"."
+    },
+    {
+      "id": "cond0-e32",
+      "prompt": "If the password {0} the policy, the form {1} it.",
+      "verbs": [
+        "NOT MEET",
+        "REJECT"
+      ],
+      "answers": [
+        [
+          "doesn't meet",
+          "does not meet"
+        ],
+        [
+          "rejects"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional en negativo. En 3ª persona el negativo se forma con \"doesn't + verbo base\" (\"doesn't meet\") y la principal lleva -s (\"the form rejects\")."
+    },
+    {
+      "id": "cond0-e33",
+      "prompt": "When onboarding {0}, HR {1} the equipment.",
+      "verbs": [
+        "START",
+        "ORDER"
+      ],
+      "answers": [
+        [
+          "starts"
+        ],
+        [
+          "orders"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (procedimiento habitual), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"onboarding starts\" → \"HR orders\"."
+    },
+    {
+      "id": "cond0-e34",
+      "prompt": "If a process {0} too much memory, the kernel {1} it.",
+      "verbs": [
+        "CONSUME",
+        "KILL"
+      ],
+      "answers": [
+        [
+          "consumes"
+        ],
+        [
+          "kills"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (comportamiento automático del sistema). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"a process consumes\" → \"the kernel kills\"."
+    },
+    {
+      "id": "cond0-e35",
+      "prompt": "Whenever the standup {0} late, the sprint board {1} outdated.",
+      "verbs": [
+        "START",
+        "STAY"
+      ],
+      "answers": [
+        [
+          "starts"
+        ],
+        [
+          "stays"
+        ]
+      ],
+      "justification": "La clave aquí es \"whenever\" (regla recurrente), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the standup starts\" → \"the sprint board stays\"."
+    },
+    {
+      "id": "cond0-e36",
+      "prompt": "In case the network {0}, the app {1} data locally.",
+      "verbs": [
+        "DROP",
+        "CACHE"
+      ],
+      "answers": [
+        [
+          "drops"
+        ],
+        [
+          "caches"
+        ]
+      ],
+      "justification": "La clave aquí es \"in case\" (precaución) con Present + Present, estructura de Zero Conditional. Ambas cláusulas con -s en 3ª persona: \"the network drops\" → \"the app caches\"."
+    },
+    {
+      "id": "cond0-e37",
+      "prompt": "The compiler {1} a warning if a variable {0} unused.",
+      "verbs": [
+        "BE",
+        "EMIT"
+      ],
+      "answers": [
+        [
+          "is",
+          "'s"
+        ],
+        [
+          "emits"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional con orden result-first (sin coma). La condición lleva \"is\" (3ª persona de be: \"a variable is unused\") y la principal \"emits\"."
+    },
+    {
+      "id": "cond0-e38",
+      "prompt": "If customers {0} satisfied, they {1} the product.",
+      "verbs": [
+        "BE",
+        "RECOMMEND"
+      ],
+      "answers": [
+        [
+          "are",
+          "'re"
+        ],
+        [
+          "recommend"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (verdad general). Con sujeto plural se usa \"are\" (\"customers are satisfied\") y la principal va sin -s (\"they recommend\")."
+    },
+    {
+      "id": "cond0-e39",
+      "prompt": "When the token {0}, the user {1} to log in again.",
+      "verbs": [
+        "EXPIRE",
+        "HAVE"
+      ],
+      "answers": [
+        [
+          "expires"
+        ],
+        [
+          "has"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (regla automática), con estructura de Zero Conditional. Ambas cláusulas con 3ª persona: \"the token expires\" y la forma irregular \"the user has\"."
+    },
+    {
+      "id": "cond0-e40",
+      "prompt": "Unless the form {0} all fields, it {1}.",
+      "verbs": [
+        "INCLUDE",
+        "NOT SUBMIT"
+      ],
+      "answers": [
+        [
+          "includes"
+        ],
+        [
+          "doesn't submit",
+          "does not submit"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\") con Present + Present, estructura de Zero Conditional. La condición lleva -s (\"the form includes\") y el resultado negativo en 3ª persona usa \"doesn't submit\"."
+    },
+    {
+      "id": "cond0-e41",
+      "prompt": "If the database {0} a duplicate key, it {1} the insert.",
+      "verbs": [
+        "FIND",
+        "REJECT"
+      ],
+      "answers": [
+        [
+          "finds"
+        ],
+        [
+          "rejects"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (comportamiento automático). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the database finds\" → \"it rejects\"."
+    },
+    {
+      "id": "cond0-e42",
+      "prompt": "Whenever traffic {0}, the autoscaler {1} more instances.",
+      "verbs": [
+        "SPIKE",
+        "ADD"
+      ],
+      "answers": [
+        [
+          "spikes"
+        ],
+        [
+          "adds"
+        ]
+      ],
+      "justification": "La clave aquí es \"whenever\" (respuesta automática siempre válida), con estructura de Zero Conditional. Ambas cláusulas con -s en 3ª persona: \"traffic spikes\" → \"the autoscaler adds\"."
+    },
+    {
+      "id": "cond0-e43",
+      "prompt": "The meeting {1} automatically if no one {0} within five minutes.",
+      "verbs": [
+        "JOIN",
+        "END"
+      ],
+      "answers": [
+        [
+          "joins"
+        ],
+        [
+          "ends"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional con orden result-first (sin coma). \"No one\" es 3ª persona singular y lleva -s (\"no one joins\"), igual que la principal (\"the meeting ends\")."
+    },
+    {
+      "id": "cond0-e44",
+      "prompt": "If a feature {0} the KPIs, the product team {1} it back.",
+      "verbs": [
+        "HURT",
+        "ROLL"
+      ],
+      "answers": [
+        [
+          "hurts"
+        ],
+        [
+          "rolls"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (regla de negocio siempre aplicada). Ambas cláusulas van en Present Simple con -s en 3ª persona: \"a feature hurts\" → \"the product team rolls it back\"."
+    },
+    {
+      "id": "cond0-e45",
+      "prompt": "When the manager {0} honest feedback, the team {1} morale.",
+      "verbs": [
+        "GIVE",
+        "GAIN"
+      ],
+      "answers": [
+        [
+          "gives"
+        ],
+        [
+          "gains"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (verdad general sobre mentoring), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"the manager gives\" → \"the team gains\"."
+    },
+    {
+      "id": "cond0-e46",
+      "prompt": "If the standards {0} clear, new hires {1} faster.",
+      "verbs": [
+        "BE",
+        "ADAPT"
+      ],
+      "answers": [
+        [
+          "are",
+          "'re"
+        ],
+        [
+          "adapt"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (verdad general). Con sujeto plural se usa \"are\" (\"the standards are clear\") y la principal en plural va sin -s (\"new hires adapt\")."
+    },
+    {
+      "id": "cond0-e47",
+      "prompt": "When a sprint {0}, the team {1} a retrospective.",
+      "verbs": [
+        "END",
+        "HOLD"
+      ],
+      "answers": [
+        [
+          "ends"
+        ],
+        [
+          "holds"
+        ]
+      ],
+      "justification": "La clave aquí es \"when\" (rutina siempre cierta), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"a sprint ends\" → \"the team holds\"."
+    },
+    {
+      "id": "cond0-e48",
+      "prompt": "Unless the client {0} the scope, we {1} the original plan.",
+      "verbs": [
+        "CHANGE",
+        "KEEP"
+      ],
+      "answers": [
+        [
+          "changes"
+        ],
+        [
+          "keep"
+        ]
+      ],
+      "justification": "La clave aquí es \"unless\" (= \"if not\") con Present + Present, estructura de Zero Conditional. El sujeto singular lleva -s (\"the client changes\") y con \"we\" la principal va sin -s (\"we keep\")."
+    },
+    {
+      "id": "cond0-e49",
+      "prompt": "If the monitoring {0} high latency, the engineers {1}.",
+      "verbs": [
+        "SHOW",
+        "INVESTIGATE"
+      ],
+      "answers": [
+        [
+          "shows"
+        ],
+        [
+          "investigate"
+        ]
+      ],
+      "justification": "La clave aquí es el Zero Conditional (procedimiento siempre aplicado). El sujeto singular lleva -s (\"the monitoring shows\") y el plural va sin -s (\"the engineers investigate\")."
+    },
+    {
+      "id": "cond0-e50",
+      "prompt": "Whenever a payment {0}, the customer {1} a receipt.",
+      "verbs": [
+        "CLEAR",
+        "GET"
+      ],
+      "answers": [
+        [
+          "clears"
+        ],
+        [
+          "gets"
+        ]
+      ],
+      "justification": "La clave aquí es \"whenever\" (proceso automático siempre válido), con estructura de Zero Conditional. Ambas cláusulas van en Present Simple con -s en 3ª persona: \"a payment clears\" → \"the customer gets\"."
+    }
+  ]
+}

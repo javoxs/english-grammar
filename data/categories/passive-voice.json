@@ -1,0 +1,703 @@
+{
+  "id": "passive-voice",
+  "name": "Passive Voice",
+  "explanation": "El sujeto recibe la acción. Past Simple passive: was/were + participio pasado. Present Simple passive: am/is/are + participio.",
+  "original": [
+    {
+      "id": "pv-24a",
+      "num": 24,
+      "prompt": "My camera {0} while I was paying for the gift.",
+      "verbs": [
+        "STEAL"
+      ],
+      "answers": [
+        [
+          "was stolen"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"my camera\" no realiza la acción sino que la recibe (alguien la robó); por lo tanto va voz pasiva. La regla del pasado pasivo es \"was/were + participio\"; como \"camera\" es singular, usamos \"was\": \"was stolen\"."
+    },
+    {
+      "id": "pv-2b",
+      "num": 2,
+      "prompt": "The ancient Romans built fine monuments and old roads some of which still {0} today.",
+      "verbs": [
+        "EXIST"
+      ],
+      "answers": [
+        [
+          "exist"
+        ]
+      ],
+      "justification": "La clave aquí es que \"exist\" es un verbo intransitivo: no admite voz pasiva y el sujeto sí hace la acción. Por lo tanto va Present Simple activo, como hecho permanente (\"still ... today\"): \"exist\"."
+    }
+  ],
+  "extra": [
+    {
+      "id": "pv-e1",
+      "prompt": "English {0} all over the world.",
+      "verbs": [
+        "SPEAK"
+      ],
+      "answers": [
+        [
+          "is spoken"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"English\" recibe la acción (la gente lo habla); por lo tanto va voz pasiva. La regla del presente pasivo es \"am/is/are + participio\"; con \"English\" (singular) usamos \"is\": \"is spoken\"."
+    },
+    {
+      "id": "pv-e2",
+      "prompt": "The window {0} last night.",
+      "verbs": [
+        "BREAK"
+      ],
+      "answers": [
+        [
+          "was broken"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the window\" recibe la acción (algo o alguien la rompió) y hay un tiempo pasado (\"last night\"); por lo tanto va pasado pasivo. La regla es \"was/were + participio\"; con \"window\" (singular) usamos \"was\": \"was broken\"."
+    },
+    {
+      "id": "pv-e3",
+      "prompt": "These cars {0} in Germany.",
+      "verbs": [
+        "MAKE"
+      ],
+      "answers": [
+        [
+          "are made",
+          "'re made"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"these cars\" recibe la acción (alguien los fabrica); por lo tanto va presente pasivo. La regla es \"am/is/are + participio\"; con sujeto plural usamos \"are\": \"are made\"."
+    },
+    {
+      "id": "pv-e4",
+      "prompt": "The letter {0} yesterday.",
+      "verbs": [
+        "SEND"
+      ],
+      "answers": [
+        [
+          "was sent"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the letter\" recibe la acción y hay tiempo pasado (\"yesterday\"); por lo tanto va pasado pasivo. La regla es \"was/were + participio\"; con \"letter\" (singular) usamos \"was\": \"was sent\"."
+    },
+    {
+      "id": "pv-e5",
+      "prompt": "A new hospital {0} at the moment.",
+      "verbs": [
+        "BUILD"
+      ],
+      "answers": [
+        [
+          "is being built",
+          "'s being built"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"a new hospital\" recibe la acción y \"at the moment\" indica algo en curso ahora; por lo tanto va presente continuo pasivo. La regla es \"am/is/are + being + participio\"; con singular usamos \"is\": \"is being built\"."
+    },
+    {
+      "id": "pv-e6",
+      "prompt": "The new release {0} to production every Friday.",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "is deployed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the new release\" recibe la acción (el equipo lo despliega) y \"every Friday\" indica rutina; por lo tanto va voz pasiva (presente simple). La regla es \"be + participio\"; con singular usamos \"is\": \"is deployed\"."
+    },
+    {
+      "id": "pv-e7",
+      "prompt": "All pull requests {0} before they are merged.",
+      "verbs": [
+        "REVIEW"
+      ],
+      "answers": [
+        [
+          "are reviewed",
+          "'re reviewed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"all pull requests\" recibe la acción (alguien las revisa) como práctica habitual; por lo tanto va voz pasiva (presente simple). La regla es \"be + participio\"; con sujeto plural usamos \"are\": \"are reviewed\"."
+    },
+    {
+      "id": "pv-e8",
+      "prompt": "The critical bug {0} yesterday afternoon.",
+      "verbs": [
+        "FIX"
+      ],
+      "answers": [
+        [
+          "was fixed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the critical bug\" recibe la acción y \"yesterday afternoon\" marca tiempo pasado; por lo tanto va voz pasiva (pasado simple). La regla es \"be + participio\"; con singular usamos \"was\": \"was fixed\"."
+    },
+    {
+      "id": "pv-e9",
+      "prompt": "The legacy databases {0} to the cloud last quarter.",
+      "verbs": [
+        "MIGRATE"
+      ],
+      "answers": [
+        [
+          "were migrated"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the legacy databases\" recibe la acción y \"last quarter\" marca tiempo pasado; por lo tanto va voz pasiva (pasado simple). La regla es \"be + participio\"; con sujeto plural usamos \"were\": \"were migrated\"."
+    },
+    {
+      "id": "pv-e10",
+      "prompt": "Don't worry, the security issue {0} already.",
+      "verbs": [
+        "FIX"
+      ],
+      "answers": [
+        [
+          "has been fixed",
+          "'s been fixed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the security issue\" recibe la acción y \"already\" conecta el pasado con el presente; por lo tanto va voz pasiva (presente perfecto). La regla es \"have/has been + participio\"; con singular usamos \"has been\": \"has been fixed\"."
+    },
+    {
+      "id": "pv-e11",
+      "prompt": "Several patches {0} to the servers this week.",
+      "verbs": [
+        "DEPLOY"
+      ],
+      "answers": [
+        [
+          "have been deployed",
+          "'ve been deployed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"several patches\" recibe la acción y \"this week\" abarca un periodo que llega al presente; por lo tanto va voz pasiva (presente perfecto). La regla es \"have/has been + participio\"; con plural usamos \"have been\": \"have been deployed\"."
+    },
+    {
+      "id": "pv-e12",
+      "prompt": "The new mobile app {0} next Monday.",
+      "verbs": [
+        "LAUNCH"
+      ],
+      "answers": [
+        [
+          "will be launched",
+          "'ll be launched"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the new mobile app\" recibe la acción y \"next Monday\" apunta al futuro; por lo tanto va voz pasiva (futuro). La regla es \"will be + participio\": \"will be launched\"."
+    },
+    {
+      "id": "pv-e13",
+      "prompt": "The monthly report {0} to all stakeholders tomorrow.",
+      "verbs": [
+        "SEND"
+      ],
+      "answers": [
+        [
+          "will be sent",
+          "'ll be sent"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the monthly report\" recibe la acción y \"tomorrow\" apunta al futuro; por lo tanto va voz pasiva (futuro). La regla es \"will be + participio\": \"will be sent\"."
+    },
+    {
+      "id": "pv-e14",
+      "prompt": "Repetitive tasks {0} with a simple script.",
+      "verbs": [
+        "AUTOMATE"
+      ],
+      "answers": [
+        [
+          "can be automated"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"repetitive tasks\" recibe la acción y el modal \"can\" expresa posibilidad; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"can be automated\"."
+    },
+    {
+      "id": "pv-e15",
+      "prompt": "Every change {0} by a senior engineer before release.",
+      "verbs": [
+        "REVIEW"
+      ],
+      "answers": [
+        [
+          "must be reviewed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"every change\" recibe la acción y el modal \"must\" expresa obligación; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"must be reviewed\"."
+    },
+    {
+      "id": "pv-e16",
+      "prompt": "The staging environment {0} automatically after each commit.",
+      "verbs": [
+        "TEST"
+      ],
+      "answers": [
+        [
+          "is tested"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the staging environment\" recibe la acción de forma rutinaria (\"after each commit\"); por lo tanto va voz pasiva (presente simple). La regla es \"be + participio\"; con singular usamos \"is\": \"is tested\"."
+    },
+    {
+      "id": "pv-e17",
+      "prompt": "The invoices {0} by the finance team at the end of each month.",
+      "verbs": [
+        "PROCESS"
+      ],
+      "answers": [
+        [
+          "are processed",
+          "'re processed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the invoices\" recibe la acción de forma habitual; por lo tanto va voz pasiva (presente simple). La regla es \"be + participio\"; con plural usamos \"are\": \"are processed\"."
+    },
+    {
+      "id": "pv-e18",
+      "prompt": "The contract {0} by both parties last Friday.",
+      "verbs": [
+        "SIGN"
+      ],
+      "answers": [
+        [
+          "was signed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the contract\" recibe la acción y \"last Friday\" marca tiempo pasado; por lo tanto va voz pasiva (pasado simple). La regla es \"be + participio\"; con singular usamos \"was\": \"was signed\"."
+    },
+    {
+      "id": "pv-e19",
+      "prompt": "The old laptops {0} to the new employees last month.",
+      "verbs": [
+        "ASSIGN"
+      ],
+      "answers": [
+        [
+          "were assigned"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the old laptops\" recibe la acción y \"last month\" marca tiempo pasado; por lo tanto va voz pasiva (pasado simple). La regla es \"be + participio\"; con plural usamos \"were\": \"were assigned\"."
+    },
+    {
+      "id": "pv-e20",
+      "prompt": "The whole pipeline {0}, so deployments are faster now.",
+      "verbs": [
+        "OPTIMIZE"
+      ],
+      "answers": [
+        [
+          "has been optimized",
+          "'s been optimized"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the whole pipeline\" recibe la acción y el resultado afecta al presente (\"faster now\"); por lo tanto va voz pasiva (presente perfecto). La regla es \"have/has been + participio\"; con singular usamos \"has been\": \"has been optimized\"."
+    },
+    {
+      "id": "pv-e21",
+      "prompt": "All the test results {0} to the shared dashboard.",
+      "verbs": [
+        "UPLOAD"
+      ],
+      "answers": [
+        [
+          "have been uploaded",
+          "'ve been uploaded"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"all the test results\" recibe la acción con efecto presente; por lo tanto va voz pasiva (presente perfecto). La regla es \"have/has been + participio\"; con plural usamos \"have been\": \"have been uploaded\"."
+    },
+    {
+      "id": "pv-e22",
+      "prompt": "The quarterly budget {0} at next week's board meeting.",
+      "verbs": [
+        "APPROVE"
+      ],
+      "answers": [
+        [
+          "will be approved",
+          "'ll be approved"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the quarterly budget\" recibe la acción y \"next week's meeting\" apunta al futuro; por lo tanto va voz pasiva (futuro). La regla es \"will be + participio\": \"will be approved\"."
+    },
+    {
+      "id": "pv-e23",
+      "prompt": "Sensitive customer data {0} according to the new policy.",
+      "verbs": [
+        "ENCRYPT"
+      ],
+      "answers": [
+        [
+          "must be encrypted"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"sensitive customer data\" recibe la acción y el modal \"must\" expresa obligación; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"must be encrypted\"."
+    },
+    {
+      "id": "pv-e24",
+      "prompt": "The outdated documentation {0} once the new API is stable.",
+      "verbs": [
+        "UPDATE"
+      ],
+      "answers": [
+        [
+          "should be updated"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the outdated documentation\" recibe la acción y el modal \"should\" expresa recomendación; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"should be updated\"."
+    },
+    {
+      "id": "pv-e25",
+      "prompt": "The presentation {0} while the projector {1} suddenly.",
+      "verbs": [
+        "PREPARE",
+        "RESTART"
+      ],
+      "answers": [
+        [
+          "was being prepared"
+        ],
+        [
+          "was restarted"
+        ]
+      ],
+      "justification": "La clave aquí es que ambos sujetos reciben la acción; \"the presentation\" estaba en curso (acción interrumpida) y \"the projector\" sufre una acción puntual. Por lo tanto va voz pasiva: pasado continuo \"was being prepared\" y pasado simple \"was restarted\"."
+    },
+    {
+      "id": "pv-e26",
+      "prompt": "{0} the security patches {1} automatically on every machine?",
+      "verbs": [
+        "INSTALL"
+      ],
+      "answers": [
+        [
+          "Are"
+        ],
+        [
+          "installed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the security patches\" recibe la acción (alguien las instala) en una pregunta de rutina; por lo tanto va voz pasiva (presente simple). La regla en pregunta es \"am/is/are + sujeto + participio\"; con plural usamos \"are\": \"Are the security patches installed?\"."
+    },
+    {
+      "id": "pv-e27",
+      "prompt": "Customer passwords {0} in plain text on our servers.",
+      "verbs": [
+        "NOT STORE"
+      ],
+      "answers": [
+        [
+          "are not stored",
+          "aren't stored"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"customer passwords\" recibe la acción y la oración es negativa y habitual; por lo tanto va voz pasiva (presente simple) en negativo. La regla es \"be + not + participio\"; con plural usamos \"are not\": \"are not stored\"."
+    },
+    {
+      "id": "pv-e28",
+      "prompt": "{0} the production server {1} during the maintenance window?",
+      "verbs": [
+        "REBOOT"
+      ],
+      "answers": [
+        [
+          "Was"
+        ],
+        [
+          "rebooted"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the production server\" recibe la acción en un momento pasado (\"during the maintenance window\"), en pregunta; por lo tanto va voz pasiva (pasado simple). La regla en pregunta es \"was/were + sujeto + participio\"; con singular usamos \"was\": \"Was the production server rebooted?\"."
+    },
+    {
+      "id": "pv-e29",
+      "prompt": "The release notes {0} before the deployment went live.",
+      "verbs": [
+        "NOT UPDATE"
+      ],
+      "answers": [
+        [
+          "were not updated",
+          "weren't updated"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the release notes\" recibe la acción en un momento pasado, en negativo; por lo tanto va voz pasiva (pasado simple). La regla es \"be + not + participio\"; con plural usamos \"were not\": \"were not updated\"."
+    },
+    {
+      "id": "pv-e30",
+      "prompt": "The migration {0} yet, so the old system is still running.",
+      "verbs": [
+        "NOT COMPLETE"
+      ],
+      "answers": [
+        [
+          "has not been completed",
+          "hasn't been completed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the migration\" recibe la acción y \"yet\" conecta el pasado con el presente, en negativo; por lo tanto va voz pasiva (presente perfecto). La regla es \"have/has + not + been + participio\"; con singular usamos \"has not been\": \"has not been completed\"."
+    },
+    {
+      "id": "pv-e31",
+      "prompt": "{0} all the stakeholders {1} about the schedule change?",
+      "verbs": [
+        "INFORM"
+      ],
+      "answers": [
+        [
+          "Have"
+        ],
+        [
+          "been informed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"all the stakeholders\" recibe la acción con efecto presente, en pregunta; por lo tanto va voz pasiva (presente perfecto). La regla en pregunta es \"have/has + sujeto + been + participio\"; con plural usamos \"have\": \"Have all the stakeholders been informed?\"."
+    },
+    {
+      "id": "pv-e32",
+      "prompt": "The legacy API {0} until every client has migrated.",
+      "verbs": [
+        "NOT SHUT DOWN"
+      ],
+      "answers": [
+        [
+          "will not be shut down",
+          "won't be shut down"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the legacy API\" recibe la acción en el futuro, en negativo; por lo tanto va voz pasiva (futuro). La regla es \"will + not + be + participio\": \"will not be shut down\"."
+    },
+    {
+      "id": "pv-e33",
+      "prompt": "{0} the test results {1} with the whole team after the meeting?",
+      "verbs": [
+        "SHARE"
+      ],
+      "answers": [
+        [
+          "Will"
+        ],
+        [
+          "be shared"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the test results\" recibe la acción en el futuro, en pregunta; por lo tanto va voz pasiva (futuro). La regla en pregunta es \"will + sujeto + be + participio\": \"Will the test results be shared?\"."
+    },
+    {
+      "id": "pv-e34",
+      "prompt": "This bottleneck {0} with a smarter caching strategy.",
+      "verbs": [
+        "AVOID"
+      ],
+      "answers": [
+        [
+          "could be avoided"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"this bottleneck\" recibe la acción y el modal \"could\" expresa posibilidad; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"could be avoided\"."
+    },
+    {
+      "id": "pv-e35",
+      "prompt": "The root cause {0} without the full server logs.",
+      "verbs": [
+        "NOT IDENTIFY"
+      ],
+      "answers": [
+        [
+          "cannot be identified",
+          "can't be identified"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the root cause\" recibe la acción y el modal \"can\" en negativo expresa imposibilidad; por lo tanto va voz pasiva (modal). La regla es \"modal + not + be + participio\": \"cannot be identified\"."
+    },
+    {
+      "id": "pv-e36",
+      "prompt": "The deadline {0} if the scope keeps growing.",
+      "verbs": [
+        "EXTEND"
+      ],
+      "answers": [
+        [
+          "may be extended",
+          "might be extended"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the deadline\" recibe la acción y el modal \"may\" expresa probabilidad; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"may be extended\"."
+    },
+    {
+      "id": "pv-e37",
+      "prompt": "The opening keynote {0} by the new CTO last year.",
+      "verbs": [
+        "DELIVER"
+      ],
+      "answers": [
+        [
+          "was delivered"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the opening keynote\" recibe la acción y el complemento agente \"by the new CTO\" indica quién la hizo, en pasado; por lo tanto va voz pasiva (pasado simple) con \"by\". La regla es \"be + participio + by\"; con singular usamos \"was\": \"was delivered\"."
+    },
+    {
+      "id": "pv-e38",
+      "prompt": "Each support ticket {0} by a different agent.",
+      "verbs": [
+        "HANDLE"
+      ],
+      "answers": [
+        [
+          "is handled"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"each support ticket\" recibe la acción de forma habitual y \"by a different agent\" señala el agente; por lo tanto va voz pasiva (presente simple) con \"by\". La regla es \"be + participio + by\"; con singular usamos \"is\": \"is handled\"."
+    },
+    {
+      "id": "pv-e39",
+      "prompt": "The new proposal {0} by the entire board.",
+      "verbs": [
+        "APPROVE"
+      ],
+      "answers": [
+        [
+          "has been approved",
+          "'s been approved"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the new proposal\" recibe la acción con efecto presente y \"by the entire board\" indica el agente; por lo tanto va voz pasiva (presente perfecto) con \"by\". La regla es \"have/has been + participio + by\"; con singular usamos \"has been\": \"has been approved\"."
+    },
+    {
+      "id": "pv-e40",
+      "prompt": "By the time we logged in, the account {0} by an administrator.",
+      "verbs": [
+        "SUSPEND"
+      ],
+      "answers": [
+        [
+          "had been suspended",
+          "'d been suspended"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the account\" recibe la acción antes de otro momento pasado (\"By the time we logged in\"); por lo tanto va voz pasiva (pasado perfecto). La regla es \"had been + participio\": \"had been suspended\"."
+    },
+    {
+      "id": "pv-e41",
+      "prompt": "The new feature {0} right now, so expect some downtime.",
+      "verbs": [
+        "ROLL OUT"
+      ],
+      "answers": [
+        [
+          "is being rolled out",
+          "'s being rolled out"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the new feature\" recibe la acción y \"right now\" indica algo en curso; por lo tanto va voz pasiva (presente continuo). La regla es \"am/is/are + being + participio\"; con singular usamos \"is being\": \"is being rolled out\"."
+    },
+    {
+      "id": "pv-e42",
+      "prompt": "The reports {0} when the system suddenly crashed.",
+      "verbs": [
+        "GENERATE"
+      ],
+      "answers": [
+        [
+          "were being generated"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the reports\" recibe la acción en progreso interrumpida por otra (\"when the system crashed\"); por lo tanto va voz pasiva (pasado continuo). La regla es \"was/were + being + participio\"; con plural usamos \"were being\": \"were being generated\"."
+    },
+    {
+      "id": "pv-e43",
+      "prompt": "All employees {0} about the new remote policy next week.",
+      "verbs": [
+        "NOTIFY"
+      ],
+      "answers": [
+        [
+          "will be notified",
+          "'ll be notified"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"all employees\" recibe la acción y \"next week\" apunta al futuro; por lo tanto va voz pasiva (futuro). La regla es \"will be + participio\": \"will be notified\"."
+    },
+    {
+      "id": "pv-e44",
+      "prompt": "Confidential files {0} over public channels.",
+      "verbs": [
+        "NOT SHARE"
+      ],
+      "answers": [
+        [
+          "should not be shared",
+          "shouldn't be shared"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"confidential files\" recibe la acción y el modal \"should\" en negativo expresa una recomendación de no hacerlo; por lo tanto va voz pasiva (modal). La regla es \"modal + not + be + participio\": \"should not be shared\"."
+    },
+    {
+      "id": "pv-e45",
+      "prompt": "Old browsers {0} by the new dashboard.",
+      "verbs": [
+        "NOT SUPPORT"
+      ],
+      "answers": [
+        [
+          "are not supported",
+          "aren't supported"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"old browsers\" recibe la acción y \"by the new dashboard\" señala el agente, en negativo; por lo tanto va voz pasiva (presente simple) con \"by\". La regla es \"be + not + participio + by\"; con plural usamos \"are not\": \"are not supported\"."
+    },
+    {
+      "id": "pv-e46",
+      "prompt": "{0} the data {1} before the breach was detected?",
+      "verbs": [
+        "ENCRYPT"
+      ],
+      "answers": [
+        [
+          "Had"
+        ],
+        [
+          "been encrypted"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the data\" recibe la acción antes de otro momento pasado (\"before the breach was detected\"), en pregunta; por lo tanto va voz pasiva (pasado perfecto). La regla en pregunta es \"had + sujeto + been + participio\": \"Had the data been encrypted?\"."
+    },
+    {
+      "id": "pv-e47",
+      "prompt": "The incident report {0} within twenty-four hours.",
+      "verbs": [
+        "SUBMIT"
+      ],
+      "answers": [
+        [
+          "must be submitted"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the incident report\" recibe la acción y el modal \"must\" expresa obligación; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"must be submitted\"."
+    },
+    {
+      "id": "pv-e48",
+      "prompt": "The internal dashboard {0} from any company device.",
+      "verbs": [
+        "ACCESS"
+      ],
+      "answers": [
+        [
+          "can be accessed"
+        ]
+      ],
+      "justification": "La clave aquí es que el sujeto \"the internal dashboard\" recibe la acción y el modal \"can\" expresa posibilidad/permiso; por lo tanto va voz pasiva (modal). La regla es \"modal + be + participio\": \"can be accessed\"."
+    }
+  ]
+}
