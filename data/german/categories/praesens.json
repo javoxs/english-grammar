@@ -1,0 +1,113 @@
+{
+  "id": "praesens",
+  "name": "Präsens",
+  "explanation": "Tiempo presente en alemán: conjugación regular (-e, -st, -t, -en, -t, -en), verbos con cambio de vocal (e→i/ie, a→ä) y verbos irregulares frecuentes (<em>sein</em>, <em>haben</em>).",
+  "original": [],
+  "extra": [
+    {
+      "id": "pr-e1",
+      "prompt": "Ich {0} jeden Tag um sieben Uhr auf.",
+      "verbs": ["AUFSTEHEN"],
+      "answers": [["stehe", "steh"]],
+      "justification": "La clave aquí es \"jeden Tag\", que indica una rutina habitual; por lo tanto va Präsens. Con \"ich\" el verbo separable \"aufstehen\" se conjuga \"stehe\" y la partícula \"auf\" va al final de la oración."
+    },
+    {
+      "id": "pr-e2",
+      "prompt": "Er {0} Deutsch und Englisch.",
+      "verbs": ["SPRECHEN"],
+      "answers": [["spricht"]],
+      "justification": "La clave aquí es una habilidad general y permanente; por lo tanto va Präsens. \"sprechen\" cambia e→i en 3ª persona singular: \"er spricht\"."
+    },
+    {
+      "id": "pr-e3",
+      "prompt": "Wir {0} in Berlin.",
+      "verbs": ["WOHNEN"],
+      "answers": [["wohnen"]],
+      "justification": "La clave aquí es un hecho permanente sobre dónde vivimos; por lo tanto va Präsens. Con \"wir\" los verbos regulares llevan la terminación -en: \"wohnen\"."
+    },
+    {
+      "id": "pr-e4",
+      "prompt": "Du {0} sehr gut Kaffee.",
+      "verbs": ["KOCHEN"],
+      "answers": [["kochst"]],
+      "justification": "La clave aquí es una afirmación general sobre una habilidad; por lo tanto va Präsens. Con \"du\" los verbos regulares terminan en -st: \"kochst\"."
+    },
+    {
+      "id": "pr-e5",
+      "prompt": "Sie {0} Lehrerin. (ella)",
+      "verbs": ["SEIN"],
+      "answers": [["ist"]],
+      "justification": "La clave aquí es una descripción de profesión permanente; por lo tanto va Präsens. El verbo irregular \"sein\" en 3ª persona singular es \"ist\"."
+    },
+    {
+      "id": "pr-e6",
+      "prompt": "Ihr {0} heute viel zu tun.",
+      "verbs": ["HABEN"],
+      "answers": [["habt"]],
+      "justification": "La clave aquí es \"heute\" con un estado presente; por lo tanto va Präsens. \"haben\" con \"ihr\" se conjuga como \"habt\"."
+    },
+    {
+      "id": "pr-e7",
+      "prompt": "Das Kind {0} ein Buch.",
+      "verbs": ["LESEN"],
+      "answers": [["liest"]],
+      "justification": "La clave aquí es una acción en el momento presente; por lo tanto va Präsens. \"lesen\" cambia e→ie en 3ª persona singular: \"liest\"."
+    },
+    {
+      "id": "pr-e8",
+      "prompt": "Ich {0} nicht gern früh auf.",
+      "verbs": ["STEHEN AUF"],
+      "answers": [["stehe", "steh"]],
+      "justification": "La clave aquí es una preferencia habitual (\"nicht gern\"); por lo tanto va Präsens. Con \"ich\" el verbo \"aufstehen\" (separable) usa \"stehe\" + \"auf\"."
+    },
+    {
+      "id": "pr-e9",
+      "prompt": "Meine Schwester {0} jeden Morgen joggen.",
+      "verbs": ["GEHEN"],
+      "answers": [["geht"]],
+      "justification": "La clave aquí es \"jeden Morgen\", una rutina; por lo tanto va Präsens. \"gehen\" es irregular en 3ª persona: \"geht\"."
+    },
+    {
+      "id": "pr-e10",
+      "prompt": "Was {0} du am Wochenende?",
+      "verbs": ["MACHEN"],
+      "answers": [["machst"]],
+      "justification": "La clave aquí es una pregunta sobre hábitos del fin de semana; por lo tanto va Präsens. En preguntas con \"du\" el verbo va en 2ª persona: \"machst\"."
+    },
+    {
+      "id": "pr-e11",
+      "prompt": "Der Zug {0} um 8:15 Uhr.",
+      "verbs": ["FAHREN"],
+      "answers": [["fährt"]],
+      "justification": "La clave aquí es un horario fijo (8:15 Uhr); los horarios usan Präsens. \"fahren\" cambia a→ä en 3ª persona: \"fährt\"."
+    },
+    {
+      "id": "pr-e12",
+      "prompt": "Wir {0} heute Abend ins Kino.",
+      "verbs": ["GEHEN"],
+      "answers": [["gehen"]],
+      "justification": "La clave aquí es un plan para hoy (presente/futuro cercano); por lo tanto va Präsens. Con \"wir\" el verbo queda en forma base plural: \"gehen\"."
+    },
+    {
+      "id": "pr-e13",
+      "prompt": "Er {0} nicht oft Fleisch.",
+      "verbs": ["ESSEN"],
+      "answers": [["isst"]],
+      "justification": "La clave aquí es \"nicht oft\", un hábito alimenticio; por lo tanto va Präsens. \"essen\" cambia e→i en 3ª persona: \"isst\"."
+    },
+    {
+      "id": "pr-e14",
+      "prompt": "Ich {0} müde, weil ich wenig geschlafen habe.",
+      "verbs": ["SEIN"],
+      "answers": [["bin"]],
+      "justification": "La clave aquí es un estado actual (\"weil ich wenig geschlafen habe\"); por lo tanto va Präsens. \"sein\" con \"ich\" es \"bin\"."
+    },
+    {
+      "id": "pr-e15",
+      "prompt": "Die Kinder {0} im Garten.",
+      "verbs": ["SPIELEN"],
+      "answers": [["spielen"]],
+      "justification": "La clave aquí es una acción que ocurre ahora (\"im Garten\"); por lo tanto va Präsens. Con sujeto plural \"die Kinder\" el verbo regular termina en -en: \"spielen\"."
+    }
+  ]
+}

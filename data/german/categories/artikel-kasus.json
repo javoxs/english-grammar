@@ -1,0 +1,114 @@
+{
+  "id": "artikel-kasus",
+  "name": "Artikel & Kasus",
+  "explanation": "Artículos definidos e indefinidos según el caso: <strong>Nominativ</strong> (sujeto), <strong>Akkusativ</strong> (objeto directo, tras <em>für, durch, gegen</em>…) y <strong>Dativ</strong> (objeto indirecto, tras <em>mit, bei, von, zu, aus</em>…).",
+  "keyHint": "Identifica si el sustantivo es sujeto, objeto directo u objeto indirecto (o qué preposición lo gobierna).",
+  "original": [],
+  "extra": [
+    {
+      "id": "ak-e1",
+      "prompt": "{0} Mann liest die Zeitung.",
+      "verbs": ["NOMINATIV, MASKULIN"],
+      "answers": [["Der"]],
+      "justification": "La clave aquí es que \"Mann\" es el sujeto de la oración (quien realiza la acción); por lo tanto va Nominativ. Artículo definido masculino en Nominativ: \"Der\"."
+    },
+    {
+      "id": "ak-e2",
+      "prompt": "Ich sehe {0} Hund im Park.",
+      "verbs": ["AKKUSATIV, MASKULIN"],
+      "answers": [["den"]],
+      "justification": "La clave aquí es que \"Hund\" es el objeto directo del verbo \"sehen\" (¿a quién/qué veo?); por lo tanto va Akkusativ. Artículo definido masculino en Akkusativ: \"den\"."
+    },
+    {
+      "id": "ak-e3",
+      "prompt": "Sie gibt {0} Kind ein Geschenk.",
+      "verbs": ["DATIV, NEUTRUM"],
+      "answers": [["dem"]],
+      "justification": "La clave aquí es que \"Kind\" es el receptor indirecto (a quién se da); por lo tanto va Dativ. Artículo definido neutro en Dativ: \"dem\"."
+    },
+    {
+      "id": "ak-e4",
+      "prompt": "Wir kaufen {0} Brot im Supermarkt.",
+      "verbs": ["AKKUSATIV, NEUTRUM"],
+      "answers": [["das"]],
+      "justification": "La clave aquí es que \"Brot\" es el objeto directo de \"kaufen\"; por lo tanto va Akkusativ. En neutro, Nominativ y Akkusativ son iguales: \"das\"."
+    },
+    {
+      "id": "ak-e5",
+      "prompt": "Er fährt mit {0} Bus zur Arbeit.",
+      "verbs": ["DATIV, MASKULIN, MIT"],
+      "answers": [["dem"]],
+      "justification": "La clave aquí es la preposición \"mit\", que siempre rige Dativ; por lo tanto va Dativ. Artículo definido masculino en Dativ: \"dem\"."
+    },
+    {
+      "id": "ak-e6",
+      "prompt": "{0} Frau arbeitet im Krankenhaus.",
+      "verbs": ["NOMINATIV, FEMININ"],
+      "answers": [["Die"]],
+      "justification": "La clave aquí es que \"Frau\" es el sujeto de la oración; por lo tanto va Nominativ. Artículo definido femenino en Nominativ: \"Die\"."
+    },
+    {
+      "id": "ak-e7",
+      "prompt": "Ich helfe {0} Frau bei der Arbeit.",
+      "verbs": ["DATIV, FEMININ"],
+      "answers": [["der"]],
+      "justification": "La clave aquí es el verbo \"helfen\", que rige Dativ (¿wem helfe ich?); por lo tanto va Dativ. Artículo definido femenino en Dativ: \"der\"."
+    },
+    {
+      "id": "ak-e8",
+      "prompt": "Er trinkt {0} Kaffee jeden Morgen.",
+      "verbs": ["AKKUSATIV, MASKULIN"],
+      "answers": [["den"]],
+      "justification": "La clave aquí es que \"Kaffee\" es el objeto directo de \"trinken\"; por lo tanto va Akkusativ. Artículo definido masculino en Akkusativ: \"den\"."
+    },
+    {
+      "id": "ak-e9",
+      "prompt": "Das Geschenk ist für {0} Mutter.",
+      "verbs": ["AKKUSATIV, FEMININ, FÜR"],
+      "answers": [["die"]],
+      "justification": "La clave aquí es la preposición \"für\", que siempre rige Akkusativ; por lo tanto va Akkusativ. Artículo definido femenino en Akkusativ: \"die\" (igual que Nominativ)."
+    },
+    {
+      "id": "ak-e10",
+      "prompt": "Ich komme aus {0} Schweiz.",
+      "verbs": ["DATIV, FEMININ, AUS"],
+      "answers": [["der"]],
+      "justification": "La clave aquí es la preposición \"aus\", que rige Dativ; por lo tanto va Dativ. \"Schweiz\" es femenino: artículo en Dativ \"der\"."
+    },
+    {
+      "id": "ak-e11",
+      "prompt": "{0} Buch liegt auf dem Tisch.",
+      "verbs": ["NOMINATIV, NEUTRUM"],
+      "answers": [["Das"]],
+      "justification": "La clave aquí es que \"Buch\" es el sujeto (quien/qué está sobre la mesa); por lo tanto va Nominativ. Artículo definido neutro en Nominativ: \"Das\"."
+    },
+    {
+      "id": "ak-e12",
+      "prompt": "Wir gehen zu {0} Arzt.",
+      "verbs": ["DATIV, MASKULIN, ZU"],
+      "answers": [["dem"]],
+      "justification": "La clave aquí es la preposición \"zu\", que rige Dativ; por lo tanto va Dativ. Artículo definido masculino en Dativ: \"dem\"."
+    },
+    {
+      "id": "ak-e13",
+      "prompt": "Sie schreibt {0} Brief an ihren Freund.",
+      "verbs": ["AKKUSATIV, MASKULIN"],
+      "answers": [["einen"]],
+      "justification": "La clave aquí es que \"Brief\" es el objeto directo de \"schreiben\"; por lo tanto va Akkusativ. Artículo indefinido masculino en Akkusativ: \"einen\"."
+    },
+    {
+      "id": "ak-e14",
+      "prompt": "Er wohnt bei {0} Eltern.",
+      "verbs": ["DATIV, PLURAL, BEI"],
+      "answers": [["den"]],
+      "justification": "La clave aquí es la preposición \"bei\" con plural, que rige Dativ; por lo tanto va Dativ. Artículo definido plural en Dativ: \"den\" (+ sustantivo en plural)."
+    },
+    {
+      "id": "ak-e15",
+      "prompt": "Ich habe {0} Katze. (indefinido, femenino, Nominativ)",
+      "verbs": ["NOMINATIV, FEMININ, EIN"],
+      "answers": [["eine"]],
+      "justification": "La clave aquí es que \"Katze\" es sujeto con artículo indefinido; por lo tanto va Nominativ. Artículo indefinido femenino en Nominativ: \"eine\"."
+    }
+  ]
+}

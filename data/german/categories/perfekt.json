@@ -1,0 +1,113 @@
+{
+  "id": "perfekt",
+  "name": "Perfekt",
+  "explanation": "Pasado hablado en alemán: <strong>haben</strong> o <strong>sein</strong> (conjugados) + <strong>Partizip II</strong> al final. Usa <em>sein</em> con verbos de movimiento/cambio de estado; <em>haben</em> con la mayoría de los demás.",
+  "original": [],
+  "extra": [
+    {
+      "id": "pf-e1",
+      "prompt": "Ich {0} gestern ein Buch {1}.",
+      "verbs": ["HABEN", "LESEN"],
+      "answers": [["habe"], ["gelesen"]],
+      "justification": "La clave aquí es \"gestern\", que marca acción pasada; por lo tanto va Perfekt. \"lesen\" usa \"haben\" y Partizip II irregular \"gelesen\"."
+    },
+    {
+      "id": "pf-e2",
+      "prompt": "Er {0} nach Hause {1}.",
+      "verbs": ["SEIN", "GEHEN"],
+      "answers": [["ist"], ["gegangen"]],
+      "justification": "La clave aquí es un movimiento hacia un lugar (\"nach Hause\"); por lo tanto va Perfekt con \"sein\". Partizip II de \"gehen\": \"gegangen\"."
+    },
+    {
+      "id": "pf-e3",
+      "prompt": "Wir {0} Pizza {1}.",
+      "verbs": ["HABEN", "ESSEN"],
+      "answers": [["haben"], ["gegessen"]],
+      "justification": "La clave aquí es una acción completada en el pasado; por lo tanto va Perfekt. \"essen\" usa \"haben\" y Partizip II \"gegessen\"."
+    },
+    {
+      "id": "pf-e4",
+      "prompt": "Sie {0} Deutsch {1}. (ella)",
+      "verbs": ["HABEN", "LERNEN"],
+      "answers": [["hat"], ["gelernt"]],
+      "justification": "La clave aquí es una acción ya completada; por lo tanto va Perfekt. Verbo regular: \"hat\" + \"gelernt\" (ge- + Stamm + -t)."
+    },
+    {
+      "id": "pf-e5",
+      "prompt": "Ich {0} gestern lange {1}.",
+      "verbs": ["HABEN", "SCHLAFEN"],
+      "answers": [["habe"], ["geschlafen"]],
+      "justification": "La clave aquí es \"gestern\" con acción pasada; por lo tanto va Perfekt. \"schlafen\" usa \"haben\" y Partizip II \"geschlafen\"."
+    },
+    {
+      "id": "pf-e6",
+      "prompt": "Du {0} mit dem Bus {1}.",
+      "verbs": ["SEIN", "FAHREN"],
+      "answers": [["bist"], ["gefahren"]],
+      "justification": "La clave aquí es desplazamiento en transporte (movimiento); por lo tanto va Perfekt con \"sein\". Partizip II de \"fahren\": \"gefahren\"."
+    },
+    {
+      "id": "pf-e7",
+      "prompt": "Er {0} die Tür {1}.",
+      "verbs": ["HABEN", "ÖFFNEN"],
+      "answers": [["hat"], ["geöffnet"]],
+      "justification": "La clave aquí es una acción puntual ya hecha; por lo tanto va Perfekt. Verbo regular con \"hat\" + \"geöffnet\"."
+    },
+    {
+      "id": "pf-e8",
+      "prompt": "Wir {0} im Park {1}.",
+      "verbs": ["HABEN", "SPIELEN"],
+      "answers": [["haben"], ["gespielt"]],
+      "justification": "La clave aquí es una actividad ya realizada; por lo tanto va Perfekt. \"spielen\" usa el auxiliar \"haben\" y Partizip II regular \"gespielt\"."
+    },
+    {
+      "id": "pf-e9",
+      "prompt": "Ich {0} meine Hausaufgaben {1}.",
+      "verbs": ["HABEN", "MACHEN"],
+      "answers": [["habe"], ["gemacht"]],
+      "justification": "La clave aquí es tarea ya terminada; por lo tanto va Perfekt. Verbo regular: \"habe gemacht\"."
+    },
+    {
+      "id": "pf-e10",
+      "prompt": "Sie {0} um acht Uhr {1}. (despertarse)",
+      "verbs": ["SEIN", "AUFSTEHEN"],
+      "answers": [["ist"], ["aufgestanden"]],
+      "justification": "La clave aquí es cambio de estado (de dormido a despierto); por lo tanto va Perfekt con \"sein\". Partizip II de \"aufstehen\": \"aufgestanden\"."
+    },
+    {
+      "id": "pf-e11",
+      "prompt": "Er {0} einen Film {1}.",
+      "verbs": ["HABEN", "SEHEN"],
+      "answers": [["hat"], ["gesehen"]],
+      "justification": "La clave aquí es experiencia pasada; por lo tanto va Perfekt. \"sehen\" usa \"haben\" y Partizip II \"gesehen\"."
+    },
+    {
+      "id": "pf-e12",
+      "prompt": "Wir {0} nach Berlin {1}.",
+      "verbs": ["SEIN", "FAHREN"],
+      "answers": [["sind"], ["gefahren"]],
+      "justification": "La clave aquí es movimiento hacia un destino (\"nach Berlin\"); por lo tanto va Perfekt con \"sein\": \"sind gefahren\"."
+    },
+    {
+      "id": "pf-e13",
+      "prompt": "Du {0} schon {1}? (ankommen)",
+      "verbs": ["SEIN", "ANKOMMEN"],
+      "answers": [["bist"], ["angekommen"]],
+      "justification": "La clave aquí es llegada a un destino (cambio de lugar); por lo tanto va Perfekt con \"sein\". Partizip II: \"angekommen\"."
+    },
+    {
+      "id": "pf-e14",
+      "prompt": "Ich {0} viel Wasser {1}.",
+      "verbs": ["HABEN", "TRINKEN"],
+      "answers": [["habe"], ["getrunken"]],
+      "justification": "La clave aquí es acción pasada completada; por lo tanto va Perfekt. \"trinken\" usa \"haben\" y Partizip II \"getrunken\"."
+    },
+    {
+      "id": "pf-e15",
+      "prompt": "Sie {0} den Brief {1}. (ella, escribir)",
+      "verbs": ["HABEN", "SCHREIBEN"],
+      "answers": [["hat"], ["geschrieben"]],
+      "justification": "La clave aquí es acción ya realizada; por lo tanto va Perfekt. \"schreiben\" usa \"haben\" y Partizip II \"geschrieben\"."
+    }
+  ]
+}

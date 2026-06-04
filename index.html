@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicios de Verbos en Inglés</title>
+  <title>Ejercicios de Gramática</title>
   <style>
     :root {
       --bg: #f0f4f8;
@@ -34,6 +34,32 @@
     }
     header h1 { font-size: 1.75rem; margin-bottom: .4rem; }
     header p { color: var(--muted); max-width: 640px; margin: 0 auto; }
+
+    .lang-nav {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .lang-nav button {
+      font-family: inherit;
+      font-size: .9rem;
+      padding: .45rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #f8fafc;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background .15s, color .15s, border-color .15s, transform .1s;
+    }
+    .lang-nav button:hover { border-color: var(--primary); color: var(--text); }
+    .lang-nav button:active { transform: scale(.97); }
+    .lang-nav button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
 
     .quiz {
       background: var(--card);
@@ -400,8 +426,12 @@
 </head>
 <body>
   <header>
-    <h1>Ejercicios de Verbos en Inglés</h1>
-    <p>Completa las 10 oraciones. Usa <strong>Evaluar</strong> para ver si acertaste (solo colores). Usa <strong>Feedback</strong> para ver explicaciones, categoría y respuestas correctas.</p>
+    <nav class="lang-nav" aria-label="Idioma de los ejercicios">
+      <button type="button" class="active" id="lang-english" aria-pressed="true">Ejercicios de inglés</button>
+      <button type="button" id="lang-german" aria-pressed="false">Ejercicios de alemán</button>
+    </nav>
+    <h1 id="page-title">Ejercicios de Verbos en Inglés</h1>
+    <p id="page-desc">Completa las 10 oraciones. Usa <strong>Evaluar</strong> para ver si acertaste (solo colores). Usa <strong>Feedback</strong> para ver explicaciones, categoría y respuestas correctas.</p>
   </header>
   <main id="app">
     <section class="quiz">
@@ -427,22 +457,68 @@
   </main>
 
   <script>
+  const LANG = {
+    english: {
+      dataPath: 'data/english',
+      pageTitle: 'Ejercicios de Verbos en Inglés',
+      docTitle: 'Ejercicios de Verbos en Inglés',
+      googleExam: 'inglés',
+      hideHintCategories: ['Question Tags'],
+      tenseNames: [
+        'Present Perfect Continuous', 'Past Perfect Continuous', 'Future Perfect Continuous',
+        'Present Continuous', 'Past Continuous', 'Future Continuous',
+        'Present Perfect', 'Past Perfect', 'Future Perfect',
+        'Present Simple', 'Past Simple', 'Future Simple',
+        'Mixed Conditional', 'Zero Conditional', 'First Conditional', 'Second Conditional', 'Third Conditional',
+        '1st Conditional', '2nd Conditional', '3rd Conditional', 'condicional'
+      ]
+    },
+    german: {
+      dataPath: 'data/german',
+      pageTitle: 'Ejercicios de Gramática Alemana',
+      docTitle: 'Ejercicios de Gramática Alemana',
+      googleExam: 'alemán',
+      hideHintCategories: [],
+      tenseNames: [
+        'Präsens', 'Praesens', 'Perfekt', 'Präteritum', 'Praeteritum', 'Futur I', 'Futur II',
+        'Plusquamperfekt', 'Konjunktiv', 'Partizip II', 'Hilfsverb',
+        'Modalverb', 'Modalverben', 'Nominativ', 'Akkusativ', 'Dativ', 'Genitiv'
+      ]
+    }
+  };
+
+  let currentLang = 'english';
   let CATEGORIES = [];
   let selectedCategoryIds = new Set();
 
+  function getLangConfig() {
+    return LANG[currentLang];
+  }
+
   async function loadCategories() {
-    const manifestRes = await fetch('data/manifest.json');
+    const { dataPath } = getLangConfig();
+    const manifestRes = await fetch(`${dataPath}/manifest.json`);
     if (!manifestRes.ok) throw new Error(`HTTP ${manifestRes.status}`);
     const manifest = await manifestRes.json();
 
     const categories = await Promise.all(
       manifest.categories.map(async (id) => {
-        const res = await fetch(`data/categories/${id}.json`);
+        const res = await fetch(`${dataPath}/categories/${id}.json`);
         if (!res.ok) throw new Error(`HTTP ${res.status} (${id})`);
         return res.json();
       })
     );
     CATEGORIES = categories;
+  }
+
+  function updateLangUI() {
+    const cfg = getLangConfig();
+    document.title = cfg.docTitle;
+    document.getElementById('page-title').textContent = cfg.pageTitle;
+    document.getElementById('lang-english').classList.toggle('active', currentLang === 'english');
+    document.getElementById('lang-german').classList.toggle('active', currentLang === 'german');
+    document.getElementById('lang-english').setAttribute('aria-pressed', currentLang === 'english');
+    document.getElementById('lang-german').setAttribute('aria-pressed', currentLang === 'german');
   }
 
   // --- Utilities ---
@@ -663,7 +739,7 @@
     card.className = 'exercise';
     card.dataset.index = index;
 
-    const hideHint = item.categoryName === 'Question Tags';
+    const hideHint = getLangConfig().hideHintCategories.includes(item.categoryName);
     const verbHint = hideHint ? '' : item.verbs.map(v => `(${v})`).join(' ');
     const hintHTML = hideHint ? '' : `<div class="verb-hint">${verbHint}</div>`;
 
@@ -696,23 +772,13 @@
     return card;
   }
 
-  // Nombres de tiempos/estructuras verbales que NO queremos revelar como pista.
-  const TENSE_NAMES = [
-    'Present Perfect Continuous', 'Past Perfect Continuous', 'Future Perfect Continuous',
-    'Present Continuous', 'Past Continuous', 'Future Continuous',
-    'Present Perfect', 'Past Perfect', 'Future Perfect',
-    'Present Simple', 'Past Simple', 'Future Simple',
-    'Mixed Conditional', 'Zero Conditional', 'First Conditional', 'Second Conditional', 'Third Conditional',
-    '1st Conditional', '2nd Conditional', '3rd Conditional', 'condicional'
-  ];
-
   // Corta la justificación justo antes de que revele el tiempo verbal:
   // lo que ocurra primero entre "por lo tanto…" o el nombre de un tiempo.
   function keyCutPoint(j) {
     let idx = j.length;
     const plt = j.toLowerCase().search(/(;|\.|,|:)?\s*por lo tanto/);
     if (plt >= 0) idx = Math.min(idx, plt);
-    for (const t of TENSE_NAMES) {
+    for (const t of getLangConfig().tenseNames) {
       const k = j.indexOf(t);
       if (k >= 0) idx = Math.min(idx, k);
     }
@@ -769,7 +835,7 @@
   function askGoogleAI(card, item) {
     const sentence = buildFilledSentence(card, item);
     const tense = item.categoryName || 'tiempos verbales';
-    const query = `En un examen de inglés sobre ${tense}, ¿es correcta o incorrecta mi respuesta en la siguiente oración y por qué?: "${sentence}"`;
+    const query = `En un examen de ${getLangConfig().googleExam} sobre ${tense}, ¿es correcta o incorrecta mi respuesta en la siguiente oración y por qué?: "${sentence}"`;
     // udm=50 abre el modo IA de Google
     const url = `https://www.google.com/search?udm=50&q=${encodeURIComponent(query)}`;
     window.open(url, '_blank', 'noopener');
@@ -894,6 +960,32 @@
     renderQuiz();
   }
 
+  async function switchLanguage(lang) {
+    if (lang === currentLang) return;
+    currentLang = lang;
+    updateLangUI();
+
+    const scoreEl = document.getElementById('global-score');
+    const buttons = document.querySelectorAll('.quiz-actions button');
+    scoreEl.textContent = 'Cargando ejercicios…';
+    scoreEl.className = 'global-score';
+    buttons.forEach(b => { b.disabled = true; });
+    clearReviewState();
+
+    try {
+      await loadCategories();
+      selectedCategoryIds = new Set(CATEGORIES.map(c => c.id));
+      renderCategoryChips();
+      buttons.forEach(b => { b.disabled = false; });
+      scoreEl.textContent = '';
+      newQuiz();
+    } catch (err) {
+      console.error(err);
+      scoreEl.textContent = 'No se pudieron cargar los ejercicios. Recarga la página.';
+      scoreEl.className = 'global-score fail';
+    }
+  }
+
   async function init() {
     const scoreEl = document.getElementById('global-score');
     const buttons = document.querySelectorAll('.quiz-actions button');
@@ -903,7 +995,10 @@
     document.getElementById('btn-new-quiz').addEventListener('click', newQuiz);
     document.getElementById('btn-cats-all').addEventListener('click', () => setAllCategories(true));
     document.getElementById('btn-cats-none').addEventListener('click', () => setAllCategories(false));
+    document.getElementById('lang-english').addEventListener('click', () => switchLanguage('english'));
+    document.getElementById('lang-german').addEventListener('click', () => switchLanguage('german'));
 
+    updateLangUI();
     scoreEl.textContent = 'Cargando ejercicios…';
     buttons.forEach(b => { b.disabled = true; });
 

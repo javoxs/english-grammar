@@ -1,0 +1,113 @@
+{
+  "id": "modalverben",
+  "name": "Modalverben",
+  "explanation": "Verbos modales (<em>können, müssen, wollen, dürfen, sollen, mögen</em>): conjugación irregular en presente; el verbo principal va al <strong>infinitivo al final</strong> de la oración.",
+  "original": [],
+  "extra": [
+    {
+      "id": "mv-e1",
+      "prompt": "Ich {0} gut Deutsch {1}.",
+      "verbs": ["KÖNNEN", "SPRECHEN"],
+      "answers": [["kann"], ["sprechen"]],
+      "justification": "La clave aquí es expresar habilidad; por lo tanto se usa el modal \"können\". Con \"ich\" → \"kann\"; el infinitivo \"sprechen\" va al final."
+    },
+    {
+      "id": "mv-e2",
+      "prompt": "Du {0} heute früher nach Hause {1}.",
+      "verbs": ["MÜSSEN", "GEHEN"],
+      "answers": [["musst"], ["gehen"]],
+      "justification": "La clave aquí es obligación; por lo tanto se usa \"müssen\". Con \"du\" → \"musst\"; infinitivo al final: \"gehen\"."
+    },
+    {
+      "id": "mv-e3",
+      "prompt": "Er {0} ein Eis {1}.",
+      "verbs": ["WOLLEN", "ESSEN"],
+      "answers": [["will"], ["essen"]],
+      "justification": "La clave aquí es deseo/voluntad; por lo tanto se usa \"wollen\". Con \"er\" → \"will\"; infinitivo \"essen\" al final."
+    },
+    {
+      "id": "mv-e4",
+      "prompt": "Wir {0} hier nicht {1}.",
+      "verbs": ["DÜRFEN", "RAUCHEN"],
+      "answers": [["dürfen"], ["rauchen"]],
+      "justification": "La clave aquí es prohibición (\"nicht\"); por lo tanto se usa \"dürfen\" en negativo. Con \"wir\" → \"dürfen\"; infinitivo \"rauchen\" al final."
+    },
+    {
+      "id": "mv-e5",
+      "prompt": "Ihr {0} leise {1}.",
+      "verbs": ["SOLLEN", "SEIN"],
+      "answers": [["sollt"], ["sein"]],
+      "justification": "La clave aquí es un consejo o recomendación; por lo tanto se usa \"sollen\". Con \"ihr\" → \"sollt\"; infinitivo \"sein\" al final."
+    },
+    {
+      "id": "mv-e6",
+      "prompt": "Sie {0} gern ins Kino {1}. (ella)",
+      "verbs": ["MÖGEN", "GEHEN"],
+      "answers": [["mag"], ["gehen"]],
+      "justification": "La clave aquí es preferencia con acción; por lo tanto se usa \"mögen\". Con \"sie\" (ella) → \"mag\"; infinitivo \"gehen\" al final."
+    },
+    {
+      "id": "mv-e7",
+      "prompt": "Ich {0} dir gerne {1}.",
+      "verbs": ["KÖNNEN", "HELFEN"],
+      "answers": [["kann"], ["helfen"]],
+      "justification": "La clave aquí es ofrecer ayuda (habilidad/disponibilidad); por lo tanto se usa \"können\". Con \"ich\" → \"kann\"; infinitivo \"helfen\" al final."
+    },
+    {
+      "id": "mv-e8",
+      "prompt": "Er {0} morgen {1}.",
+      "verbs": ["MÜSSEN", "ARBEITEN"],
+      "answers": [["muss"], ["arbeiten"]],
+      "justification": "La clave aquí es obligación futura; por lo tanto se usa \"müssen\". Con \"er\" → \"muss\"; infinitivo \"arbeiten\" al final."
+    },
+    {
+      "id": "mv-e9",
+      "prompt": "Wir {0} ins Kino {1}.",
+      "verbs": ["WOLLEN", "GEHEN"],
+      "answers": [["wollen"], ["gehen"]],
+      "justification": "La clave aquí es intención/plan; por lo tanto se usa \"wollen\". Con \"wir\" → \"wollen\"; infinitivo \"gehen\" al final."
+    },
+    {
+      "id": "mv-e10",
+      "prompt": "Du {0} im Unterricht nicht {1}.",
+      "verbs": ["DÜRFEN", "SPRECHEN"],
+      "answers": [["darfst"], ["sprechen"]],
+      "justification": "La clave aquí es permiso negado en clase; por lo tanto se usa \"dürfen\". Con \"du\" → \"darfst\"; infinitivo \"sprechen\" al final."
+    },
+    {
+      "id": "mv-e11",
+      "prompt": "Ich {0} heute nicht {1}.",
+      "verbs": ["KÖNNEN", "KOMMEN"],
+      "answers": [["kann"], ["kommen"]],
+      "justification": "La clave aquí es imposibilidad (\"nicht\"); por lo tanto se usa \"können\" en negativo. Con \"ich\" → \"kann\"; infinitivo \"kommen\" al final."
+    },
+    {
+      "id": "mv-e12",
+      "prompt": "Was {0} du heute Abend {1}?",
+      "verbs": ["WOLLEN", "MACHEN"],
+      "answers": [["willst"], ["machen"]],
+      "justification": "La clave aquí es preguntar por intención/planes; por lo tanto se usa \"wollen\". Con \"du\" → \"willst\"; infinitivo \"machen\" al final."
+    },
+    {
+      "id": "mv-e13",
+      "prompt": "Sie {0} jeden Tag Sport {1}. (ella, deber)",
+      "verbs": ["SOLLEN", "MACHEN"],
+      "answers": [["soll"], ["machen"]],
+      "justification": "La clave aquí es deber o recomendación externa; por lo tanto se usa \"sollen\". Con \"sie\" (ella) → \"soll\"; infinitivo \"machen\" al final."
+    },
+    {
+      "id": "mv-e14",
+      "prompt": "Ihr {0} die Hausaufgaben {1}.",
+      "verbs": ["MÜSSEN", "MACHEN"],
+      "answers": [["müsst"], ["machen"]],
+      "justification": "La clave aquí es obligación escolar; por lo tanto se usa \"müssen\". Con \"ihr\" → \"müsst\"; infinitivo \"machen\" al final."
+    },
+    {
+      "id": "mv-e15",
+      "prompt": "Er {0} sehr gut Klavier {1}.",
+      "verbs": ["KÖNNEN", "SPIELEN"],
+      "answers": [["kann"], ["spielen"]],
+      "justification": "La clave aquí es habilidad (\"sehr gut\"); por lo tanto se usa \"können\". Con \"er\" → \"kann\"; infinitivo \"spielen\" al final."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "praeteritum",
+  "name": "Präteritum",
+  "explanation": "Pasado escrito/narrativo: verbos regulares con <strong>-te</strong> (machte, spielte) e irregulares frecuentes (<em>war, hatte, ging, kam, sah</em>…). Muy usado en textos y con <em>sein/haben/modales</em> también en conversación.",
+  "original": [],
+  "extra": [
+    {
+      "id": "pt-e1",
+      "prompt": "Gestern {0} ich zu Hause.",
+      "verbs": ["SEIN"],
+      "answers": [["war"]],
+      "justification": "La clave aquí es \"gestern\" en narración pasada; por lo tanto va Präteritum. \"sein\" en 1ª persona singular es irregular: \"war\"."
+    },
+    {
+      "id": "pt-e2",
+      "prompt": "Er {0} viel Hunger.",
+      "verbs": ["HABEN"],
+      "answers": [["hatte"]],
+      "justification": "La clave aquí es un estado pasado; por lo tanto va Präteritum. \"haben\" en 3ª persona singular es \"hatte\"."
+    },
+    {
+      "id": "pt-e3",
+      "prompt": "Wir {0} gestern Fußball.",
+      "verbs": ["SPIELEN"],
+      "answers": [["spielten"]],
+      "justification": "La clave aquí es acción pasada narrada (\"gestern\"); por lo tanto va Präteritum. Verbo regular con \"wir\": Stamm + -ten → \"spielten\"."
+    },
+    {
+      "id": "pt-e4",
+      "prompt": "Sie {0} ins Kino. (ella)",
+      "verbs": ["GEHEN"],
+      "answers": [["ging"]],
+      "justification": "La clave aquí es movimiento en el pasado; por lo tanto va Präteritum. \"gehen\" en 3ª persona es irregular: \"ging\"."
+    },
+    {
+      "id": "pt-e5",
+      "prompt": "Ich {0} ein interessantes Buch.",
+      "verbs": ["LESEN"],
+      "answers": [["las"]],
+      "justification": "La clave aquí es acción pasada completada; por lo tanto va Präteritum. \"lesen\" en 1ª persona es irregular: \"las\"."
+    },
+    {
+      "id": "pt-e6",
+      "prompt": "Er {0} um acht Uhr nach Hause.",
+      "verbs": ["KOMMEN"],
+      "answers": [["kam"]],
+      "justification": "La clave aquí es llegada en el pasado; por lo tanto va Präteritum. \"kommen\" en 3ª persona es irregular: \"kam\"."
+    },
+    {
+      "id": "pt-e7",
+      "prompt": "Du {0} gestern Pizza.",
+      "verbs": ["ESSEN"],
+      "answers": [["aßest", "aßt"]],
+      "justification": "La clave aquí es acción pasada (\"gestern\"); por lo tanto va Präteritum. \"essen\" con \"du\" es \"aßest\" (o coloquial \"aßt\")."
+    },
+    {
+      "id": "pt-e8",
+      "prompt": "Sie {0} den Film. (ella, ver)",
+      "verbs": ["SEHEN"],
+      "answers": [["sah"]],
+      "justification": "La clave aquí es experiencia pasada; por lo tanto va Präteritum. \"sehen\" en 3ª persona es irregular: \"sah\"."
+    },
+    {
+      "id": "pt-e9",
+      "prompt": "Wir {0} lange im Park.",
+      "verbs": ["BLEIBEN"],
+      "answers": [["blieben"]],
+      "justification": "La clave aquí es duración en el pasado; por lo tanto va Präteritum. \"bleiben\" con \"wir\" es irregular: \"blieben\"."
+    },
+    {
+      "id": "pt-e10",
+      "prompt": "Ich {0} gestern viel Kaffee.",
+      "verbs": ["TRINKEN"],
+      "answers": [["trank"]],
+      "justification": "La clave aquí es acción pasada habitual puntual; por lo tanto va Präteritum. \"trinken\" en 1ª persona es irregular: \"trank\"."
+    },
+    {
+      "id": "pt-e11",
+      "prompt": "Er {0} die Tür.",
+      "verbs": ["ÖFFNEN"],
+      "answers": [["öffnete"]],
+      "justification": "La clave aquí es acción puntual en el pasado; por lo tanto va Präteritum. Verbo regular en 3ª persona: Stamm + -te → \"öffnete\"."
+    },
+    {
+      "id": "pt-e12",
+      "prompt": "Sie {0} uns die Wahrheit. (ella, decir)",
+      "verbs": ["SAGEN"],
+      "answers": [["sagte"]],
+      "justification": "La clave aquí es acción de habla en el pasado; por lo tanto va Präteritum. Verbo regular: \"sagte\"."
+    },
+    {
+      "id": "pt-e13",
+      "prompt": "Ihr {0} gestern lange.",
+      "verbs": ["ARBEITEN"],
+      "answers": [["arbeitetet"]],
+      "justification": "La clave aquí es actividad pasada (\"gestern\"); por lo tanto va Präteritum. Verbo regular con \"ihr\": Stamm + -tet → \"arbeitetet\"."
+    },
+    {
+      "id": "pt-e14",
+      "prompt": "Es {0} den ganzen Tag.",
+      "verbs": ["REGNEN"],
+      "answers": [["regnete"]],
+      "justification": "La clave aquí es descripción meteorológica pasada; por lo tanto va Präteritum. Verbo regular impersonal: \"regnete\"."
+    },
+    {
+      "id": "pt-e15",
+      "prompt": "Ich {0} gestern meine Freunde.",
+      "verbs": ["TREFFEN"],
+      "answers": [["traf"]],
+      "justification": "La clave aquí es encuentro en el pasado (\"gestern\"); por lo tanto va Präteritum. \"treffen\" en 1ª persona es irregular: \"traf\"."
+    }
+  ]
+}
